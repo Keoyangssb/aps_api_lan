@@ -1,0 +1,23 @@
+info:
+  name: GetFlightPerCertificate copy
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/GetFlightPerCertificate"
+  body:
+    type: json
+    data: |-
+      {
+        "flight_per_id": "10000"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
