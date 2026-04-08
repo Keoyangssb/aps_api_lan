@@ -1,0 +1,19 @@
+opencollection: 1.0.0
+
+info:
+  name: APS_Api
+
+request:
+  variables:
+    - name: currentIP
+      value: http://10.0.100.31:8081
+    - name: authToken
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiOTg2OTgyZGQtNjFkNC00ZTVlLWI4MmMtNmI2NjZmZGFhY2Q0IiwiZXhwIjoxNzQ0MzM1MzQwfQ.aB8q15rt4LyD6vICeKLektDqcm_I0xF2rYOi4k2vq88
+    - name: localhostIP
+      value: ""
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

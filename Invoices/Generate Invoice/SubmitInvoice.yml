@@ -1,0 +1,112 @@
+info:
+  name: SubmitInvoice
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoice/SubmitInvoice"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-02-01\",\r
+
+      \  \"to_date\": \"2025-02-28\",\r
+
+      \  \"date_add\": \"2025-02-10\",\r
+
+      \  \"invoice_description\": \"test\",\r
+
+      \  \"invoiceDetails\": [\r
+
+      \    {\r
+
+      \        \"invoice_no\": \"LANS/OVF/CRK/02/2025/001\",\r
+
+      \        \"customer_id\": \"147\",\r
+
+      \        \"customer\": \"HONGKONG AIRLINES\",\r
+
+      \        \"airline_code\": \"CRK\",\r
+
+      \        \"gsa_code\": \"\",\r
+
+      \        \"type_of_flight\": \"\",\r
+
+      \        \"route\": \"\",\r
+
+      \        \"qty\": \"1\",\r
+
+      \        \"overflight_fee\": \"160\",\r
+
+      \        \"service_fee\": \"0\",\r
+
+      \        \"total_fee\": \"160\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"invoice_no\": \"LANS/OVF/CSN/02/2025/002\",\r
+
+      \        \"customer_id\": \"144\",\r
+
+      \        \"customer\": \"CHINA SOUTHERN AIRLINES\",\r
+
+      \        \"airline_code\": \"CSN\",\r
+
+      \        \"gsa_code\": \"\",\r
+
+      \        \"type_of_flight\": \"\",\r
+
+      \        \"route\": \"\",\r
+
+      \        \"qty\": \"2\",\r
+
+      \        \"overflight_fee\": \"320\",\r
+
+      \        \"service_fee\": \"0\",\r
+
+      \        \"total_fee\": \"320\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"invoice_no\": \"LANS/OVF/VJC/02/2025/003\",\r
+
+      \        \"customer_id\": \"147\",\r
+
+      \        \"customer\": \"HONGKONG AIRLINES\",\r
+
+      \        \"airline_code\": \"CRK\",\r
+
+      \        \"gsa_code\": \"\",\r
+
+      \        \"type_of_flight\": \"\",\r
+
+      \        \"route\": \"\",\r
+
+      \        \"qty\": \"2\",\r
+
+      \        \"overflight_fee\": \"420\",\r
+
+      \        \"service_fee\": \"0\",\r
+
+      \        \"total_fee\": \"420\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

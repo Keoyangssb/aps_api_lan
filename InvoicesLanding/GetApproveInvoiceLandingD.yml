@@ -1,0 +1,21 @@
+info:
+  name: GetApproveInvoiceLandingD
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/InvoiceLanding/GetApproveInvoiceLandingD?transactionId=22025021007171332
+  params:
+    - name: transactionId
+      value: "22025021007171332"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiYjNhM2Y0ZTItMDBmZC00MDkwLWI4ZTMtN2ZiNzhkNmJhNWI2IiwiZXhwIjoxNzM5MzQ1ODI2fQ.8OgbPv3-dbys6q1fbKLFhAsWx8Wbp0g4Ga7jIXpEdWg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

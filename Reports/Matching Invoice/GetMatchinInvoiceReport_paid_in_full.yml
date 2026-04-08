@@ -1,0 +1,36 @@
+info:
+  name: GetMatchinInvoiceReport_paid_in_full
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetMatchinInvoiceReport_paid_in_full"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"PageNumber\": 1,\r
+
+      \  \"PageSize\": 10,\r
+
+      \  \"client_name\": \"\",\r
+
+      \  \"invoice_no\": \"\",\r
+
+      \  \"invoice_status\": \"\",\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

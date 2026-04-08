@@ -1,0 +1,32 @@
+info:
+  name: GetAgingReport
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetAgingReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"client_name\": \"\",\r
+
+      \  \"from_date\": \"2024-05-05\",\r
+
+      \  \"to_date\": \"2025-10-10\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

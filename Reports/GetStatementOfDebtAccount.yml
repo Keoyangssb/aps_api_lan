@@ -1,0 +1,28 @@
+info:
+  name: GetStatementOfDebtAccount
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetStatementOfDebtAccount"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"airline_name\": \"HONGKONG AIRLINES (CRK)\",\r
+
+      \  \"from_date\": \"2024-01-01\",\r
+
+      \  \"to_date\": \"2025-07-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiMTFkZTAxMWEtNjYyZi00M2VjLWE3ZmMtMGJjNWE3Y2M1OWJjIiwiZXhwIjoxNzUzNjA1MzIxfQ.Q34uHdhyGmzx5Tte6p6fxd_iae6i5IRSqbT29xSz_zk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

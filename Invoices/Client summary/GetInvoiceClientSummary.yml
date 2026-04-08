@@ -1,0 +1,34 @@
+info:
+  name: GetInvoiceClientSummary
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceClientSummary"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"airline_name\": \"9 AIR CO LTD (JYH)\",\r
+
+      \    \"invoice_no\": \"LANS/OVF/JYH/06/2025/001\",\r
+
+      \    \"status_id\": \"\",\r
+
+      \    \"payment_tran_no\": \"\",\r
+
+      \    \"from_date\": \"\",\r
+
+      \    \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: GetPaymentDetailToApprove
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Payment/GetPaymentDetailToApprove
+  body:
+    type: json
+    data: "{\r
+
+      \  \"paymentCode\": \"2025022709404232\",\r
+
+      \  \"invoiceNo\": \"LANS/OVF/JYH/10/2024/001\",\r
+
+      \  \"transactionRef\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiMGU1YjBmMTAtMmViMC00NGI2LTg0OGEtNjg4ZGMxNWJhNGY1IiwiZXhwIjoxNzQwODgxOTM1fQ.wQAfEFmEM_htzQTFfZjPI_jCi9LXHfC5TWYJ7XKRFrM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

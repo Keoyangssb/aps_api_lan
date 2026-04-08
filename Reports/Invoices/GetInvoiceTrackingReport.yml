@@ -1,0 +1,36 @@
+info:
+  name: GetInvoiceTrackingReport
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetInvoiceTrackingReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 100,\r
+
+      \  \"client_name\": \"All\", // Get customerName from api/Customer/GetAllCustomer\r
+
+      \  \"invoice_no\": \"\",\r
+
+      \  \"invoice_status\": \"All Status\", // All Status, Pending Matching, Matched Partial, Paid in full\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

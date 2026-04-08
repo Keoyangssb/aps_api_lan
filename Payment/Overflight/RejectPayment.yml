@@ -1,0 +1,25 @@
+info:
+  name: RejectPayment
+  type: http
+  seq: 20
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Payment/RejectPayment?id=23&Remark=test reject&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM0OTE4NTk0LCJleHAiOjE3MzUwMDQ5OTQsImlhdCI6MTczNDkxODU5NH0.bijWl37N-tl9WdrZZX2kc2KEEXHzynBdXSBeGazToLw
+  params:
+    - name: id
+      value: "23"
+      type: query
+    - name: Remark
+      value: test reject
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM0OTE4NTk0LCJleHAiOjE3MzUwMDQ5OTQsImlhdCI6MTczNDkxODU5NH0.bijWl37N-tl9WdrZZX2kc2KEEXHzynBdXSBeGazToLw
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

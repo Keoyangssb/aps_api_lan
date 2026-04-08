@@ -1,0 +1,25 @@
+info:
+  name: GetInvoiceOverdueDetail
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Tracking/GetInvoiceOverdueDetail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"over_due_id\": \"3\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

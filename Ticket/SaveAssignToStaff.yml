@@ -1,0 +1,26 @@
+info:
+  name: SaveAssignToStaff
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Ticket/SaveAssignToStaff
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"1\",\r
+
+      \  \"user_email\": \"leng@aidctech.com\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

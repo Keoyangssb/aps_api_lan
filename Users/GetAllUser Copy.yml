@@ -1,0 +1,21 @@
+info:
+  name: GetAllUser Copy
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: http://13.213.165.56:8081/api/User/GetAllUser?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6IjM5YWY1MTcxLWQzZDItNGIzMy1hNTBiLTQ2MjIyYzczZDBkMSIsImV4cCI6MTczNzYxODU3NH0.zAcO_I0QeIGv0Y_Rf9PdviJsxH6fSDgClq6fOPwUWHg
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6IjM5YWY1MTcxLWQzZDItNGIzMy1hNTBiLTQ2MjIyYzczZDBkMSIsImV4cCI6MTczNzYxODU3NH0.zAcO_I0QeIGv0Y_Rf9PdviJsxH6fSDgClq6fOPwUWHg
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNTgwMTAyMTc4NzEyMzgxNTk4MjQ0MTUyMDE4ODIwNDEzNzc3NDk3ODkxMjAzMTk0NzE1ODIzMzI0ODIyNjIxOTE3MzE1MjUyOTYyMDIxNjUiLCJqdGkiOiJiYjRmOGQ0Yi03OGU0LTQzYjEtOWZiNi1hYjE3MjFkNzdlM2MiLCJleHAiOjE3Mzg4MDc0Nzl9.3Mf5dxK1QK5vRFZEDf3GYXJ4t1hlWZY9bOLPwtKr6fU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

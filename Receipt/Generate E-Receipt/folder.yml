@@ -1,0 +1,7 @@
+info:
+  name: Generate E-Receipt
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

@@ -1,0 +1,44 @@
+info:
+  name: GetFlightPermissionReport
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetFlightPermissionReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 5,\r
+
+      \  \"from_date\": \"2025-01-01\",\r
+
+      \  \"to_date\": \"2025-12-31\",\r
+
+      \  \"operator_type_id\": \"\",\r
+
+      \  \"app_status_id\": \"\",\r
+
+      \  \"purpose_flight_id\": \"\",\r
+
+      \  \"request_no\": \"\",\r
+
+      \  \"permit_no\": \"\",\r
+
+      \  \"flight_no\": \"\",\r
+
+      \  \"registration_mark\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: ApplyInvoiceLandingAttachFile
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/InvoiceLanding/ApplyInvoiceLandingAttachFile
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNzQyMDQyZTYtZTBhOS00MjU4LWFlMDgtOTJhZmQzNTQ2ZDI5IiwiZXhwIjoxNzM5NDExNDA5fQ.KtCS7LW2m0I7oOD71tnnuG2UsyyMHw6AfRKLLoWOMEM\",\r
+
+      \  \"invoiceId\": \"155\",\r
+
+      \  \"attachFile\": \"test.pdf\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

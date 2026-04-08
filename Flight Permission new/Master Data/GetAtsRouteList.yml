@@ -1,0 +1,14 @@
+info:
+  name: GetAtsRouteList
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/MasterData/GetAtsRouteList"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

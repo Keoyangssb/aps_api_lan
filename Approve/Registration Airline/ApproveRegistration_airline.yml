@@ -1,0 +1,68 @@
+info:
+  name: ApproveRegistration_airline
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/ApproveRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"147\",\r
+
+      \  \"remark\": \"test\",\r
+
+      \  \"file_bus_reg_cer_remark\": \"\",\r
+
+      \  \"file_bus_reg_cer_isAccepted\": true,\r
+
+      \  \"file_id_card_remark\": \"\",\r
+
+      \  \"file_id_card_isAccepted\": true,\r
+
+      \  \"auth_rep_file_id_card_remark\": \"\",\r
+
+      \  \"auth_rep_file_id_card_isAccepted\": true,\r
+
+      \  \"aircraft_informations\": [\r
+
+      \    {\r
+
+      \      \"airline_aircraft_id\": \"17\",\r
+
+      \      \"lease_file_remark\": \"\",\r
+
+      \      \"lease_file_isAccepted\": true,\r
+
+      \      \"cor_file_remark\": \"\",\r
+
+      \      \"cor_file_isAccepted\": true,\r
+
+      \      \"coa_file_remark\": \"\",\r
+
+      \      \"coa_file_isAccepted\": true,\r
+
+      \      \"coi_file_remark\": \"\",\r
+
+      \      \"coi_file_isAccepted\": true,\r
+
+      \      \"photo_of_aircraft_file_remark\": \"\",\r
+
+      \      \"photo_of_aircraft_file_isAccepted\": true\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

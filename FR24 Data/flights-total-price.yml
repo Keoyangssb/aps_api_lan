@@ -1,0 +1,22 @@
+info:
+  name: flights-total-price
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/flights/flights-total-price?fromDate=2024-1-1&toDate=2024-12-31"
+  params:
+    - name: fromDate
+      value: 2024-1-1
+      type: query
+    - name: toDate
+      value: 2024-12-31
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

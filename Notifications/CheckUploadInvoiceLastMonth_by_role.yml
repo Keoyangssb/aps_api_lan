@@ -1,0 +1,20 @@
+info:
+  name: CheckUploadInvoiceLastMonth_by_role
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Notification/CheckUploadInvoiceLastMonth_by_role"
+  body:
+    type: json
+    data: "{\r\n    \"role_id\": \"1\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

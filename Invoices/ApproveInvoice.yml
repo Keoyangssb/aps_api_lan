@@ -1,0 +1,30 @@
+info:
+  name: ApproveInvoice
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/ApproveInvoice?transactionId=1202601131022122&Remark=app2&tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImI4YTNkMDI4LWI2N2QtNDExNy1hZmY3LWQyMjRlN2UyYzE5YSIsImV4cCI6MTc2NDIzNzQyOX0.Bv3QNOf4wBcrhARV673WCscbaNFCartzDlMWhhiaUd8"
+  params:
+    - name: transactionId
+      value: "1202601131022122"
+      type: query
+    - name: Remark
+      value: app2
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImI4YTNkMDI4LWI2N2QtNDExNy1hZmY3LWQyMjRlN2UyYzE5YSIsImV4cCI6MTc2NDIzNzQyOX0.Bv3QNOf4wBcrhARV673WCscbaNFCartzDlMWhhiaUd8
+      type: query
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: GetMatchApprovedPaymentList Copy
+  type: http
+  seq: 36
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetMatchApprovedPaymentList"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"PageNumber\": 1,\r
+
+      \    \"PageSize\": 10\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

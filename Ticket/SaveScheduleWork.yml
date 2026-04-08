@@ -1,0 +1,30 @@
+info:
+  name: SaveScheduleWork
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/SaveScheduleWork"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"1\",\r
+
+      \  \"date\": \"2025-12-25\",\r
+
+      \  \"time\": \"15:30\",\r
+
+      \  \"note\": \"follow the airline bugs...2\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: GetTrackingPaymentByAirline
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard/GetTrackingPaymentByAirline"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2024\",\r
+
+      \  \"fromDate\": \"string\",\r
+
+      \  \"toDate\": \"string\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

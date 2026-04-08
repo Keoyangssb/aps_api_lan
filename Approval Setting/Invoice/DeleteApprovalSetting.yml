@@ -1,0 +1,25 @@
+info:
+  name: DeleteApprovalSetting
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:8081/api/ApprovalSetting/DeleteApprovalSetting?id=4&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzIxNzkwNywiZXhwIjoxNzMzMjIxNTA3LCJpYXQiOjE3MzMyMTc5MDd9.lvp_NGhJai41AYJso05kJZqbbQFrY30_tTmfLwFC9VQ
+  params:
+    - name: id
+      value: "4"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzIxNzkwNywiZXhwIjoxNzMzMjIxNTA3LCJpYXQiOjE3MzMyMTc5MDd9.lvp_NGhJai41AYJso05kJZqbbQFrY30_tTmfLwFC9VQ
+      type: query
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

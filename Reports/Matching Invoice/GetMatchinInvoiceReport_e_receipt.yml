@@ -1,0 +1,36 @@
+info:
+  name: GetMatchinInvoiceReport_e_receipt
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetMatchinInvoiceReport_e_receipt"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"PageNumber\": 1,\r
+
+      \  \"PageSize\": 10,\r
+
+      \  \"client_name\": \"\",\r
+
+      \  \"invoice_no\": \"\",\r
+
+      \  \"invoice_status\": \"\",\r
+
+      \  \"from_date\": \"2025-05-01\",\r
+
+      \  \"to_date\": \"2025-12-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

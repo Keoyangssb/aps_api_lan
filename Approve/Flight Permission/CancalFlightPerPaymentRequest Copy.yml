@@ -1,0 +1,26 @@
+info:
+  name: CancalFlightPerPaymentRequest Copy
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:5236/api/FlightPermission/CancalFlightPerPaymentRequest
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"1\",\r
+
+      \  \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

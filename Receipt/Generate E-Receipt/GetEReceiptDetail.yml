@@ -1,0 +1,20 @@
+info:
+  name: GetEReceiptDetail
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Tracking/GetEReceiptDetail"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"13124\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

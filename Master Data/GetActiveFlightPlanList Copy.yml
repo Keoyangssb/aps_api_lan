@@ -1,0 +1,28 @@
+info:
+  name: GetActiveFlightPlanList Copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://localhost:7086/api/MasterData/GetActiveFlightPlanList
+  body:
+    type: json
+    data: "{\r
+
+      \  \"pageNumber\": 1,\r
+
+      \  \"pageSize\": 10,\r
+
+      \  \"keywordSearch\": \"LXW289\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

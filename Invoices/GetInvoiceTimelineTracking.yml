@@ -1,0 +1,24 @@
+info:
+  name: GetInvoiceTimelineTracking
+  type: http
+  seq: 29
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceTimelineTracking"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"invoice_id\": \"10426\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

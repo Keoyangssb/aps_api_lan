@@ -1,0 +1,42 @@
+info:
+  name: GetFlightMovementReport
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetFlightMovementReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"from_date\": \"2025-01-01\",\r
+
+      \  \"to_date\": \"2025-12-31\",\r
+
+      \  \"entry_point_name\": \"\",\r
+
+      \  \"exit_point_name\": \"\",\r
+
+      \  \"active_movement_status_id\": \"\",\r
+
+      \  \"airline_id\": \"\",\r
+
+      \  \"departure_name\": \"\",\r
+
+      \  \"destination_name\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

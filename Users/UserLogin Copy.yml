@@ -1,0 +1,28 @@
+info:
+  name: UserLogin Copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5236/api/User/UserLogin
+  body:
+    type: json
+    data: "{\r
+
+      \  \"passKey\": \"eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH\",\r
+
+      \  \"userName\": \"admin1\",\r
+
+      \  \"userPassword\": \"123\",\r
+
+      \  \"deviceToken\": \"none\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

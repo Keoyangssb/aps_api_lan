@@ -1,0 +1,26 @@
+info:
+  name: RejectRegistration
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/RejectRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"136\",\r
+
+      \  \"remark\": \"reject to cancel\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6ImQ2MTI3OGY2LTZkZDAtNDA4ZS05NDc5LTc3MzYwYzY4OTQxMCIsImV4cCI6MTc1NjQ4MTY3OH0.b3wY18fX-cBWTWpt1KPOzrBWW3O4BGHQp4OBzgCJfLU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

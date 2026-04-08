@@ -1,0 +1,30 @@
+info:
+  name: AddUpdateUserRolePermission
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/AddUpdateUserRolePermission"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"roleId\": \"7\",\r
+
+      \  \"permissionId\": \"5\",\r
+
+      \  \"per_id\": \"1\",\r
+
+      \  \"per_value\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

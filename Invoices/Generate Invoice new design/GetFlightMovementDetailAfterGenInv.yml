@@ -1,0 +1,28 @@
+info:
+  name: GetFlightMovementDetailAfterGenInv
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementDetailAfterGenInv"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"customer_id\": \"147\",\r
+
+      \  \"date_from\": \"2025-02-01\",\r
+
+      \  \"date_to\": \"2025-02-28\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

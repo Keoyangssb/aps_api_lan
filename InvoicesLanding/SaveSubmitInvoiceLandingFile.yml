@@ -1,0 +1,28 @@
+info:
+  name: SaveSubmitInvoiceLandingFile
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/InvoiceLanding/SaveSubmitInvoiceLandingFile?transaction_id=22025021306332127"
+  params:
+    - name: transaction_id
+      value: "22025021306332127"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /D:/AIDC_Tech/APS/Docs/invoiceLanding/112024-1.xlsx
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

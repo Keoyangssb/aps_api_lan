@@ -1,0 +1,39 @@
+info:
+  name: get-invoice-summary
+  type: http
+  seq: 30
+
+http:
+  method: POST
+  url: https://apilans-aps.aidctech.net/api/Invoice/get-invoice-summary?airline_name&airline_code&from_date&to_date&month&year=2025
+  headers:
+    - name: X-Api-Key
+      value: eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH
+  params:
+    - name: airline_name
+      value: ""
+      type: query
+    - name: airline_code
+      value: ""
+      type: query
+    - name: from_date
+      value: ""
+      type: query
+    - name: to_date
+      value: ""
+      type: query
+    - name: month
+      value: ""
+      type: query
+    - name: year
+      value: "2025"
+      type: query
+  body:
+    type: json
+    data: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

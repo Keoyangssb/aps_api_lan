@@ -1,0 +1,20 @@
+info:
+  name: GetTicketDetail
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/GetTicketDetail"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"7\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

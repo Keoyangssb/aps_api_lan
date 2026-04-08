@@ -1,0 +1,20 @@
+info:
+  name: GetAnnouncementById
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/GetAnnouncementById"
+  body:
+    type: json
+    data: "{\r\n    \"id\": \"21\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

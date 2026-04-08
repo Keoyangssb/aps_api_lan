@@ -1,0 +1,20 @@
+info:
+  name: GenEInvoiceOverFlight
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/EInvoice/GenEInvoiceOverFlight"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"6243\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

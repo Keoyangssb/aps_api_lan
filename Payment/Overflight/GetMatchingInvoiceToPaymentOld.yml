@@ -1,0 +1,25 @@
+info:
+  name: GetMatchingInvoiceToPaymentOld
+  type: http
+  seq: 15
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/Payment/GetMatchingInvoiceToPayment?paymentId=4&isMatching=0&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNDMzMjMwMywiZXhwIjoxNzM0NDE4NzAzLCJpYXQiOjE3MzQzMzIzMDN9.3D6FYv_FCtJBpF_sureDknsHfQmrTC8XX2p0GI4ogQg
+  params:
+    - name: paymentId
+      value: "4"
+      type: query
+    - name: isMatching
+      value: "0"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNDMzMjMwMywiZXhwIjoxNzM0NDE4NzAzLCJpYXQiOjE3MzQzMzIzMDN9.3D6FYv_FCtJBpF_sureDknsHfQmrTC8XX2p0GI4ogQg
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

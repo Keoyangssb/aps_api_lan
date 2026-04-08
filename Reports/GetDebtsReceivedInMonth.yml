@@ -1,0 +1,24 @@
+info:
+  name: GetDebtsReceivedInMonth
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Reports/GetDebtsReceivedInMonth
+  body:
+    type: json
+    data: "{\r
+
+      \  \"report_month\": \"10\",\r
+
+      \  \"report_year\": \"2024\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

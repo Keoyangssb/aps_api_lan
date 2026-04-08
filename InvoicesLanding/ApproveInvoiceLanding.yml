@@ -1,0 +1,24 @@
+info:
+  name: ApproveInvoiceLanding
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/InvoiceLanding/ApproveInvoiceLanding?transactionId=22025021007171332&Remark=test
+  params:
+    - name: transactionId
+      value: "22025021007171332"
+      type: query
+    - name: Remark
+      value: test
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNzQyMDQyZTYtZTBhOS00MjU4LWFlMDgtOTJhZmQzNTQ2ZDI5IiwiZXhwIjoxNzM5NDExNDA5fQ.KtCS7LW2m0I7oOD71tnnuG2UsyyMHw6AfRKLLoWOMEM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: get-flight-permission-status
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: https://apilans-aps.aidctech.net/api/MasterData/get-flight-permission-status
+  headers:
+    - name: X-Api-Key
+      value: eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: GetSwiftPaymentReport
+  type: http
+  seq: 25
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetSwiftPaymentReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"from_date\": \"2026-01-01\",\r
+
+      \  \"to_date\": \"2025-12-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

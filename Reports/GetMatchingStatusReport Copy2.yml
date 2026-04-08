@@ -1,0 +1,26 @@
+info:
+  name: GetMatchingStatusReport Copy2
+  type: http
+  seq: 18
+
+http:
+  method: POST
+  url: https://localhost:7086/api/Reports/GetMatchingStatusReport
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-01-01\",\r
+
+      \  \"to_date\": \"2025-12-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiMDAyNGJkMDUtZGYwZi00NDU2LWJiZjItNjc4MGMxNGJmMzFmIiwiZXhwIjoxNzUyMTExMzY2fQ.B5X4gFxqaUVYTmyHUVnEVM3ALIsS03fB6CVOvU6o7RY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

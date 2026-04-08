@@ -1,0 +1,23 @@
+info:
+  name: GenInvoiceToRevise
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceToRevise"
+  body:
+    type: json
+    data: |-
+      {
+          "id": "14769"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

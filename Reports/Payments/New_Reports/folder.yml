@@ -1,0 +1,7 @@
+info:
+  name: New_Reports
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

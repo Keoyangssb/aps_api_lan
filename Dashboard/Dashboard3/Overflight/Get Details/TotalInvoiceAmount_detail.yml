@@ -1,0 +1,26 @@
+info:
+  name: TotalInvoiceAmount_detail
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard3/TotalInvoiceAmount_detail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"year\": \"2025\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: GetInvoicesAdjustmentHistory
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoicesAdjustmentHistory"
+  body:
+    type: json
+    data: "{\r\n  \"invoiceId\": \"13111\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

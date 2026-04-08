@@ -1,0 +1,20 @@
+info:
+  name: GetViewFlightPerPaymentById
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/GetViewFlightPerPaymentById"
+  body:
+    type: json
+    data: "{\r\n  \"flight_per_id\": \"19\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

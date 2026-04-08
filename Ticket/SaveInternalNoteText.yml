@@ -1,0 +1,26 @@
+info:
+  name: SaveInternalNoteText
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Ticket/SaveInternalNoteText
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"1\",\r
+
+      \  \"message\": \"please check the problem from this airline\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,17 @@
+info:
+  name: get_departure_destination_list Copy
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/FlightMovement/get_departure_destination_list"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

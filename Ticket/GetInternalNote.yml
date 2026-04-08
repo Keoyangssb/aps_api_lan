@@ -1,0 +1,20 @@
+info:
+  name: GetInternalNote
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/GetInternalNote"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"1\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

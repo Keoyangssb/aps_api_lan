@@ -1,0 +1,26 @@
+info:
+  name: GetMatchedHistory
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Payment/GetMatchedHistory
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNjM4ODEyMzUyOTY1MTIzNDM3Mjc3OTE5MTc5MzMyMjAyNDY2Mjk0MjA1MTQ2MTgzOTE0MTE2NjE4NjE0ODExOTE4MTEwNDEwODk5MTg5IiwianRpIjoiYjJkMTI0ODUtYmMxNS00ZTQyLTliMmQtNTE4ZGI0NjI4NGZiIiwiZXhwIjoxNzM4NzI5NTgwfQ.-cF6li5eGKFvW2PZklp9kD0IUawu0lesMP2o5-rODz8\",\r
+
+      \  \"switchMsgId\": \"323\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNjM4ODEyMzUyOTY1MTIzNDM3Mjc3OTE5MTc5MzMyMjAyNDY2Mjk0MjA1MTQ2MTgzOTE0MTE2NjE4NjE0ODExOTE4MTEwNDEwODk5MTg5IiwianRpIjoiODVhNDJkYjUtMGRiOC00MDk1LTg4NDMtYzZlYmEyY2JlNTQ2IiwiZXhwIjoxNzM4NzIzOTM2fQ.uo1YubIrt0SSQoxGi4qcOoYVzX-f21bRz9VWxSgrJ0s
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

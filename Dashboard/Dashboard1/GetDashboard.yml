@@ -1,0 +1,28 @@
+info:
+  name: GetDashboard
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Dashboard/GetDashboard
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: ""
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

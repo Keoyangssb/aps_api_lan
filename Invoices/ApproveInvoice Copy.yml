@@ -1,0 +1,30 @@
+info:
+  name: ApproveInvoice Copy
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{localhostIP}}/api/Invoice/ApproveInvoice?transactionId=1202601130816552&Remark=test123&tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjIyMjI3NDc0OTkxMzEyMzU1MzYwMTY0MjI2MzYxNjQxODgxNzIyMzgxOTkxNDYxNTAyMjUxNTIyMTkxOTMxODcyMDgxODYyMjY2ODE5MTIxMjEyMTE0NCIsImp0aSI6Ijg5ZjllMjM0LTEyZWItNDk2Zi1iZDczLWFjOWUyZTQxMTJkNSIsImV4cCI6MTc2MjM5NTU5NywiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.vJQ-OJrzTAsk1g8iikp1R7doSRFc4kOKQxk_76pMBHM"
+  params:
+    - name: transactionId
+      value: "1202601130816552"
+      type: query
+    - name: Remark
+      value: test123
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjIyMjI3NDc0OTkxMzEyMzU1MzYwMTY0MjI2MzYxNjQxODgxNzIyMzgxOTkxNDYxNTAyMjUxNTIyMTkxOTMxODcyMDgxODYyMjY2ODE5MTIxMjEyMTE0NCIsImp0aSI6Ijg5ZjllMjM0LTEyZWItNDk2Zi1iZDczLWFjOWUyZTQxMTJkNSIsImV4cCI6MTc2MjM5NTU5NywiaXNzIjoiQUlEQy5URUNIIiwiYXVkIjoiQVBTLkFpcmxpbmUuQVBJIn0.vJQ-OJrzTAsk1g8iikp1R7doSRFc4kOKQxk_76pMBHM
+      type: query
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

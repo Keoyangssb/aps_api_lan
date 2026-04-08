@@ -1,0 +1,26 @@
+info:
+  name: Cancel
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/Cancel"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"1\",\r
+
+      \  \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

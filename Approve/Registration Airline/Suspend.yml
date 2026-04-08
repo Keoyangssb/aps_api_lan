@@ -1,0 +1,26 @@
+info:
+  name: Suspend
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://10.0.100.31:8086/api/RegisterAirline/Suspend
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"61\",\r
+
+      \  \"remark\": \"suspend after approve\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

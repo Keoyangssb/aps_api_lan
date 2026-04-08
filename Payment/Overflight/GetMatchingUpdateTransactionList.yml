@@ -1,0 +1,26 @@
+info:
+  name: GetMatchingUpdateTransactionList
+  type: http
+  seq: 33
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetMatchingUpdateTransactionList"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"PageNumber\": 1,\r
+
+      \    \"PageSize\": 10\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

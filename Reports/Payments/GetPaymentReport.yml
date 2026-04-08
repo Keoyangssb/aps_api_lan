@@ -1,0 +1,28 @@
+info:
+  name: GetPaymentReport
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Reports/GetPaymentReport
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNzA5NTE1MSwiZXhwIjoxNzM3MjY3OTUxLCJpYXQiOjE3MzcwOTUxNTF9.vtZNl1Mwfq8wMzpFAXrN9O2Ff9j9MIB46yv-QL_RiN8\",\r
+
+      \  \"fromDate\": \"2024-01-01\",\r
+
+      \  \"toDate\": \"2026-01-01\",\r
+
+      \  \"statusId\": \"0\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

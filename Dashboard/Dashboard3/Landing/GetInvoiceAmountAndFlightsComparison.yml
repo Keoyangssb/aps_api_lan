@@ -1,0 +1,26 @@
+info:
+  name: GetInvoiceAmountAndFlightsComparison
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:5236/api/DashboardLanding3/GetInvoiceAmountAndFlightsComparison
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

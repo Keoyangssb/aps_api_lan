@@ -1,0 +1,28 @@
+info:
+  name: UserLogin
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://apilans-aps.aidctech.net/api/User/UserLogin
+  body:
+    type: json
+    data: "{\r
+
+      \  \"passKey\": \"eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH\",\r
+
+      \  \"userName\": \"admin1\",\r
+
+      \  \"userPassword\": \"1234567\",\r
+
+      \  \"deviceToken\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

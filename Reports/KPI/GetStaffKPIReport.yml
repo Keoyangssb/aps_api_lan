@@ -1,0 +1,30 @@
+info:
+  name: GetStaffKPIReport
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetStaffKPIReport"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"department_id\": \"\",\r
+
+      \    \"staff_id\": \"\",\r
+
+      \    \"from_date\": \"2025-01-01\",\r
+
+      \    \"to_date\": \"2025-12-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

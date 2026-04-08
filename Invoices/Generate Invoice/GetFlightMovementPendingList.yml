@@ -1,0 +1,26 @@
+info:
+  name: GetFlightMovementPendingList
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementPendingList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"date_from\": \"2025-02-01\",\r
+
+      \  \"date_to\": \"2025-02-28\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

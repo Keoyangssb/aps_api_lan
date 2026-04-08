@@ -1,0 +1,24 @@
+info:
+  name: GetPaymentInfoTransaction
+  type: http
+  seq: 32
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetPaymentInfoTransaction"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"paymentId\": \"15482\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

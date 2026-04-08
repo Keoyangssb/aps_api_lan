@@ -1,0 +1,52 @@
+info:
+  name: ApplyMatchingInvoice
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Payment/ApplyMatchingInvoice?tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM0MzQyOTM1LCJleHAiOjE3MzQ0MjkzMzUsImlhdCI6MTczNDM0MjkzNX0.tFrGVFTKCaZcAOJkhHrKSv-MnKy8Dwk1DqXZUc1LY_I
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM0MzQyOTM1LCJleHAiOjE3MzQ0MjkzMzUsImlhdCI6MTczNDM0MjkzNX0.tFrGVFTKCaZcAOJkhHrKSv-MnKy8Dwk1DqXZUc1LY_I
+      type: query
+  body:
+    type: json
+    data: "[\r
+
+      \  {\r
+
+      \    \"invoiceId\": \"538\",\r
+
+      \    \"switchMsgId\": \"2\",\r
+
+      \    \"invoiceDate\": \"2024-12-01\",\r
+
+      \    \"invoiceNumber\": \"LANS/OVF/TVJ/10/2024/095\",\r
+
+      \    \"movement\": \"848\",\r
+
+      \    \"totalInvoiceAmount\": \"19,504,000.00\",\r
+
+      \    \"remainingBalance\": \"19,504,000.00\",\r
+
+      \    \"matchingAmount\": \"98,587,400.00\",\r
+
+      \    \"currency\": \"LAK\"\r
+
+      \  }\r
+
+      ]\r
+
+      \r
+
+      \r
+
+      \r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

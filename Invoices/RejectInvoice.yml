@@ -1,0 +1,25 @@
+info:
+  name: RejectInvoice
+  type: http
+  seq: 24
+
+http:
+  method: POST
+  url: http://localhost:8081/api/Invoice/RejectInvoice?transactionId=2&Remark=test123&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzIxNzkwNywiZXhwIjoxNzMzMjIxNTA3LCJpYXQiOjE3MzMyMTc5MDd9.lvp_NGhJai41AYJso05kJZqbbQFrY30_tTmfLwFC9VQ
+  params:
+    - name: transactionId
+      value: "2"
+      type: query
+    - name: Remark
+      value: test123
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzIxNzkwNywiZXhwIjoxNzMzMjIxNTA3LCJpYXQiOjE3MzMyMTc5MDd9.lvp_NGhJai41AYJso05kJZqbbQFrY30_tTmfLwFC9VQ
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

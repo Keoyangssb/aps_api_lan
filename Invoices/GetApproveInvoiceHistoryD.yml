@@ -1,0 +1,22 @@
+info:
+  name: GetApproveInvoiceHistoryD
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/Invoice/GetApproveInvoiceHistoryD?transactionId=2&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTIzIiwibmJmIjoxNzMzMjgxOTc3LCJleHAiOjE3MzMyODU1NzcsImlhdCI6MTczMzI4MTk3N30.PtyjMrlnryyHaZEaqGWzgvISDZOnalbRzcTmXjRzRLI
+  params:
+    - name: transactionId
+      value: "2"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTIzIiwibmJmIjoxNzMzMjgxOTc3LCJleHAiOjE3MzMyODU1NzcsImlhdCI6MTczMzI4MTk3N30.PtyjMrlnryyHaZEaqGWzgvISDZOnalbRzcTmXjRzRLI
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

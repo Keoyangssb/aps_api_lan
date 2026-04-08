@@ -1,0 +1,20 @@
+info:
+  name: GetRevisedInvoiceApproved
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetRevisedInvoiceApproved"
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

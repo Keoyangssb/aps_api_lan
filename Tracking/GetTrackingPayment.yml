@@ -1,0 +1,26 @@
+info:
+  name: GetTrackingPayment
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Tracking/GetTrackingPayment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"2024-01-01\",\r
+
+      \  \"toDate\": \"2026-01-01\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,68 @@
+info:
+  name: RejectToReviseRegistration_airline
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/RegisterAirline/RejectToReviseRegistration"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"147\",\r
+
+      \  \"remark\": \"test\",\r
+
+      \  \"file_bus_reg_cer_remark\": \"the file is expired date\",\r
+
+      \  \"file_bus_reg_cer_isAccepted\": false,\r
+
+      \  \"file_id_card_remark\": \"the file is expired date\",\r
+
+      \  \"file_id_card_isAccepted\": false,\r
+
+      \  \"auth_rep_file_id_card_remark\": \"the file is expired date\",\r
+
+      \  \"auth_rep_file_id_card_isAccepted\": false,\r
+
+      \  \"aircraft_informations\": [\r
+
+      \    {\r
+
+      \      \"airline_aircraft_id\": \"17\",\r
+
+      \      \"lease_file_remark\": \"the file is expired date\",\r
+
+      \      \"lease_file_isAccepted\": false,\r
+
+      \      \"cor_file_remark\": \"the file is expired date\",\r
+
+      \      \"cor_file_isAccepted\": false,\r
+
+      \      \"coa_file_remark\": \"the file is expired date\",\r
+
+      \      \"coa_file_isAccepted\": false,\r
+
+      \      \"coi_file_remark\": \"the file is expired date\",\r
+
+      \      \"coi_file_isAccepted\": false,\r
+
+      \      \"photo_of_aircraft_file_remark\": \"\",\r
+
+      \      \"photo_of_aircraft_file_isAccepted\": true\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6ImQ2MTI3OGY2LTZkZDAtNDA4ZS05NDc5LTc3MzYwYzY4OTQxMCIsImV4cCI6MTc1NjQ4MTY3OH0.b3wY18fX-cBWTWpt1KPOzrBWW3O4BGHQp4OBzgCJfLU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

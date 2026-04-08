@@ -1,0 +1,36 @@
+info:
+  name: GetRequestRegistrationList_active_by_status
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://10.0.100.31:8086/api/RegisterAirline/GetRequestRegistrationList_active_by_status
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\",\r
+
+      \  \"register_no\": \"\",\r
+
+      \  \"operator_type_id\": \"\",\r
+
+      \  \"status_id\": \"3\" //active\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

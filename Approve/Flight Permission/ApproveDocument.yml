@@ -1,0 +1,130 @@
+info:
+  name: ApproveDocument
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/ApproveDocument"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"2\",\r
+
+      \  \"remark\": \"approve\",\r
+
+      \  \"document_files\": [\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"1\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"2\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"3\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"4\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"5\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"6\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"7\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"8\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"9\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"attach_file_id\": \"10\",\r
+
+      \      \"is_passed\": true,\r
+
+      \      \"remark\": \"passed\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6ImI0MzFiMjYxLWFhMDYtNGFiZC05ZDUzLTcxNDMwNDgyNTM5MiIsImV4cCI6MTc1NjQ0MTg0OH0.YoEOU8oUK0FzTBVFtlLgZ8KWkSEjbSMN6oWqpFBRZro
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

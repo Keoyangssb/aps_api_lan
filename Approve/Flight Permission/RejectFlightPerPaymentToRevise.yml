@@ -1,0 +1,26 @@
+info:
+  name: RejectFlightPerPaymentToRevise
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/RejectFlightPerPaymentToRevise"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"36\",\r
+
+      \  \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6ImMwZGYyNWVkLTFjZjctNGRiYi04NmMzLTdjOTAzNjY1YWFkYiIsImV4cCI6MTc1NjQzODY3M30.PxRJJ4smQv9CpL2jf7sclnxtjgz5C9elh4vJ3nEr_bg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: GetPaymentToInvoice
+  type: http
+  seq: 13
+
+http:
+  method: GET
+  url: http://13.213.165.56:8081/api/Payment/GetPaymentToInvoice?fromDate=2025-07-01&toDate=2025-07-31&amount=&instructions=
+  params:
+    - name: fromDate
+      value: 2025-07-01
+      type: query
+    - name: toDate
+      value: 2025-07-31
+      type: query
+    - name: amount
+      value: ""
+      type: query
+    - name: instructions
+      value: ""
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiYmViYzZkZjEtOGQyMC00ODA2LTkyNGMtNDU1MTQ5NWUzNTEwIiwiZXhwIjoxNzU0NzMwMzEyfQ.1sRdKLhmeKVgBCCIBv3Oh659ZcAOo1YQsWkrOCPoC7E
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

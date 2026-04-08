@@ -1,0 +1,24 @@
+info:
+  name: ActualTimeFrequency_landing
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardMap/ActualTimeFrequency_landing"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"2025-01-01\",\r
+
+      \  \"toDate\": \"2025-06-30\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,31 @@
+info:
+  name: get-actual-flight-movement
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://apilans-aps.aidctech.net/api/Reports/get-actual-flight-movement?month&year=2025&page=1&pageSize=1000
+  headers:
+    - name: X-Api-Key
+      value: eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH
+  params:
+    - name: month
+      value: ""
+      type: query
+    - name: year
+      value: "2025"
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "1000"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

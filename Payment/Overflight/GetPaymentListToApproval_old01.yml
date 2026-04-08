@@ -1,0 +1,17 @@
+info:
+  name: GetPaymentListToApproval_old01
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/Payment/GetPaymentListToApproval_old01"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiOTRkYzFhMzMtMDMxZC00NDlmLWE1ZGUtYjlmN2RmZjA0N2Q3IiwiZXhwIjoxNzQ2MDczNDgwfQ.Uhv3XYzkCV2fFF8HDr93ZkdjL3LzhU-B-UAQIK76NRA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

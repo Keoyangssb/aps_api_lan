@@ -1,0 +1,24 @@
+info:
+  name: GetMatchingStatisticsDetail
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetMatchingStatisticsDetail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"report_id\": \"1\",\r
+
+      \  \"report_year\": \"2025\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

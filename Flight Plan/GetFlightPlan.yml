@@ -1,0 +1,46 @@
+info:
+  name: GetFlightPlan
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPlan/GetFlightPlan"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\",\r
+
+      \  \"time_from\": \"\",\r
+
+      \  \"time_to\": \"\",\r
+
+      \  \"date_stamp_for_fpl\": \"\",\r
+
+      \  \"status\": \"\",\r
+
+      \  \"airline\": \"\",\r
+
+      \  \"no_of_hrs\": \"\",\r
+
+      \  \"departure\": \"\",\r
+
+      \  \"destination\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

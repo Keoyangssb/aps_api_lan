@@ -1,0 +1,34 @@
+info:
+  name: GetInvoiceReportList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetInvoiceReportList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"invoice_no\": \"\",\r
+
+      \  \"from_date\": \"2025-01-01\",\r
+
+      \  \"to_date\": \"2025-12-31\",\r
+
+      \  \"airline_name\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

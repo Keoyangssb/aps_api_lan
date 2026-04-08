@@ -1,0 +1,24 @@
+info:
+  name: GetDashboard
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardInvoiceType/GetDashboard"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"invoice_type\": \"1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

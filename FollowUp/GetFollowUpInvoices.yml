@@ -1,0 +1,26 @@
+info:
+  name: GetFollowUpInvoices
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://10.0.100.31:8081/api/FollowUp/GetFollowUpInvoices
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

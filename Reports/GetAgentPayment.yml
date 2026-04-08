@@ -1,0 +1,20 @@
+info:
+  name: GetAgentPayment
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Reports/GetAgentPayment
+  body:
+    type: json
+    data: "{\r\n  \"report_year\": \"2025\"\r\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNTFlZmRlYjUtZWRhNi00ODk4LWJkOTUtZmI0MDAyNGFkNjU0IiwiZXhwIjoxNzQxODM1MDUzfQ.ZB5tHG8THaPgBGH-vQ21fAnNndrHJ0LXz1kuMZicZGo
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

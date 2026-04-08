@@ -1,0 +1,22 @@
+info:
+  name: GetUserRoleAsync
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/UserRole/GetUserRoleAsync
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM1ODAyNTkwLCJleHAiOjE3MzU5NzUzOTAsImlhdCI6MTczNTgwMjU5MH0.7lxuFfBEwE6nWLH_Z-sKSWKFzpQLgcxCc2jWuktV7aY\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

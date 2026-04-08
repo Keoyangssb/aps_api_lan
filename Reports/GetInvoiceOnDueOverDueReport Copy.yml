@@ -1,0 +1,26 @@
+info:
+  name: GetInvoiceOnDueOverDueReport Copy
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: https://localhost:7086/api/Reports/GetInvoiceOnDueOverDueReport
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

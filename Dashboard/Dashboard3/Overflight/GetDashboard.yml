@@ -1,0 +1,28 @@
+info:
+  name: GetDashboard
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard3/GetDashboard"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\",\r
+
+      \  \"airline_agent\": \"Overall\" //Overall, Airline, Agent\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

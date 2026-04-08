@@ -1,0 +1,24 @@
+info:
+  name: CreatePermission
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/UserRole/CreatePermission
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM2MTI4MjY5LCJleHAiOjE3MzYzMDEwNjksImlhdCI6MTczNjEyODI2OX0.ivcJGRXW2dssssZ5nuNO6F-c-vVICDLtLOygGUoGDP5CL3Y\",\r
+
+      \  \"permissionName\": \"test pppp\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

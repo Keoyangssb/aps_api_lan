@@ -1,0 +1,7 @@
+info:
+  name: Revise
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

@@ -1,0 +1,32 @@
+info:
+  name: GetInvoiceReport
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetInvoiceReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6IjI4MGRhZDQyLWVkYTEtNDQ2Ny1hMTE3LWRkNzMwZDlhMDhhMyIsImV4cCI6MTc2MDUwMDM3NH0.9WCLzHqojcEDuU7sRx5-9g3ICfSex16RTNFPWTaNY-4\",\r
+
+      \  \"fromDate\": \"2024-01-01\",\r
+
+      \  \"toDate\": \"2025-12-12\",\r
+
+      \  \"statusId\": \"3\",\r
+
+      \  \"dueDateId\": \"8\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

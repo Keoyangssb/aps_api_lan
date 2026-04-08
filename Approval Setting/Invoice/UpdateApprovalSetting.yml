@@ -1,0 +1,28 @@
+info:
+  name: UpdateApprovalSetting
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8081/api/ApprovalSetting/UpdateApprovalSetting?id=8&approverId=1&approveLevel=1&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMjg1NDE3NCwiZXhwIjoxNzMyODU3Nzc0LCJpYXQiOjE3MzI4NTQxNzR9.pQkfX-FL47ab9s7FF4FAzM7824ho4CV68kTa1wE0Q1Y
+  params:
+    - name: id
+      value: "8"
+      type: query
+    - name: approverId
+      value: "1"
+      type: query
+    - name: approveLevel
+      value: "1"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMjg1NDE3NCwiZXhwIjoxNzMyODU3Nzc0LCJpYXQiOjE3MzI4NTQxNzR9.pQkfX-FL47ab9s7FF4FAzM7824ho4CV68kTa1wE0Q1Y
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

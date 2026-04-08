@@ -1,0 +1,163 @@
+info:
+  name: SubmitInvoice Copy
+  type: http
+  seq: 19
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Invoice/SubmitInvoice?fromDate=2025-01-01&toDate=2025-01-30&dateAdd=2025-01-05&invDescription=testdes&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNzAxMDkyNywiZXhwIjoxNzM3MTgzNzI3LCJpYXQiOjE3MzcwMTA5Mjd9.Eiby5S6KnAuM_OW0N8Q8E30QRlwdeZAhE2uMU4UEdiY&fileName=test
+  params:
+    - name: fromDate
+      value: 2025-01-01
+      type: query
+    - name: toDate
+      value: 2025-01-30
+      type: query
+    - name: dateAdd
+      value: 2025-01-05
+      type: query
+    - name: invDescription
+      value: testdes
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNzAxMDkyNywiZXhwIjoxNzM3MTgzNzI3LCJpYXQiOjE3MzcwMTA5Mjd9.Eiby5S6KnAuM_OW0N8Q8E30QRlwdeZAhE2uMU4UEdiY
+      type: query
+    - name: fileName
+      value: test
+      type: query
+  body:
+    type: json
+    data: "[\r
+
+      \  {\r
+
+      \    \"no\": \"1\",\r
+
+      \    \"customerType\": \"1\",\r
+
+      \    \"customerFull\": \"customerFull 1aaaaaaaaa\",\r
+
+      \    \"customerCode\": \"customerCode 1\",\r
+
+      \    \"customerName\": \"customerName 1\",\r
+
+      \    \"customerCode1\": \"customerCode1 1\",\r
+
+      \    \"customerName1\": \"customerName1 1\",\r
+
+      \    \"qty\": \"1\",\r
+
+      \    \"overflightFee\": \"1000\",\r
+
+      \    \"serviceFee\": \"100\",\r
+
+      \    \"discountAmount\": \"0\",\r
+
+      \    \"totalFee\": \"1100\",\r
+
+      \    \"invoiceNo\": \"invoiceNo1231111111111\"\r
+
+      \  },\r
+
+      {\r
+
+      \    \"no\": \"2\",\r
+
+      \    \"customerType\": \"2\",\r
+
+      \    \"customerFull\": \"customerFull 2\",\r
+
+      \    \"customerCode\": \"customerCode 2\",\r
+
+      \    \"customerName\": \"customerName 2\",\r
+
+      \    \"customerCode1\": \"customerCode1 2\",\r
+
+      \    \"customerName1\": \"customerName1 2\",\r
+
+      \    \"qty\": \"1\",\r
+
+      \    \"overflightFee\": \"2000\",\r
+
+      \    \"serviceFee\": \"100\",\r
+
+      \    \"discountAmount\": \"0\",\r
+
+      \    \"totalFee\": \"2100\",\r
+
+      \    \"invoiceNo\": \"invoiceNo123456\"\r
+
+      \  }\r
+
+      ,\r
+
+      {\r
+
+      \    \"no\": \"3\",\r
+
+      \    \"customerType\": \"2\",\r
+
+      \    \"customerFull\": \"customerFull 3\",\r
+
+      \    \"customerCode\": \"customerCode 3\",\r
+
+      \    \"customerName\": \"customerName 3\",\r
+
+      \    \"customerCode1\": \"customerCode1 3\",\r
+
+      \    \"customerName1\": \"customerName1 3\",\r
+
+      \    \"qty\": \"1\",\r
+
+      \    \"overflightFee\": \"3000\",\r
+
+      \    \"serviceFee\": \"100\",\r
+
+      \    \"discountAmount\": \"0\",\r
+
+      \    \"totalFee\": \"3100\",\r
+
+      \    \"invoiceNo\": \"invoiceNo123456789\"\r
+
+      \  }\r
+
+      \  ,\r
+
+      {\r
+
+      \    \"no\": \"4\",\r
+
+      \    \"customerType\": \"1\",\r
+
+      \    \"customerFull\": \"customerFull 4\",\r
+
+      \    \"customerCode\": \"customerCode 4\",\r
+
+      \    \"customerName\": \"customerName 4\",\r
+
+      \    \"customerCode1\": \"customerCode1 4\",\r
+
+      \    \"customerName1\": \"customerName1 4\",\r
+
+      \    \"qty\": \"1\",\r
+
+      \    \"overflightFee\": \"4000\",\r
+
+      \    \"serviceFee\": \"100\",\r
+
+      \    \"discountAmount\": \"0\",\r
+
+      \    \"totalFee\": \"4100\",\r
+
+      \    \"invoiceNo\": \"invoiceNo12345678901\"\r
+
+      \  }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

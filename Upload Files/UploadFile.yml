@@ -1,0 +1,21 @@
+info:
+  name: UploadFile
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/General/UploadFile
+  body:
+    type: multipart-form
+    data:
+      - name: ""
+        type: file
+        value: []
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

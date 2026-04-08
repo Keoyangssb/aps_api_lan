@@ -1,0 +1,26 @@
+info:
+  name: GetFollowUpPayment
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://10.0.100.31:8081/api/FollowUp/GetFollowUpPayment
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"2025-01-01\",\r
+
+      \  \"toDate\": \"2025-01-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

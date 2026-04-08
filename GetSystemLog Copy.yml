@@ -1,0 +1,26 @@
+info:
+  name: GetSystemLog Copy
+  type: http
+  seq: 36
+
+http:
+  method: POST
+  url: http://localhost:5236/api/General/GetSystemLog
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

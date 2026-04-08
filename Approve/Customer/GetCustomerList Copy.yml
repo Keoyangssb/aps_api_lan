@@ -1,0 +1,21 @@
+info:
+  name: GetCustomerList Copy
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://13.213.165.56:8081/api/Customer/GetCustomerList?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiMTYyYzU4ODktNWJjNS00YjczLThlOWQtMmJmZTI2OWM5ZWY3IiwiZXhwIjoxNzQ4NDE3Mzk0fQ.58GqeoDRYwRUXcz9G1PX4VERj19WI6ontH9kCW8hNmA
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiMTYyYzU4ODktNWJjNS00YjczLThlOWQtMmJmZTI2OWM5ZWY3IiwiZXhwIjoxNzQ4NDE3Mzk0fQ.58GqeoDRYwRUXcz9G1PX4VERj19WI6ontH9kCW8hNmA
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiMTYyYzU4ODktNWJjNS00YjczLThlOWQtMmJmZTI2OWM5ZWY3IiwiZXhwIjoxNzQ4NDE3Mzk0fQ.58GqeoDRYwRUXcz9G1PX4VERj19WI6ontH9kCW8hNmA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

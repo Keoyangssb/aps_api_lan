@@ -1,0 +1,28 @@
+info:
+  name: GetAllPaymentReceiveLanding Copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://13.213.165.56:8081/api/PaymentLanding/GetAllPaymentReceiveLanding
+  body:
+    type: json
+    data: "{\r
+
+      \  \"pageNumber\": 1,\r
+
+      \  \"pageSize\": 10,\r
+
+      \  \"keywordSearch\": \"8100000\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6IjQ4YjMyMzRkLTQ3ZDctNDViZC1hNGYyLTI4ZmI1MjYwMjhmNSIsImV4cCI6MTc0MzY1MTg4MH0.0Lz38eUktyPrVg9rCmwCW8T0zQ034KBmxZWPofBiynM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: UpdateUserRegisterApprovalSetting
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ApprovalSetting/UpdateUserRegisterApprovalSetting"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": \"1\",\r
+
+      \  \"approverId\": \"1\",\r
+
+      \  \"approveLevel\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

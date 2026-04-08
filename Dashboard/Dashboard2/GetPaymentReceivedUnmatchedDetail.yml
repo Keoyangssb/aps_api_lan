@@ -1,0 +1,18 @@
+info:
+  name: GetPaymentReceivedUnmatchedDetail
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard2/GetPaymentReceivedUnmatchedDetail"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

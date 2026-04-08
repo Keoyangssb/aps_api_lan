@@ -1,0 +1,28 @@
+info:
+  name: GetActiveFlightPlanList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/GetActiveFlightPlanList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"pageNumber\": 1,\r
+
+      \  \"pageSize\": 10,\r
+
+      \  \"keywordSearch\": \"LAO441\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

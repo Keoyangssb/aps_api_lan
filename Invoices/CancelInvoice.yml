@@ -1,0 +1,25 @@
+info:
+  name: CancelInvoice
+  type: http
+  seq: 23
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/Invoice/CancelInvoice?transactionId=202412101016331&Remark=ss&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczMzk4MjkxMCwiZXhwIjoxNzM0MDY5MzEwLCJpYXQiOjE3MzM5ODI5MTB9.z6CY_5F_hZhSKjI_qcRuEI-VQ5L1f-YBs2A0fKr0Ryc
+  params:
+    - name: transactionId
+      value: "202412101016331"
+      type: query
+    - name: Remark
+      value: ss
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczMzk4MjkxMCwiZXhwIjoxNzM0MDY5MzEwLCJpYXQiOjE3MzM5ODI5MTB9.z6CY_5F_hZhSKjI_qcRuEI-VQ5L1f-YBs2A0fKr0Ryc
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

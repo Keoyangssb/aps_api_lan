@@ -1,0 +1,28 @@
+info:
+  name: RouteDetail_ovf
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardMap/RouteDetail_ovf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"bpn_point\": \"VTN\",\r
+
+      \  \"bpx_point\": \"LAVOS\",\r
+
+      \  \"fromDate\": \"2025-01-01\",\r
+
+      \  \"toDate\": \"2025-02-02\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

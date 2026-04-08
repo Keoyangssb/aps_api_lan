@@ -1,0 +1,24 @@
+info:
+  name: SearchByTransactionOrInvoiceNo
+  type: http
+  seq: 29
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/SearchByTransactionOrInvoiceNo"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"searching_no\": \"0009978242990022\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

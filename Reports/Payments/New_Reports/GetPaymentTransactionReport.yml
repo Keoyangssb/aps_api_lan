@@ -1,0 +1,34 @@
+info:
+  name: GetPaymentTransactionReport
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetPaymentTransactionReport"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"transaction_reference\": \"\",\r
+
+      \  \"client_name\": \"\",\r
+
+      \  \"from_date\": \"\",\r
+
+      \  \"to_date\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

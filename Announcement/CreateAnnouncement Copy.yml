@@ -1,0 +1,72 @@
+info:
+  name: CreateAnnouncement Copy
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/CreateAnnouncement"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"save_type\": \"1\", // 0 is save draft\r
+
+      \  \"title\": \"test-01\",\r
+
+      \  \"content\": \"test-02\",\r
+
+      \  \"is_all_airline\": false,\r
+
+      \  \"is_specific_airline\": true,\r
+
+      \  \"is_all_agent\": false,\r
+
+      \  \"start_date\": \"2025-12-12\",\r
+
+      \  \"end_date\": \"2025-12-20\",\r
+
+      \  \"is_schedule_publish\": true,\r
+
+      \  \"publish_date\": \"2025-12-15\",\r
+
+      \  \"publish_time\": \"08:00\",\r
+
+      \  \"specific_airlines\": [\r
+
+      \    {\r
+
+      \      \"airline_id\": \"144\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"airline_id\": \"146\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"airline_id\": \"148\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"airline_id\": \"153\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

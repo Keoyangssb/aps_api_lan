@@ -1,0 +1,28 @@
+info:
+  name: SaveCheckList
+  type: http
+  seq: 27
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/SaveCheckList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"payment_id\": \"21\",\r
+
+      \  \"check_id\": \"3\",\r
+
+      \  \"check_value\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: GetInvoiceTracking_by_invoice_id
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Tracking/GetInvoiceTracking_by_invoice_id"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"13524\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

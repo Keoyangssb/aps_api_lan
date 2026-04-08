@@ -1,0 +1,32 @@
+info:
+  name: SaveInvoicesAdjustment
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/SaveInvoicesAdjustment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"invoiceId\": \"6164\",\r
+
+      \  \"adj_overflightfee\": \"-20\",\r
+
+      \  \"adj_servicefee\": \"-40\",\r
+
+      \  \"adj_qty\": \"0\",\r
+
+      \  \"remarks\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNzliMDAwZmItMDM3Ny00MzNmLWI2ZGItZmRjZjg1ZTZiNDE2IiwiZXhwIjoxNzQyMDk2NjYxfQ.3seoAQIqcHA5Y7ibuoRfN30xu67JCWzq9D8v8cwFk80
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

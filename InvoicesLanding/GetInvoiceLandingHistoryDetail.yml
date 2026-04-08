@@ -1,0 +1,21 @@
+info:
+  name: GetInvoiceLandingHistoryDetail
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: https://apilans-aps.aidctech.net/api/InvoiceLanding/GetInvoiceLandingHistoryDetail?transactionId=22025043008595627
+  params:
+    - name: transactionId
+      value: "22025043008595627"
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

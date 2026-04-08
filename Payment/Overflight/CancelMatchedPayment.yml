@@ -1,0 +1,20 @@
+info:
+  name: CancelMatchedPayment
+  type: http
+  seq: 30
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/CancelMatchedPayment"
+  body:
+    type: json
+    data: "{\r\n  \"payment_id\": \"663\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: GetInvoiceInYear
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetInvoiceInYear"
+  body:
+    type: json
+    data: "{\r\n  \"report_year\": \"2024\"\r\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6IjFhMjM4ZWU1LWU5ZDAtNDcyYi1hNWVhLTllODM2ZGQ1MDE2YiIsImV4cCI6MTc1NDY0MTY3NX0.H4o8r9Vu3NM70cw5i8aFif6P1o96sgQ81SU478vVLBM
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

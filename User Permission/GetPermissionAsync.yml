@@ -1,0 +1,24 @@
+info:
+  name: GetPermissionAsync
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/UserRole/GetPermissionAsync
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNTgwMTAyMTc4NzEyMzgxNTk4MjQ0MTUyMDE4ODIwNDEzNzc3NDk3ODkxMjAzMTk0NzE1ODIzMzI0ODIyNjIxOTE3MzE1MjUyOTYyMDIxNjUiLCJqdGkiOiI5YTE3NDM0MS1mNTcyLTQ2MTUtOThkYy05NWM1ZDhkNTFhNTgiLCJleHAiOjE3MzgxNDQwNzV9.6vY01UDz1SLtWIQ1oFN0lG_Y5158sfpeOx7F1UGv-Pk\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNTgwMTAyMTc4NzEyMzgxNTk4MjQ0MTUyMDE4ODIwNDEzNzc3NDk3ODkxMjAzMTk0NzE1ODIzMzI0ODIyNjIxOTE3MzE1MjUyOTYyMDIxNjUiLCJqdGkiOiI5YTE3NDM0MS1mNTcyLTQ2MTUtOThkYy05NWM1ZDhkNTFhNTgiLCJleHAiOjE3MzgxNDQwNzV9.6vY01UDz1SLtWIQ1oFN0lG_Y5158sfpeOx7F1UGv-Pk
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

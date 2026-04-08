@@ -1,0 +1,75 @@
+info:
+  name: SubmitReviseInvoice
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/SubmitReviseInvoice"
+  body:
+    type: json
+    data: |-
+      {
+        "invoice_id": "15031",
+        "invoice_no": "LANS/OVF/AAJ/02/2025/003",
+        "qty": "3",
+        "overflight_fee": "0",
+        "service_fee": "0",
+        "total_fee": "600",
+        "invoiceDetails": [
+          {
+            "id": "1",
+            "date": "2025-02-01",
+            "registration": "",
+            "call_sign": "CES2803",
+            "type": "A20N",
+            "dept": "ZSNJ",
+            "entry_point": "VILAO",
+            "entry_time": "17:04 UTC",
+            "exit_time": "17:16 UTC",
+            "exit_point": "SAV",
+            "dest": "VTBS",
+            "mtow": "56",
+            "amount": "100"
+          },
+          {
+            "id": "2",
+            "date": "2025-02-18",
+            "registration": "",
+            "call_sign": "LKE801",
+            "type": "B738",
+            "dept": "ZPPP",
+            "entry_point": "SAGAG",
+            "entry_time": "10:35 UTC",
+            "exit_time": "11:03 UTC",
+            "exit_point": "YAKUA",
+            "dest": "VTBS",
+            "mtow": "56",
+            "amount": "200"
+          },
+          {
+            "id": "3",
+            "date": "2025-02-15",
+            "registration": "",
+            "call_sign": "THA658",
+            "type": "A359",
+            "dept": "VTBS",
+            "entry_point": "BUTRA",
+            "entry_time": "17:34 UTC",
+            "exit_time": "17:45 UTC",
+            "exit_point": "PAPRA",
+            "dest": "RKSI",
+            "mtow": "57",
+            "amount": "300"
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

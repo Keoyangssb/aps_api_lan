@@ -1,0 +1,26 @@
+info:
+  name: GetInvoiceStatusDetail
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard3/GetInvoiceStatusDetail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: CreateNewUserRole
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/UserRole/CreateUserRole
+  body:
+    type: json
+    data: "{\r
+
+      \  \"tokenKey\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIwMjEwMjE3NzQwMTI0NDIzNzI3MTc2MjIxMTc1MTk1MTE3MjM0MTM2NjkyMjM0NjEzOTQ1NjEyNjM5MTI1MTY4ODkxOTEyNTI2NTYxMTgzIiwibmJmIjoxNzM1NTI1MTI4LCJleHAiOjE3MzU2MTE1MjgsImlhdCI6MTczNTUyNTEyOH0.8WetoasAlPGlYjB3hZk7Vald8uVm3tX94CT7IUKEKwU\",\r
+
+      \  \"roleName\": \"apprval user\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

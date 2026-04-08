@@ -1,0 +1,21 @@
+info:
+  name: verify
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: http://10.0.100.31:8086/api/GenerateInvoice/verify?file=15029.pdf
+  params:
+    - name: file
+      value: 15029.pdf
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

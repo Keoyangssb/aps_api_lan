@@ -1,0 +1,28 @@
+info:
+  name: Top10OverdueByInvoice
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard3/Top10OverdueByInvoice"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2026\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\",\r
+
+      \  \"airline_agent\": \"agent\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

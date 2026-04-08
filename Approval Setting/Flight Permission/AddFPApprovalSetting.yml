@@ -1,0 +1,26 @@
+info:
+  name: AddFPApprovalSetting
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ApproverSetting/AddFPApprovalSetting"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"approverId\": \"33\",\r
+
+      \  \"approveLevel\": \"3\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

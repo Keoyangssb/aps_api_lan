@@ -1,0 +1,24 @@
+info:
+  name: ApprovePayment
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Payment/ApprovePayment?id=2025100904274728&Remark=test2
+  params:
+    - name: id
+      value: "2025100904274728"
+      type: query
+    - name: Remark
+      value: test2
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

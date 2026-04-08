@@ -1,0 +1,21 @@
+info:
+  name: GetDelegateList
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/General/GetDelegateList?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6ImZlMDRkMjRmLTYzNGUtNDAxYS1iMDkyLTgxODE1NWE1ZWFmNSIsImV4cCI6MTczNzY4NzE0M30.hClHtZvobbwAw0m6etRYkGbemen1idvomf8Uv_6DkVE
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6ImZlMDRkMjRmLTYzNGUtNDAxYS1iMDkyLTgxODE1NWE1ZWFmNSIsImV4cCI6MTczNzY4NzE0M30.hClHtZvobbwAw0m6etRYkGbemen1idvomf8Uv_6DkVE
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6ImZlMDRkMjRmLTYzNGUtNDAxYS1iMDkyLTgxODE1NWE1ZWFmNSIsImV4cCI6MTczNzY4NzE0M30.hClHtZvobbwAw0m6etRYkGbemen1idvomf8Uv_6DkVE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: GetDashboard
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardBOL/GetDashboard"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

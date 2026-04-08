@@ -1,0 +1,26 @@
+info:
+  name: GetInvoiceInYearDetail
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: http://192.168.0.164:8081/api/Reports/GetInvoiceInYearDetail
+  body:
+    type: json
+    data: "{\r
+
+      \  \"report_month\": \"9\",\r
+
+      \  \"report_year\": \"2024\",\r
+
+      \  \"report_id\": \"2\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

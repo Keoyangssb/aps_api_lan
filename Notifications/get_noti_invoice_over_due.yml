@@ -1,0 +1,15 @@
+info:
+  name: get_noti_invoice_over_due
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/Notification/get_noti_invoice_over_due"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

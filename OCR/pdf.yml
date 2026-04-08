@@ -1,0 +1,22 @@
+info:
+  name: pdf
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Ocr/pdf
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/11111.pdf
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

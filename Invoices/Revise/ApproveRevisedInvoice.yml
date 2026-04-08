@@ -1,0 +1,24 @@
+info:
+  name: ApproveRevisedInvoice
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/ApproveRevisedInvoice?id=15032&remark=approve"
+  params:
+    - name: id
+      value: "15032"
+      type: query
+    - name: remark
+      value: approve
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

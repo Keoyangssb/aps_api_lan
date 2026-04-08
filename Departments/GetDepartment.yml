@@ -1,0 +1,17 @@
+info:
+  name: GetDepartment
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/User/GetDepartment
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiOTY3YTJkM2EtN2RiYy00NDA0LTlmZGUtYjc3YjFlNTJkMjlmIiwiZXhwIjoxNzM4NzIwODE4fQ.loTxWL7Nqne2ToL3QDzFio55Ma0rGK9J83yvbRDVQiU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

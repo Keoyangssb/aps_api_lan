@@ -1,0 +1,28 @@
+info:
+  name: ErrorRate_by_process
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardStaffKPI/ErrorRate_by_process"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-07-01\",\r
+
+      \  \"to_date\": \"2025-12-30\",\r
+
+      \  \"department_id\": \"\",\r
+
+      \  \"staff_id\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,14 @@
+info:
+  name: GenerateInvoiceToPDF
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://localhost:5236/api/GenerateInvoice/GenerateInvoiceToPDF
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,18 @@
+info:
+  name: TransactionDiscrepancy_bol_vs_swift
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardBOL/TransactionDiscrepancy_bol_vs_swift"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

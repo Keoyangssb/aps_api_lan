@@ -1,0 +1,26 @@
+info:
+  name: GetEInvoiceLandingList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/EInvoice/GetEInvoiceLandingList"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"date_from\": \"2024-01-01\",\r
+
+      \  \"date_to\": \"2025-12-31\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

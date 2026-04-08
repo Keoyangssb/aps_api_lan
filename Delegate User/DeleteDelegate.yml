@@ -1,0 +1,22 @@
+info:
+  name: DeleteDelegate
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/General/DeleteDelegate?id=1&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+  params:
+    - name: id
+      value: "1"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

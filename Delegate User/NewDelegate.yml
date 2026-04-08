@@ -1,0 +1,32 @@
+info:
+  name: NewDelegate
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/General/NewDelegate?tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \  \"toUserId\": \"5\",\r
+
+      \  \"fromDate\": \"2004-12-09\",\r
+
+      \  \"toDate\": \"2004-12-12\",\r
+
+      \  \"descriptions\": \"test\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: Ticket
+  type: folder
+  seq: 30
+
+request:
+  auth: inherit

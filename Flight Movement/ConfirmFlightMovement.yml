@@ -1,0 +1,54 @@
+info:
+  name: ConfirmFlightMovement
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightMovement/ConfirmFlightMovement"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"active_flight_plan_id\": \"9608\",\r
+
+      \    \"flight_plan_id\": \"7022\",\r
+
+      \    \"flight_permission_id\": \"67\",\r
+
+      \    \"call_sign\": \"LLL202\",\r
+
+      \    \"aircraft\": \"C208\",\r
+
+      \    \"date\": \"2025-02-28\",\r
+
+      \    \"entry_point\": \"VTN/OUD\",\r
+
+      \    \"exit_point\": \"VTN/OUD\",\r
+
+      \    \"entry_time\": \"02:19 UTC\",\r
+
+      \    \"exit_time\": \"03:26 UTC\",\r
+
+      \    \"departure\": \"VLVT\",\r
+
+      \    \"destination\": \"VLFL\",\r
+
+      \    \"registration\": \"\",\r
+
+      \    \"is_flight_permission\": true,\r
+
+      \    \"is_flight_plan\": true,\r
+
+      \    \"is_radar\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

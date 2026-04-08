@@ -1,0 +1,20 @@
+info:
+  name: SaveToCompleted
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5044/api/Ticket/SaveToCompleted
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"1\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

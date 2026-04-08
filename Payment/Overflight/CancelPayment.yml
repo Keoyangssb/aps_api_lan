@@ -1,0 +1,20 @@
+info:
+  name: CancelPayment
+  type: http
+  seq: 26
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/CancelPayment"
+  body:
+    type: json
+    data: "{\r\n    \"paymentId\": \"15\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

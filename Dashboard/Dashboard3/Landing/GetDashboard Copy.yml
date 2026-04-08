@@ -1,0 +1,26 @@
+info:
+  name: GetDashboard Copy
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5236/api/DashboardLanding3/GetDashboard
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2024\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

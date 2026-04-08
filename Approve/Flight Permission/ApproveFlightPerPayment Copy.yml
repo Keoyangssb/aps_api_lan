@@ -1,0 +1,26 @@
+info:
+  name: ApproveFlightPerPayment Copy
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/ApproveFlightPerPayment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flight_per_id\": \"36\",\r
+
+      \  \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

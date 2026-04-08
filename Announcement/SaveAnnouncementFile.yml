@@ -1,0 +1,25 @@
+info:
+  name: SaveAnnouncementFile
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/SaveAnnouncementFile?id=10"
+  params:
+    - name: id
+      value: "10"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Downloads/20251205-210145.jpg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

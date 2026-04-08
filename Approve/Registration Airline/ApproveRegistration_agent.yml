@@ -1,0 +1,84 @@
+info:
+  name: ApproveRegistration_agent
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://localhost:7086/api/RegisterAirline/ApproveRegistration
+  body:
+    type: json
+    data: "{\r
+
+      \  \"register_id\": \"147\",\r
+
+      \  \"remark\": \"test\",\r
+
+      \  \"file_bus_reg_cer_remark\": \"\",\r
+
+      \  \"file_bus_reg_cer_isAccepted\": true,\r
+
+      \  \"file_agent_cor_license_remark\": \"\",\r
+
+      \  \"file_agent_cor_license_isAccepted\": true,\r
+
+      \  \"file_tax_reg_remark\": \"\",\r
+
+      \  \"file_tax_reg_isAccepted\": true,\r
+
+      \  \"profit_and_loss_statement_remark\": \"\",\r
+
+      \  \"profit_and_loss_statement_isAccepted\": true,\r
+
+      \  \"cashflow_statement_remark\": \"\",\r
+
+      \  \"cashflow_statement_isAccepted\": true,\r
+
+      \  \"balance_sheet_statement_remark\": \"\",\r
+
+      \  \"balance_sheet_statement_isAccepted\": true,\r
+
+      \  \"file_id_card_remark\": \"\",\r
+
+      \  \"file_id_card_isAccepted\": true,\r
+
+      \  \"auth_rep_file_id_card_remark\": \"\",\r
+
+      \  \"auth_rep_file_id_card_isAccepted\": true,\r
+
+      \  \"aircraft_informations\": [\r
+
+      \    {\r
+
+      \      \"airline_aircraft_id\": \"17\",\r
+
+      \      \"cor_file_remark\": \"\",\r
+
+      \      \"cor_file_isAccepted\": true,\r
+
+      \      \"coa_file_remark\": \"\",\r
+
+      \      \"coa_file_isAccepted\": true,\r
+
+      \      \"coi_file_remark\": \"\",\r
+
+      \      \"coi_file_isAccepted\": true,\r
+
+      \      \"airline_bus_reg_cer_file_remark\": \"\",\r
+
+      \      \"airline_bus_reg_cer_file_isAccepted\": true\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

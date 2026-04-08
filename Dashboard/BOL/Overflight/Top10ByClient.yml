@@ -1,0 +1,18 @@
+info:
+  name: Top10ByClient
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardBOL/Top10ByClient"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: generate_e_receipt Copy
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Receipt/generate_e_receipt
+  body:
+    type: json
+    data: "{\r
+
+      \  \"transaction_id\": \"625\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

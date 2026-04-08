@@ -1,0 +1,723 @@
+info:
+  name: SubmitInvoiceLanding
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://apilans-aps.aidctech.net/api/InvoiceLanding/SubmitInvoiceLanding?fromDate=2025-05-01&toDate=2025-05-31&dateAdd=2026-03-07&invDescription=test+duean+05&fileName&invoice_type=2
+  params:
+    - name: fromDate
+      value: 2025-05-01
+      type: query
+    - name: toDate
+      value: 2025-05-31
+      type: query
+    - name: dateAdd
+      value: 2026-03-07
+      type: query
+    - name: invDescription
+      value: test+duean+05
+      type: query
+    - name: fileName
+      value: ""
+      type: query
+    - name: invoice_type
+      value: "2"
+      type: query
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LANEXANG AIRWAYS INTERNALTIONAL (LXW)\",\r
+
+      \        \"customerCode\": \"LXW\",\r
+
+      \        \"customerName\": \"LANEXANG AIRWAYS INTERNALTIONAL\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"112\",\r
+
+      \        \"invoiceAmount\": \"44800000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LXW/05/2025/026\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"THAI AIRASIA COMPANY LIMITED (AIQ)\",\r
+
+      \        \"customerCode\": \"AIQ\",\r
+
+      \        \"customerName\": \"THAI AIRASIA COMPANY LIMITED\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"31\",\r
+
+      \        \"invoiceAmount\": \"$ 9300\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/AIQ/05/2025/030\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO AIRLINES (LAO)\",\r
+
+      \        \"customerCode\": \"LAO\",\r
+
+      \        \"customerName\": \"LAO AIRLINES\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"269\",\r
+
+      \        \"invoiceAmount\": \"108000000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LAO/05/2025/028\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"VIETNAM AIRLINES (HVN)\",\r
+
+      \        \"customerCode\": \"HVN\",\r
+
+      \        \"customerName\": \"VIETNAM AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"19\",\r
+
+      \        \"invoiceAmount\": \"$ 5700\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/HVN/05/2025/031\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"BANGKOK AIRWAYS (BKP)\",\r
+
+      \        \"customerCode\": \"BKP\",\r
+
+      \        \"customerName\": \"BANGKOK AIRWAYS\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"31\",\r
+
+      \        \"invoiceAmount\": \"$ 8700\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/BKP/05/2025/024\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"CHINA EASTERN AIRLINES (CES)\",\r
+
+      \        \"customerCode\": \"CES\",\r
+
+      \        \"customerName\": \"CHINA EASTERN AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"14\",\r
+
+      \        \"invoiceAmount\": \"$ 4200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CES/05/2025/025\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO SKYWAY (LLL)\",\r
+
+      \        \"customerCode\": \"LLL\",\r
+
+      \        \"customerName\": \"LAO SKYWAY\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"135\",\r
+
+      \        \"invoiceAmount\": \"36300000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LLL/05/2025/029\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO AIRLINES (LAO)\",\r
+
+      \        \"customerCode\": \"LAO\",\r
+
+      \        \"customerName\": \"LAO AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"64\",\r
+
+      \        \"invoiceAmount\": \"$ 16200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LAO/05/2025/027\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"9 AIR CO LTD (JYH)\",\r
+
+      \        \"customerCode\": \"JYH\",\r
+
+      \        \"customerName\": \"9 AIR CO LTD\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"22\",\r
+
+      \        \"invoiceAmount\": \"$ 6600\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/JYH/05/2025/001\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"AIR BUSAN (ABL)\",\r
+
+      \        \"customerCode\": \"ABL\",\r
+
+      \        \"customerName\": \"AIR BUSAN\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"9\",\r
+
+      \        \"invoiceAmount\": \"$ 2700\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/ABL/05/2025/002\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"AirAsia Berhad (AXM)\",\r
+
+      \        \"customerCode\": \"AXM\",\r
+
+      \        \"customerName\": \"AirAsia Berhad\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"12\",\r
+
+      \        \"invoiceAmount\": \"$ 3600\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/AXM/05/2025/003\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"CHINA EASTERN AIRLINES (CES)\",\r
+
+      \        \"customerCode\": \"CES\",\r
+
+      \        \"customerName\": \"CHINA EASTERN AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"110\",\r
+
+      \        \"invoiceAmount\": \"$ 33000\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CES/05/2025/004\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"CHINA EXPRESS AIRLINES (HXA)\",\r
+
+      \        \"customerCode\": \"HXA\",\r
+
+      \        \"customerName\": \"CHINA EXPRESS AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"10\",\r
+
+      \        \"invoiceAmount\": \"$ 3000\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/HXA/05/2025/005\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"CHINA SOUTHERN AIRLINES (CSN)\",\r
+
+      \        \"customerCode\": \"CSN\",\r
+
+      \        \"customerName\": \"CHINA SOUTHERN AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"31\",\r
+
+      \        \"invoiceAmount\": \"$ 9300\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CSN/05/2025/006\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"China United Airlines (CUA)\",\r
+
+      \        \"customerCode\": \"CUA\",\r
+
+      \        \"customerName\": \"China United Airlines\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"4\",\r
+
+      \        \"invoiceAmount\": \"$ 1200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CUA/05/2025/007\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"HAINAN AIRLINES HOLDING CO LTD (CHH)\",\r
+
+      \        \"customerCode\": \"CHH\",\r
+
+      \        \"customerName\": \"HAINAN AIRLINES HOLDING CO LTD\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"14\",\r
+
+      \        \"invoiceAmount\": \"$ 4200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CHH/05/2025/008\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"JEJUAIR Operation Control Center (JJA)\",\r
+
+      \        \"customerCode\": \"JJA\",\r
+
+      \        \"customerName\": \"JEJUAIR Operation Control Center\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"4\",\r
+
+      \        \"invoiceAmount\": \"$ 1200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/JJA/05/2025/009\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LANEXANG AIRWAYS INTERNALTIONAL (LXW)\",\r
+
+      \        \"customerCode\": \"LXW\",\r
+
+      \        \"customerName\": \"LANEXANG AIRWAYS INTERNALTIONAL\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"78\",\r
+
+      \        \"invoiceAmount\": \"31200000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LXW/05/2025/010\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"Lao Air Sports Club - Khoksa Airfield (KA1)\",\r
+
+      \        \"customerCode\": \"KA1\",\r
+
+      \        \"customerName\": \"Lao Air Sports Club - Khoksa Airfield\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"3\",\r
+
+      \        \"invoiceAmount\": \"75000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/KA1/05/2025/011\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO AIRLINES (LAO)\",\r
+
+      \        \"customerCode\": \"LAO\",\r
+
+      \        \"customerName\": \"LAO AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"177\",\r
+
+      \        \"invoiceAmount\": \"$ 51250\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LAO/05/2025/012\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO AIRLINES (LAO)\",\r
+
+      \        \"customerCode\": \"LAO\",\r
+
+      \        \"customerName\": \"LAO AIRLINES\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"249\",\r
+
+      \        \"invoiceAmount\": \"100000000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LAO/05/2025/013\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO SKYWAY (LLL)\",\r
+
+      \        \"customerCode\": \"LLL\",\r
+
+      \        \"customerName\": \"LAO SKYWAY\",\r
+
+      \        \"flightType\": \"DOMESTIC\",\r
+
+      \        \"movements\": \"211\",\r
+
+      \        \"invoiceAmount\": \"42700000\",\r
+
+      \        \"currency\": \"KIP\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LLL/05/2025/014\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"LAO SKYWAY (LLL)\",\r
+
+      \        \"customerCode\": \"LLL\",\r
+
+      \        \"customerName\": \"LAO SKYWAY\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"1\",\r
+
+      \        \"invoiceAmount\": \"$ 50\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/LLL/05/2025/015\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"QINGDAO AIRLINES (QDA)\",\r
+
+      \        \"customerCode\": \"QDA\",\r
+
+      \        \"customerName\": \"QINGDAO AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"14\",\r
+
+      \        \"invoiceAmount\": \"$ 4200\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/QDA/05/2025/016\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"SCOOT TIGERAIR PTE LTD (TGW)\",\r
+
+      \        \"customerCode\": \"TGW\",\r
+
+      \        \"customerName\": \"SCOOT TIGERAIR PTE LTD\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"23\",\r
+
+      \        \"invoiceAmount\": \"$ 6900\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/TGW/05/2025/017\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"SICHUAN AIRLINES (CSC)\",\r
+
+      \        \"customerCode\": \"CSC\",\r
+
+      \        \"customerName\": \"SICHUAN AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"29\",\r
+
+      \        \"invoiceAmount\": \"$ 8700\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CSC/05/2025/018\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"THAI AIR WAYS INTERNATIONAL PUBLIC COMPANY LIMITED (THA)\",\r
+
+      \        \"customerCode\": \"THA\",\r
+
+      \        \"customerName\": \"THAI AIR WAYS INTERNATIONAL PUBLIC COMPANY LIMITED\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"62\",\r
+
+      \        \"invoiceAmount\": \"$ 18600\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/THA/05/2025/019\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"THAI AIRASIA COMPANY LIMITED (AIQ)\",\r
+
+      \        \"customerCode\": \"AIQ\",\r
+
+      \        \"customerName\": \"THAI AIRASIA COMPANY LIMITED\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"62\",\r
+
+      \        \"invoiceAmount\": \"$ 18600\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/AIQ/05/2025/020\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"VIETJET AVIATION JOINT STOCK COMPANY (VJC)\",\r
+
+      \        \"customerCode\": \"VJC\",\r
+
+      \        \"customerName\": \"VIETJET AVIATION JOINT STOCK COMPANY\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"38\",\r
+
+      \        \"invoiceAmount\": \"$ 12000\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/VJC/05/2025/021\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"VIETNAM AIRLINES (HVN)\",\r
+
+      \        \"customerCode\": \"HVN\",\r
+
+      \        \"customerName\": \"VIETNAM AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"62\",\r
+
+      \        \"invoiceAmount\": \"$ 18600\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/HVN/05/2025/022\"\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"customerType\": \"1\",\r
+
+      \        \"customerFull\": \"XIAMEN AIRLINES (CXA)\",\r
+
+      \        \"customerCode\": \"CXA\",\r
+
+      \        \"customerName\": \"XIAMEN AIRLINES\",\r
+
+      \        \"flightType\": \"INTERNATIONAL\",\r
+
+      \        \"movements\": \"10\",\r
+
+      \        \"invoiceAmount\": \"$ 3000\",\r
+
+      \        \"currency\": \"USD\",\r
+
+      \        \"invoiceNo\": \"LANS/ARR/CXA/05/2025/023\"\r
+
+      \    }\r
+
+      ]"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJsaXR0YXZhbmgucC5haWRjdGVjaEBnbWFpbC5jb20iLCJVc2VySWQiOiIyOCIsIlJvbGVJZCI6IjEiLCJqdGkiOiI2NzViM2M0ZS0yZDUyLTQ0M2MtYjVlMy00ODI5ZmI4NWVmZjciLCJleHAiOjE3NzMwMjg0ODl9.B3mXhT4tyce7Im2B3_x6rZxMWky7FBzZBTwuMN6R-ho
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: ApproveInvoiceAdjustment
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/ApproveInvoiceAdjustment"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": \"8\",\r
+
+      \    \"remark\": \"test\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: GetMatchedInvoiceList
+  type: http
+  seq: 34
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Payment/GetMatchedInvoiceList"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"payment_code\": \"2025100904274728\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

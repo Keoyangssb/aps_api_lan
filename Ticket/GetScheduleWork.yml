@@ -1,0 +1,20 @@
+info:
+  name: GetScheduleWork
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/GetScheduleWork"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"1\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

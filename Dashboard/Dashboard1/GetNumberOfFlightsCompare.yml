@@ -1,0 +1,26 @@
+info:
+  name: GetNumberOfFlightsCompare
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard/GetNumberOfFlightsCompare"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"string\",\r
+
+      \  \"toDate\": \"string\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

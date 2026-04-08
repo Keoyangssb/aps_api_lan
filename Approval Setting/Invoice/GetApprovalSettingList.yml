@@ -1,0 +1,21 @@
+info:
+  name: GetApprovalSettingList
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://localhost:5236/api/ApprovalSetting/GetApprovalSettingList?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjQ3ZGI3MDVlLWMyZmItNGM0NS04ZWFkLTA2ZTBjMTUzN2Q2YyIsImV4cCI6MTc2NDcyODMzM30.aJcXcfGdeEOBi3m1LqXygKIQVtnKMdKiXSI-s7Sc8PI
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjQ3ZGI3MDVlLWMyZmItNGM0NS04ZWFkLTA2ZTBjMTUzN2Q2YyIsImV4cCI6MTc2NDcyODMzM30.aJcXcfGdeEOBi3m1LqXygKIQVtnKMdKiXSI-s7Sc8PI
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

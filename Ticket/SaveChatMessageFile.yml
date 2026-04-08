@@ -1,0 +1,28 @@
+info:
+  name: SaveChatMessageFile
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Ticket/SaveChatMessageFile?id=1
+  params:
+    - name: id
+      value: "1"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/ovf_invoice.jpg
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

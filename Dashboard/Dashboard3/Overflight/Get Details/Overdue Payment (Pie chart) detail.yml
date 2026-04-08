@@ -1,0 +1,24 @@
+info:
+  name: Overdue Payment (Pie chart) detail
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard/GetDashboardOverDuePaymentDetail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"airlineCode\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

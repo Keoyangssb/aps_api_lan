@@ -1,0 +1,14 @@
+info:
+  name: GetInvoiceStatus_client_summary
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/Invoice/GetInvoiceStatus_client_summary"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

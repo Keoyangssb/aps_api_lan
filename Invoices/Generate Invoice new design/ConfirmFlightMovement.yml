@@ -1,0 +1,54 @@
+info:
+  name: ConfirmFlightMovement
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightMovement/ConfirmFlightMovement"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"active_flight_plan_id\": \"87\",\r
+
+      \    \"flight_plan_id\": \"7194\",\r
+
+      \    \"flight_permission_id\": \"22\",\r
+
+      \    \"call_sign\": \"THA632\",\r
+
+      \    \"aircraft\": \"B77W\",\r
+
+      \    \"date\": \"2025-02-28\",\r
+
+      \    \"entry_point\": \"BUTRA\",\r
+
+      \    \"exit_point\": \"PAPRA\",\r
+
+      \    \"entry_time\": \"02:37 UTC\",\r
+
+      \    \"exit_time\": \"02:48 UTC\",\r
+
+      \    \"departure\": \"VTBS\",\r
+
+      \    \"destination\": \"RCTP\",\r
+
+      \    \"registration\": \"\",\r
+
+      \    \"is_flight_permission\": true,\r
+
+      \    \"is_flight_plan\": true,\r
+
+      \    \"is_radar\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: GetUserById
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/User/GetUserById?id=35&tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0OTk0MzYxMzYxOTI3OTE0ODUzNjAxMDIyMjMxMDExODEzNDE3MjQ5OTAxNDYxODAxMDAxMDA4MTI5OTgyMDgxNjExNzk4NDUyMjMyMTgiLCJqdGkiOiJmNjA4NjZmZC0zYjM4LTQyODQtODA1Ny1hMDMwN2UyODM2N2UiLCJleHAiOjE3NjIzMTQxOTN9.BG0c-3dmIVVPteE5QTiiWxQ0h1q2jFteNVT7KINfigU"
+  params:
+    - name: id
+      value: "35"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0OTk0MzYxMzYxOTI3OTE0ODUzNjAxMDIyMjMxMDExODEzNDE3MjQ5OTAxNDYxODAxMDAxMDA4MTI5OTgyMDgxNjExNzk4NDUyMjMyMTgiLCJqdGkiOiJmNjA4NjZmZC0zYjM4LTQyODQtODA1Ny1hMDMwN2UyODM2N2UiLCJleHAiOjE3NjIzMTQxOTN9.BG0c-3dmIVVPteE5QTiiWxQ0h1q2jFteNVT7KINfigU
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

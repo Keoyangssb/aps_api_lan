@@ -1,0 +1,25 @@
+info:
+  name: GetMatchingInvoice
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:5236/api/Payment/GetMatchingInvoice?id=5307&isMatching=0&tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiZDM0NWFhOTYtZmE0ZC00YjYxLTg4ZDMtYzg2MWM2NGQ0MmEwIiwiZXhwIjoxNzYwMTUzODQ4fQ.okCYUkUPCIjIqFGuHRFSicSgpjxoJjjpep2HVxtkoZ8
+  params:
+    - name: id
+      value: "5307"
+      type: query
+    - name: isMatching
+      value: "0"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiZDM0NWFhOTYtZmE0ZC00YjYxLTg4ZDMtYzg2MWM2NGQ0MmEwIiwiZXhwIjoxNzYwMTUzODQ4fQ.okCYUkUPCIjIqFGuHRFSicSgpjxoJjjpep2HVxtkoZ8
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,30 @@
+info:
+  name: SaveFollowUpTracking
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/FollowUp/SaveFollowUpTracking
+  body:
+    type: json
+    data: "{\r
+
+      \  \"invoiceId\": \"3127\",\r
+
+      \  \"checked_value\": \"1\",\r
+
+      \  \"sent_value\": \"1\",\r
+
+      \  \"remarks\": \"checked and sent\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6ImRiMGMwYTc5LWEzZTItNDVjZS04YzFhLWQwOTU5YzVhMDJkYiIsImV4cCI6MTczNzYyNzkwOH0.wxk7HFaxCUoxaech0vIU2zXU6_nE2HlRYKAxqovJtGU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

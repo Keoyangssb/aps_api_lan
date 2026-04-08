@@ -1,0 +1,20 @@
+info:
+  name: GetFollowUpTrackingCheckedSent
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/FollowUp/GetFollowUpTrackingCheckedSent
+  body:
+    type: json
+    data: "{\r\n  \"invoiceId\": \"3127\"\r\n}"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDIxMDIxNzc0MDEyNDQyMzcyNzE3NjIyMTE3NTE5NTExNzIzNDEzNjY5MjIzNDYxMzk0NTYxMjYzOTEyNTE2ODg5MTkxMjUyNjU2MTE4MyIsImp0aSI6ImRiMGMwYTc5LWEzZTItNDVjZS04YzFhLWQwOTU5YzVhMDJkYiIsImV4cCI6MTczNzYyNzkwOH0.wxk7HFaxCUoxaech0vIU2zXU6_nE2HlRYKAxqovJtGU
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: GetUsersWithoutUserLogin
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: http://192.168.1.254:8081/api/General/GetUsersWithoutUserLogin?tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

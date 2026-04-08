@@ -1,0 +1,20 @@
+info:
+  name: GenEInvoiceLanding
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/EInvoice/GenEInvoiceLanding"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"123\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,46 @@
+info:
+  name: CreateAnnouncement
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Announcement/CreateAnnouncement"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": \"1\", // if id value is nothing is create new \r
+
+      \  \"save_type\": \"0\", // 0 = save draft\r
+
+      \  \"title\": \"uuupppp1\",\r
+
+      \  \"content\": \"uuupppp2\",\r
+
+      \  \"is_all_airline\": true,\r
+
+      \  \"is_specific_airline\": false,\r
+
+      \  \"is_all_agent\": false,\r
+
+      \  \"start_date\": \"2025-12-12\",\r
+
+      \  \"end_date\": \"2025-12-20\",\r
+
+      \  \"is_schedule_publish\": false,\r
+
+      \  \"publish_date\": \"\",\r
+
+      \  \"publish_time\": \"\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

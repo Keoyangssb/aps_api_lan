@@ -1,0 +1,28 @@
+info:
+  name: InvoiceAmountAndFlightComparison_in_year_detail
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard3/InvoiceAmountAndFlightComparison_in_year_detail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"page_number\": 1,\r
+
+      \  \"page_size\": 10,\r
+
+      \  \"monthId\": \"1\",\r
+
+      \  \"year\": \"2025\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

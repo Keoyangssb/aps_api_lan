@@ -1,0 +1,28 @@
+info:
+  name: SaveInternalNoteFile
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Ticket/SaveInternalNoteFile?id=1"
+  params:
+    - name: id
+      value: "1"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/ovf_invoice.jpg
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

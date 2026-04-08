@@ -1,0 +1,58 @@
+info:
+  name: SubmitInvoiceByOne
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoice/SubmitInvoiceByOne"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-02-01\",\r
+
+      \  \"to_date\": \"2025-02-28\",\r
+
+      \  \"date_add\": \"2025-02-10\",\r
+
+      \  \"invoice_description\": \"test\",\r
+
+      \  \"invoiceDetails\":\r
+
+      \    {\r
+
+      \        \"invoice_no\": \"LANS/OVF/TZP/02/2025/008\",\r
+
+      \        \"customer_id\": \"135\",\r
+
+      \        \"customer\": \"ZIPAIR\",\r
+
+      \        \"airline_code\": \"TZP\",\r
+
+      \        \"gsa_code\": \"\",\r
+
+      \        \"type_of_flight\": \"\",\r
+
+      \        \"route\": \"\",\r
+
+      \        \"qty\": \"5\",\r
+
+      \        \"overflight_fee\": \"350\",\r
+
+      \        \"service_fee\": \"0\",\r
+
+      \        \"total_fee\": \"350\"\r
+
+      \    }\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

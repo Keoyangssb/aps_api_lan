@@ -1,0 +1,21 @@
+info:
+  name: GetSwiftMessage
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/SwiftMessages/GetSwiftMessage?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiM2Y2M2ZkNDMtZWMzMC00M2IzLTgyYjAtYjhlMWQ5MmY0NTYyIiwiZXhwIjoxNzU5NjQzMTYzfQ.TPYQUWCoClvFzIvOI4tGAgy8ULpGG2K1tjBIqKRdYS0"
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiM2Y2M2ZkNDMtZWMzMC00M2IzLTgyYjAtYjhlMWQ5MmY0NTYyIiwiZXhwIjoxNzU5NjQzMTYzfQ.TPYQUWCoClvFzIvOI4tGAgy8ULpGG2K1tjBIqKRdYS0
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

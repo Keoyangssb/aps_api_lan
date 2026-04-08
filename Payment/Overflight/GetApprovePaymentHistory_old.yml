@@ -1,0 +1,22 @@
+info:
+  name: GetApprovePaymentHistory_old
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: https://localhost:7086/api/Payment/GetApprovePaymentHistory?paymentCode=202412160357001&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNDQwMDI1MCwiZXhwIjoxNzM0NDg2NjUwLCJpYXQiOjE3MzQ0MDAyNTB9.UurppEeRRWHnqQQ0sx2kzKG5LOrz1rAoJFkqXLQDeyI
+  params:
+    - name: paymentCode
+      value: "202412160357001"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjI1ODAxMDIxNzg3MTIzODE1OTgyNDQxNTIwMTg4MjA0MTM3Nzc0OTc4OTEyMDMxOTQ3MTU4MjMzMjQ4MjI2MjE5MTczMTUyNTI5NjIwMjE2NSIsIm5iZiI6MTczNDQwMDI1MCwiZXhwIjoxNzM0NDg2NjUwLCJpYXQiOjE3MzQ0MDAyNTB9.UurppEeRRWHnqQQ0sx2kzKG5LOrz1rAoJFkqXLQDeyI
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

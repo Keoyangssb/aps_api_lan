@@ -1,0 +1,25 @@
+info:
+  name: ChangeUserPass
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/User/ChangeUserPass?oldPassword=123456&newPassword=123&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImtlbzEyMzQ1NiIsIm5iZiI6MTczMzQ3MTg0OSwiZXhwIjoxNzMzNDc1NDQ4LCJpYXQiOjE3MzM0NzE4NDl9.RGhRLEsN4wdBkpDfjCR0B-J3MDPUD6lYrj45TsPYQVk
+  params:
+    - name: oldPassword
+      value: "123456"
+      type: query
+    - name: newPassword
+      value: "123"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImtlbzEyMzQ1NiIsIm5iZiI6MTczMzQ3MTg0OSwiZXhwIjoxNzMzNDc1NDQ4LCJpYXQiOjE3MzM0NzE4NDl9.RGhRLEsN4wdBkpDfjCR0B-J3MDPUD6lYrj45TsPYQVk
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

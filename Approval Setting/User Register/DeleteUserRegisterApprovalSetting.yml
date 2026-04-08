@@ -1,0 +1,20 @@
+info:
+  name: DeleteUserRegisterApprovalSetting
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ApprovalSetting/DeleteUserRegisterApprovalSetting"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"2\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

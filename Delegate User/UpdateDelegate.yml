@@ -1,0 +1,34 @@
+info:
+  name: UpdateDelegate
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/General/UpdateDelegate?tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTExIiwibmJmIjoxNzMzNzMwODU4LCJleHAiOjE3MzM3MzQ0NTgsImlhdCI6MTczMzczMDg1OH0.iH7Tw5eZQfXQcMOP1GuDLey5Gx2JzwliMEC4BF4awg4
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": \"1\",\r
+
+      \  \"toUserId\": \"6\",\r
+
+      \  \"fromDate\": \"2004-12-09\",\r
+
+      \  \"toDate\": \"2004-12-13\",\r
+
+      \  \"descriptions\": \"test\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
