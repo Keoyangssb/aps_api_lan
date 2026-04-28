@@ -8,21 +8,18 @@ http:
   url: "{{currentIP}}/api/Invoice/GetInvoiceClientSummary"
   body:
     type: json
-    data: "{\r
-
-      \    \"airline_name\": \"9 AIR CO LTD (JYH)\",\r
-
-      \    \"invoice_no\": \"LANS/OVF/JYH/06/2025/001\",\r
-
-      \    \"status_id\": \"\",\r
-
-      \    \"payment_tran_no\": \"\",\r
-
-      \    \"from_date\": \"\",\r
-
-      \    \"to_date\": \"\"\r
-
-      }"
+    data: |-
+      {
+          "airline_name": "9 AIR CO LTD (JYH)",
+          "invoice_no": "",
+          "status_id": "",
+          "payment_tran_no": "000FT0826071QLI5",
+          "from_date": "",
+          "to_date": "",
+          "payment_status_id": "",
+          "payment_from_date": "",
+          "payment_to_date": ""
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

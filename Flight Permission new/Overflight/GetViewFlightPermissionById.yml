@@ -8,7 +8,10 @@ http:
   url: "{{currentIP}}/api/FlightPermission/GetViewFlightPermissionById"
   body:
     type: json
-    data: "{\r\n  \"flight_per_id\": \"24\"\r\n}"
+    data: |-
+      {
+        "flight_per_id": "89"
+      }
   auth:
     type: bearer
     token: "{{authToken}}"
