@@ -1,0 +1,27 @@
+info:
+  name: ApprovePayment
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/PaymentLanding/ApprovePayment?id=123&Remark=test"
+  params:
+    - name: id
+      value: "123"
+      type: query
+    - name: Remark
+      value: test
+      type: query
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjczNTQ0Mjc3LTM5ZjAtNDJlOS04NjE5LWE2MmQ5NTczZWVlMSIsImV4cCI6MTc3ODEzODg4Nn0.k1mIZOUmVb-Wz8qS7hib0dLefBHec_wsHmivjeTEUsE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
