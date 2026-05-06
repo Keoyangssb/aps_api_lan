@@ -1,18 +1,21 @@
 info:
-  name: GetAllPaymentReceiveLanding
+  name: GetMatchingInvoiceToPayment
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: https://apilans-aps.aidctech.net/api/PaymentLanding/GetAllPaymentReceiveLanding
+  url: "{{currentIP}}/api/PaymentLanding/GetMatchingInvoiceToPayment"
   body:
     type: json
     data: |-
       {
+        "paymentId": "14161",
         "pageNumber": 1,
-        "pageSize": 100,
-        "keywordSearch": ""
+        "pageSize": 5,
+        "keywordSearch": "",
+        "fromDate": "",
+        "toDate": ""
       }
   auth:
     type: bearer

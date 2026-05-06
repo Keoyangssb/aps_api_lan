@@ -1,7 +1,7 @@
 info:
-  name: Customer
+  name: OneSignal
   type: folder
-  seq: 34
+  seq: 4
 
 request:
   auth: inherit

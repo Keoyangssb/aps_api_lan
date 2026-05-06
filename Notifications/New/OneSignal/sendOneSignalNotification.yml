@@ -1,0 +1,23 @@
+info:
+  name: sendOneSignalNotification
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Notification/sendOneSignalNotification"
+  body:
+    type: json
+    data: |-
+      {
+        "playerIds": ["5ef2f766-0d3d-4eec-9f5c-84988dbe3ce1"],
+        "title": "APS Alert",
+        "message": "Your oneSignal is ready"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

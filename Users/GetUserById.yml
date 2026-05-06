@@ -5,17 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/User/GetUserById?id=35&tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0OTk0MzYxMzYxOTI3OTE0ODUzNjAxMDIyMjMxMDExODEzNDE3MjQ5OTAxNDYxODAxMDAxMDA4MTI5OTgyMDgxNjExNzk4NDUyMjMyMTgiLCJqdGkiOiJmNjA4NjZmZC0zYjM4LTQyODQtODA1Ny1hMDMwN2UyODM2N2UiLCJleHAiOjE3NjIzMTQxOTN9.BG0c-3dmIVVPteE5QTiiWxQ0h1q2jFteNVT7KINfigU"
+  url: "{{currentIP}}/api/User/GetUserById?id=35"
   params:
     - name: id
       value: "35"
       type: query
-    - name: tokenKey
-      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0OTk0MzYxMzYxOTI3OTE0ODUzNjAxMDIyMjMxMDExODEzNDE3MjQ5OTAxNDYxODAxMDAxMDA4MTI5OTgyMDgxNjExNzk4NDUyMjMyMTgiLCJqdGkiOiJmNjA4NjZmZC0zYjM4LTQyODQtODA1Ny1hMDMwN2UyODM2N2UiLCJleHAiOjE3NjIzMTQxOTN9.BG0c-3dmIVVPteE5QTiiWxQ0h1q2jFteNVT7KINfigU
-      type: query
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImJhYmM1YzEyLTg4ZDUtNGMxNC05OTFlLWFmYjhiOGI0NmU2MCIsImV4cCI6MTc3ODEyMTM0OX0.qMOPiC383X5lTY67A5wxaAn-ziQ4kePw7DxBeeRw0Og
 
 settings:
   encodeUrl: true

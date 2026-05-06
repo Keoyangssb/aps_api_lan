@@ -1,19 +1,20 @@
 info:
-  name: GetAllPaymentReceiveLanding
+  name: GetBoardSummaryLanding
   type: http
   seq: 1
 
 http:
   method: POST
-  url: https://apilans-aps.aidctech.net/api/PaymentLanding/GetAllPaymentReceiveLanding
+  url: "{{currentIP}}/api/SwiftMessages/GetBoardSummaryLanding"
   body:
     type: json
-    data: |-
-      {
-        "pageNumber": 1,
-        "pageSize": 100,
-        "keywordSearch": ""
-      }
+    data: "{\r
+
+      \    \"from_date\": \"\",\r
+
+      \    \"to_date\": \"\"\r
+
+      }"
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjczNTQ0Mjc3LTM5ZjAtNDJlOS04NjE5LWE2MmQ5NTczZWVlMSIsImV4cCI6MTc3ODEzODg4Nn0.k1mIZOUmVb-Wz8qS7hib0dLefBHec_wsHmivjeTEUsE

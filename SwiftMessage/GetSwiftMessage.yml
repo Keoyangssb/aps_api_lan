@@ -5,14 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/SwiftMessages/GetSwiftMessage?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiM2Y2M2ZkNDMtZWMzMC00M2IzLTgyYjAtYjhlMWQ5MmY0NTYyIiwiZXhwIjoxNzU5NjQzMTYzfQ.TPYQUWCoClvFzIvOI4tGAgy8ULpGG2K1tjBIqKRdYS0"
-  params:
-    - name: tokenKey
-      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTg4NjUyNDExODYxNTAxMzIxMTg4MzI1MjEyMDEzNDE2OTE3OTg3MTYxMTcyMjE2MzMzMzE2MTk1NTIwNjUxMTkzMzU2MTk4MTQwMTcxMTk5IiwianRpIjoiM2Y2M2ZkNDMtZWMzMC00M2IzLTgyYjAtYjhlMWQ5MmY0NTYyIiwiZXhwIjoxNzU5NjQzMTYzfQ.TPYQUWCoClvFzIvOI4tGAgy8ULpGG2K1tjBIqKRdYS0
-      type: query
+  url: "{{currentIP}}/api/SwiftMessages/GetSwiftMessage"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjczNTQ0Mjc3LTM5ZjAtNDJlOS04NjE5LWE2MmQ5NTczZWVlMSIsImV4cCI6MTc3ODEzODg4Nn0.k1mIZOUmVb-Wz8qS7hib0dLefBHec_wsHmivjeTEUsE
 
 settings:
   encodeUrl: true
