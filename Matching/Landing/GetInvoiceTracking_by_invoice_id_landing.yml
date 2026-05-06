@@ -1,0 +1,23 @@
+info:
+  name: GetInvoiceTracking_by_invoice_id_landing
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Tracking/GetInvoiceTracking_by_invoice_id_landing"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "13141"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjczNTQ0Mjc3LTM5ZjAtNDJlOS04NjE5LWE2MmQ5NTczZWVlMSIsImV4cCI6MTc3ODEzODg4Nn0.k1mIZOUmVb-Wz8qS7hib0dLefBHec_wsHmivjeTEUsE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
