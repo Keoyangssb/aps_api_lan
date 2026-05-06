@@ -1,0 +1,29 @@
+info:
+  name: GetInvoiceTrackingReport_landing
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Reports/GetInvoiceReportList_landing"
+  body:
+    type: json
+    data: |-
+      {
+        "page_number": 1,
+        "page_size": 100,
+        "client_name": "All", // Get customerName from api/Customer/GetAllCustomer
+        "invoice_no": "",
+        "invoice_status": "All Status", // All Status, Pending Matching, Matched Partial, Paid in full
+        "from_date": "",
+        "to_date": ""
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
