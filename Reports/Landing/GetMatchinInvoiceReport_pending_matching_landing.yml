@@ -10,8 +10,8 @@ http:
     type: json
     data: |-
       {
-        "PageNumber": 1,
-        "PageSize": 10,
+        "page_number": 1,
+        "page_size": 10,
         "client_name": "",
         "invoice_no": "",
         "invoice_status": "",

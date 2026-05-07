@@ -1,11 +1,11 @@
 info:
-  name: GetMatchinInvoiceReport_match_partial_landing
+  name: GetAgingReport_landing
   type: http
-  seq: 6
+  seq: 9
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Reports/GetMatchinInvoiceReport_match_partial_landing"
+  url: "{{currentIP}}/api/Reports/GetAgingReport_landing"
   body:
     type: json
     data: |-
@@ -13,8 +13,6 @@ http:
         "page_number": 1,
         "page_size": 10,
         "client_name": "",
-        "invoice_no": "",
-        "invoice_status": "",
         "from_date": "",
         "to_date": ""
       }
