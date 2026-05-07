@@ -1,7 +1,7 @@
 info:
   name: CancalFlightPerPaymentRequest Copy
   type: http
-  seq: 11
+  seq: 1
 
 http:
   method: POST

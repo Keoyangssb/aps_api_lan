@@ -1,0 +1,23 @@
+info:
+  name: GetViewFlightPermissionById
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermissionLanding/GetViewFlightPermissionById"
+  body:
+    type: json
+    data: |-
+      {
+        "flight_per_id": "89"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

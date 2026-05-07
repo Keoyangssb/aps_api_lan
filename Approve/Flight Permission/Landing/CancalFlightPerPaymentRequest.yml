@@ -1,11 +1,11 @@
 info:
   name: CancalFlightPerPaymentRequest
   type: http
-  seq: 10
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/CancalFlightPerPaymentRequest"
+  url: "{{currentIP}}/api/FlightPermissionLanding/CancalFlightPerPaymentRequest"
   body:
     type: json
     data: "{\r

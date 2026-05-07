@@ -1,18 +1,18 @@
 info:
-  name: RejectToRevise
+  name: ApproveDocument Copy
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/RejectToRevise"
+  url: http://localhost:5236/api/FlightPermission/ApproveDocument
   body:
     type: json
     data: "{\r
 
       \  \"flight_per_id\": \"2\",\r
 
-      \  \"remark\": \"the file is expired date\",\r
+      \  \"remark\": \"approve\",\r
 
       \  \"document_files\": [\r
 
@@ -20,9 +20,9 @@ http:
 
       \      \"attach_file_id\": \"1\",\r
 
-      \      \"is_passed\": false,\r
+      \      \"is_passed\": true,\r
 
-      \      \"remark\": \"not accepted\"\r
+      \      \"remark\": \"passed\"\r
 
       \    },\r
 
@@ -30,9 +30,9 @@ http:
 
       \      \"attach_file_id\": \"2\",\r
 
-      \      \"is_passed\": false,\r
+      \      \"is_passed\": true,\r
 
-      \      \"remark\": \"not accepted\"\r
+      \      \"remark\": \"passed\"\r
 
       \    },\r
 
@@ -40,9 +40,9 @@ http:
 
       \      \"attach_file_id\": \"3\",\r
 
-      \      \"is_passed\": false,\r
+      \      \"is_passed\": true,\r
 
-      \      \"remark\": \"not accepted\"\r
+      \      \"remark\": \"passed\"\r
 
       \    },\r
 
@@ -50,9 +50,9 @@ http:
 
       \      \"attach_file_id\": \"4\",\r
 
-      \      \"is_passed\": false,\r
+      \      \"is_passed\": true,\r
 
-      \      \"remark\": \"not accepted\"\r
+      \      \"remark\": \"passed\"\r
 
       \    },\r
 
@@ -60,9 +60,9 @@ http:
 
       \      \"attach_file_id\": \"5\",\r
 
-      \      \"is_passed\": false,\r
+      \      \"is_passed\": true,\r
 
-      \      \"remark\": \"not accepted\"\r
+      \      \"remark\": \"passed\"\r
 
       \    },\r
 

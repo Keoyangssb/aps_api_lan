@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/CancalRequest"
+  url: "{{currentIP}}/api/FlightPermissionLanding/CancalRequest"
   body:
     type: json
     data: "{\r

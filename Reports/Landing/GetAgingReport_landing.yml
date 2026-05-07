@@ -13,8 +13,8 @@ http:
         "page_number": 1,
         "page_size": 10,
         "client_name": "",
-        "from_date": "",
-        "to_date": ""
+        "from_date": "2020-01-01",
+        "to_date": "2026-12-01"
       }
   auth:
     type: bearer

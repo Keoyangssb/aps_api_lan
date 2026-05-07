@@ -1,16 +1,16 @@
 info:
-  name: ApproveFlightPerPayment Copy
+  name: Suspend
   type: http
   seq: 8
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/ApproveFlightPerPayment"
+  url: "{{currentIP}}/api/FlightPermissionLanding/Suspend"
   body:
     type: json
     data: "{\r
 
-      \  \"flight_per_id\": \"36\",\r
+      \  \"flight_per_id\": \"1\",\r
 
       \  \"remark\": \"test\"\r
 
