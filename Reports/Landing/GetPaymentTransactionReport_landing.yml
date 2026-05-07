@@ -1,20 +1,19 @@
 info:
-  name: GetInvoiceTrackingReport_landing
+  name: GetPaymentTransactionReport_landing
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Reports/GetInvoiceTrackingReport_landing"
+  url: "{{currentIP}}/api/Reports/GetPaymentTransactionReport_landing"
   body:
     type: json
     data: |-
       {
         "page_number": 1,
-        "page_size": 100,
-        "client_name": "All", // Get customerName from api/Customer/GetAllCustomer
-        "invoice_no": "",
-        "invoice_status": "All Status", // All Status, Pending Matching, Matched Partial, Paid in full
+        "page_size": 10,
+        "transaction_reference": "",
+        "client_name": "",
         "from_date": "",
         "to_date": ""
       }

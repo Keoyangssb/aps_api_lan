@@ -1,22 +1,22 @@
 info:
-  name: GetInvoiceTrackingReport_landing
+  name: GetReceiptReport_landing
   type: http
-  seq: 2
+  seq: 8
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Reports/GetInvoiceTrackingReport_landing"
+  url: "{{currentIP}}/api/Reports/GetReceiptReport_landing"
   body:
     type: json
     data: |-
       {
         "page_number": 1,
-        "page_size": 100,
-        "client_name": "All", // Get customerName from api/Customer/GetAllCustomer
+        "page_size": 10,
+        "client_name": "",
         "invoice_no": "",
-        "invoice_status": "All Status", // All Status, Pending Matching, Matched Partial, Paid in full
-        "from_date": "",
-        "to_date": ""
+        "invoice_status": "",
+        "from_date": "2025-01-01",
+        "to_date": "2025-12-31"
       }
   auth:
     type: bearer
