@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "playerIds": ["5ef2f766-0d3d-4eec-9f5c-84988dbe3ce1"],
+        "playerIds": ["603c647b-5cb2-4f6f-b30b-e393f61974c4"],
         "title": "APS Alert",
         "message": "Your oneSignal is ready"
       }
