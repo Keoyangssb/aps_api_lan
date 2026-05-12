@@ -1,0 +1,24 @@
+info:
+  name: Top10AircraftTypeApproved_landing
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardFlightPermission/Top10AircraftTypeApproved_landing"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
