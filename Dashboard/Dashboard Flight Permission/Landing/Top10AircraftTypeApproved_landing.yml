@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardFlightPermission/Top10AircraftTypeApproved_landing"
+  url: "{{currentIP}}/api/DashboardFlightPermissionLanding/Top10AircraftTypeApproved_landing"
   body:
     type: json
     data: "{\r
