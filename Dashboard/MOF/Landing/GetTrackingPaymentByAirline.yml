@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOF/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
   body:
     type: json
     data: "{\r\n  \"year\": \"2025\"\r\n}"

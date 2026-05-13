@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5236/api/DashboardMOF/CompareInvoiceToPaymentChart
+  url: http://localhost:5236/api/DashboardMOFLanding/CompareInvoiceToPaymentChart
   body:
     type: json
     data: "{\r\n  \"year\": \"2025\"\r\n}"

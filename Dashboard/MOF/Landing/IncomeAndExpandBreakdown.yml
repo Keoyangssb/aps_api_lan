@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOF/IncomeAndExpandBreakdown"
+  url: "{{currentIP}}/api/DashboardMOFLanding/IncomeAndExpandBreakdown"
   body:
     type: json
     data: "{\r\n  \"year\": \"2026\"\r\n}"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOF/GetNumberOfFlightsCompare"
+  url: "{{currentIP}}/api/DashboardMOFLanding/GetNumberOfFlightsCompare"
   body:
     type: json
     data: "{\r\n  \"year\": \"2025\"\r\n}"
