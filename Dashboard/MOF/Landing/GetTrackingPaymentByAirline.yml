@@ -1,0 +1,18 @@
+info:
+  name: GetTrackingPaymentByAirline
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardMOF/GetTrackingPaymentByAirline"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

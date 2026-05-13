@@ -1,11 +1,11 @@
 info:
-  name: GetAirlineList
+  name: get_departure_destination_list
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: GET
-  url: "{{currentIP}}/api/FlightMovement/GetAirlineList"
+  url: "{{currentIP}}/api/FlightMovement/get_departure_destination_list"
   auth:
     type: bearer
     token: "{{authToken}}"

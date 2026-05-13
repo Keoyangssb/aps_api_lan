@@ -1,11 +1,11 @@
 info:
-  name: GetReconciliationList
+  name: GetFlightPlan Copy
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPlan/GetReconciliationList"
+  url: localhost:6001/api/FlightPlan/GetFlightPlan
   body:
     type: json
     data: "{\r
