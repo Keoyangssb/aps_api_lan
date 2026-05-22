@@ -1,32 +1,18 @@
 info:
-  name: GetFlightMovementList
+  name: GetFlightMovementApproved
   type: http
   seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovementLanding/GetFlightMovementList"
+  url: "{{currentIP}}/api/GenerateInvoiceLanding/GetFlightMovementApproved"
   body:
     type: json
-    data: "{\r
-
-      \  \"page_number\": 1,\r
-
-      \  \"page_size\": 10,\r
-
-      \  \"from_date\": \"\",\r
-
-      \  \"to_date\": \"\",\r
-
-      \  \"entry_time\": \"\",\r
-
-      \  \"airline_id\": \"\",\r
-
-      \  \"departure\": \"\",\r
-
-      \  \"destination\": \"\"\r
-
-      }"
+    data: |-
+      {
+        "date_from": "2026-05-01",
+        "date_to": "2026-05-31"
+      }
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImIxNmQwYjE4LWIyYjctNDRiMi04ODQyLTAyMjhiOTNmYWI4MiIsImV4cCI6MTc3OTU5MDY5N30.GpqR6Y6JliksXGyo6b8owqa_-QdHQIKFMWDd8rLSPWk

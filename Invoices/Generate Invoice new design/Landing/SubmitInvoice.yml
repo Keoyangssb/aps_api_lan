@@ -1,0 +1,29 @@
+info:
+  name: SubmitInvoice
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoiceLanding/SubmitInvoice"
+  body:
+    type: json
+    data: |-
+      {
+        "from_date": "2025-02-01",
+        "to_date": "2025-02-28",
+        "date_add": "2025-02-10",
+        "invoice_description": "test",
+        "invoiceDetails": [
+          
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
