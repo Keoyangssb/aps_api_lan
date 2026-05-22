@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovement/ConfirmFlightMovement"
+  url: "{{currentIP}}/api/FlightMovementLanding/ConfirmFlightMovement"
   body:
     type: json
     data: "{\r
