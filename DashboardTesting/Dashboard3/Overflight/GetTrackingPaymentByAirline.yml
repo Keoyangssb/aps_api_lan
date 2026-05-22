@@ -1,17 +1,22 @@
 info:
   name: GetTrackingPaymentByAirline
   type: http
-  seq: 4
+  seq: 10
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/Dashboard3/Top10OverdueByInvoice"
   body:
     type: json
-    data: |-
-      {
-        "year": "2026"
-      }
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }\r\n"
   auth: inherit
 
 settings:

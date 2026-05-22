@@ -1,17 +1,14 @@
 info:
-  name: GetTrackingPaymentByAirline
+  name: Top10ByClient
   type: http
   seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/DashboardBOL/Top10ByClient"
   body:
     type: json
-    data: |-
-      {
-        "year": "2026"
-      }
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
   auth: inherit
 
 settings:

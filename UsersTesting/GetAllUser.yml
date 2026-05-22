@@ -1,0 +1,21 @@
+info:
+  name: GetAllUser
+  type: http
+  seq: 6
+
+http:
+  method: GET
+  url: https://localhost:7086/api/User/GetAllUser?tokenKey=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNTgwMTAyMTc4NzEyMzgxNTk4MjQ0MTUyMDE4ODIwNDEzNzc3NDk3ODkxMjAzMTk0NzE1ODIzMzI0ODIyNjIxOTE3MzE1MjUyOTYyMDIxNjUiLCJqdGkiOiJlZDU1MjIxOC0zYmY2LTQzN2MtOTFmMy1hYTQ4MWMzOTdiY2IiLCJleHAiOjE3Mzg0ODEzNzl9.S9zRSaUX2PQdWzgc4Zk6re7mvxpeEwRRHAhwdvaC1SU
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNTgwMTAyMTc4NzEyMzgxNTk4MjQ0MTUyMDE4ODIwNDEzNzc3NDk3ODkxMjAzMTk0NzE1ODIzMzI0ODIyNjIxOTE3MzE1MjUyOTYyMDIxNjUiLCJqdGkiOiJlZDU1MjIxOC0zYmY2LTQzN2MtOTFmMy1hYTQ4MWMzOTdiY2IiLCJleHAiOjE3Mzg0ODEzNzl9.S9zRSaUX2PQdWzgc4Zk6re7mvxpeEwRRHAhwdvaC1SU
+      type: query
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

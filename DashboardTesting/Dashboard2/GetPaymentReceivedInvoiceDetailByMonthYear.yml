@@ -1,0 +1,26 @@
+info:
+  name: GetPaymentReceivedInvoiceDetailByMonthYear
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard2/GetPaymentReceivedInvoiceDetailByMonthYear"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"report_month\": \"02\",\r
+
+      \  \"report_year\": \"2023\",\r
+
+      \  \"report_id\": \"1\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

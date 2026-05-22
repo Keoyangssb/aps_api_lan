@@ -1,0 +1,22 @@
+info:
+  name: DeleteUser
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/User/DeleteUser?id=7&tokenKey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzMwNDA3NywiZXhwIjoxNzMzMzA3Njc3LCJpYXQiOjE3MzMzMDQwNzd9.qYLxb3G_5PZrV7E0gL6JRuI4h4tuLqsDTy5LzHaNJkk
+  params:
+    - name: id
+      value: "7"
+      type: query
+    - name: tokenKey
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFkbWluMTEyMyIsIm5iZiI6MTczMzMwNDA3NywiZXhwIjoxNzMzMzA3Njc3LCJpYXQiOjE3MzMzMDQwNzd9.qYLxb3G_5PZrV7E0gL6JRuI4h4tuLqsDTy5LzHaNJkk
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

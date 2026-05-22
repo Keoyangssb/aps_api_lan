@@ -1,0 +1,28 @@
+info:
+  name: UpdateUserProfile
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/UpdateUserProfile?user_id=35"
+  params:
+    - name: user_id
+      value: "35"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: user_profile
+        type: file
+        value:
+          - /C:/Users/ASUS/Pictures/aidc/WhatsApp Image 2024-12-30 at 21.03.00.jpeg
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

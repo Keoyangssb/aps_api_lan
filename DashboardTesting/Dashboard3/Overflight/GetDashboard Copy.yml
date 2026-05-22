@@ -5,15 +5,18 @@ info:
 
 http:
   method: POST
-  url: http://localhost:6001/api/DashboardLanding3/GetDashboard
+  url: localhost:6001/api/Dashboard3/GetDashboard
   body:
     type: json
-    data: |-
-      {
-        "year": "2026",
-        "fromDate": "",
-        "toDate": ""
-      }
+    data: "{\r
+
+      \  \"year\": \"2026\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
   auth: inherit
 
 settings:

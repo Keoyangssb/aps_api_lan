@@ -1,0 +1,28 @@
+info:
+  name: UpdateUserSignature
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/UpdateUserSignature?user_id=35"
+  params:
+    - name: user_id
+      value: "35"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: user_signature
+        type: file
+        value:
+          - /C:/Users/ASUS/Downloads/images.png
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

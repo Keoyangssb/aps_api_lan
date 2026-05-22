@@ -1,0 +1,23 @@
+info:
+  name: RejectFlightMovement
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightMovement/RejectFlightMovement"
+  body:
+    type: json
+    data: |-
+      {
+          "active_flight_plan_id": "0",
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

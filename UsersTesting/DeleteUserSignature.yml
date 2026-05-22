@@ -1,0 +1,20 @@
+info:
+  name: DeleteUserSignature
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/DeleteUserSignature"
+  body:
+    type: json
+    data: "{\r\n    \"user_id\": \"37\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

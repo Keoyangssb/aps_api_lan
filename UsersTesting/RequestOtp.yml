@@ -1,0 +1,22 @@
+info:
+  name: RequestOtp
+  type: http
+  seq: 17
+
+http:
+  method: POST
+  url: http://192.168.1.254:8081/api/User/RequestOtp
+  body:
+    type: json
+    data: "{\r
+
+      \  \"userEmail\": \"keoyangpro@gmail.com\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

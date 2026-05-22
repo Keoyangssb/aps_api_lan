@@ -5,15 +5,10 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardLanding3/GetDashboard"
+  url: "{{currentIP}}/api/DashboardMOFLanding/GetDashboard"
   body:
     type: json
-    data: |-
-      {
-        "year": "2026",
-        "fromDate": "",
-        "toDate": ""
-      }
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
   auth: inherit
 
 settings:

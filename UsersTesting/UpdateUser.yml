@@ -1,0 +1,48 @@
+info:
+  name: UpdateUser
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/UpdateUser?tokenKey={{authToken}}"
+  params:
+    - name: tokenKey
+      value: "{{authToken}}"
+      type: query
+  body:
+    type: json
+    data: "\r
+
+      {\r
+
+      \    \"id\": 52,\r
+
+      \    \"userProfile\": \"\",\r
+
+      \    \"userFirstName\": \"h\",\r
+
+      \    \"userLastName\": \"h\",\r
+
+      \    \"phoneCodeId\": \"856\",\r
+
+      \    \"mobileNumber\": \"2056588965\",\r
+
+      \    \"roleId\": \"1\",\r
+
+      \    \"userSubDepartmentId\": \"1\",\r
+
+      \    \"userPosition\": \"h\",\r
+
+      \    \"statusId\": \"1\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

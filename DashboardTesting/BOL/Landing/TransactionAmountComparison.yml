@@ -1,11 +1,11 @@
 info:
-  name: GetTrackingPaymentByAirline
+  name: TransactionAmountComparison
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/DashboardBOLLanding/TransactionAmountComparison"
   body:
     type: json
     data: |-

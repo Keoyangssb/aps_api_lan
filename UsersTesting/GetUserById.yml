@@ -1,0 +1,21 @@
+info:
+  name: GetUserById
+  type: http
+  seq: 9
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/User/GetUserById?id=35"
+  params:
+    - name: id
+      value: "35"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImJhYmM1YzEyLTg4ZDUtNGMxNC05OTFlLWFmYjhiOGI0NmU2MCIsImV4cCI6MTc3ODEyMTM0OX0.qMOPiC383X5lTY67A5wxaAn-ziQ4kePw7DxBeeRw0Og
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

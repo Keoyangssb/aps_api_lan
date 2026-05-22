@@ -1,0 +1,18 @@
+info:
+  name: GetDashboardUnmatchInvoice
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard2/GetDashboardUnmatchInvoice"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

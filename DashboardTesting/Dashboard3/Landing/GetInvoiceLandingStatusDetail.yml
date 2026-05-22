@@ -1,0 +1,26 @@
+info:
+  name: GetInvoiceLandingStatusDetail
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardLanding3/GetInvoiceLandingStatusDetail"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2024\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

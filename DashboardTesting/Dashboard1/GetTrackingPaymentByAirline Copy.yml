@@ -1,0 +1,28 @@
+info:
+  name: GetTrackingPaymentByAirline Copy
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:5236/api/Dashboard/GetTrackingPaymentByAirline
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2024\",\r
+
+      \  \"fromDate\": \"string\",\r
+
+      \  \"toDate\": \"string\",\r
+
+      \  \"airline_agent\": \"Overall\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

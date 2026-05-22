@@ -1,0 +1,26 @@
+info:
+  name: InvoiceAndPaymentTrackingByTimeSeries
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardLanding3/InvoiceAndPaymentTrackingByTimeSeries"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2024\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

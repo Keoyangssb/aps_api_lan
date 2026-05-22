@@ -1,0 +1,26 @@
+info:
+  name: Overdue Payment (Pie chart)
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard/GetDashboardOverDuePayment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"year\": \"2025\",\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

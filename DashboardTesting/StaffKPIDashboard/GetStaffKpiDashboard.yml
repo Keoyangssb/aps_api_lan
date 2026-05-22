@@ -1,0 +1,28 @@
+info:
+  name: GetStaffKpiDashboard
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardStaffKPI/GetStaffKpiDashboard"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from_date\": \"2025-01-01\",\r
+
+      \  \"to_date\": \"2025-08-31\",\r
+
+      \  \"department_id\": \"\",\r
+
+      \  \"staff_id\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

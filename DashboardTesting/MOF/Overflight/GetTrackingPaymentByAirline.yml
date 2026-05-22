@@ -5,13 +5,10 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/DashboardMOF/GetTrackingPaymentByAirline"
   body:
     type: json
-    data: |-
-      {
-        "year": "2026"
-      }
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
   auth: inherit
 
 settings:

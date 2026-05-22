@@ -1,16 +1,18 @@
 info:
-  name: GetTrackingPaymentByAirline
+  name: GetDashboard
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOFLanding/GetTrackingPaymentByAirline"
+  url: http://10.0.100.61:6001/api/DashboardLanding3/GetDashboard
   body:
     type: json
     data: |-
       {
-        "year": "2026"
+        "year": "2026",
+        "fromDate": "",
+        "toDate": ""
       }
   auth: inherit
 

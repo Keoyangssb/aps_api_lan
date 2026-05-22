@@ -1,0 +1,18 @@
+info:
+  name: GetDashboardPaymentCompairision
+  type: http
+  seq: 12
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Dashboard2/GetDashboardPaymentCompairision"
+  body:
+    type: json
+    data: "{\r\n  \"year\": \"2025\"\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

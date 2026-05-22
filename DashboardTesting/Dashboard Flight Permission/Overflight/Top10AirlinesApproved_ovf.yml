@@ -1,0 +1,24 @@
+info:
+  name: Top10AirlinesApproved_ovf
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardFlightPermission/Top10AirlinesApproved_ovf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"2025-01-01\",\r
+
+      \  \"toDate\": \"2025-12-30\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

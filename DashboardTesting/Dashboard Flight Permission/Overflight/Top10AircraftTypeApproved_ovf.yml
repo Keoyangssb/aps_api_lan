@@ -1,0 +1,24 @@
+info:
+  name: Top10AircraftTypeApproved_ovf
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardFlightPermission/Top10AircraftTypeApproved_ovf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"fromDate\": \"\",\r
+
+      \  \"toDate\": \"\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

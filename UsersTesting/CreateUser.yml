@@ -1,0 +1,47 @@
+info:
+  name: CreateUser
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/CreateUser"
+  params:
+    - name: tokenKey
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNWE0ZDhhNzEtZDg0Mi00NTNlLWEyYjctOWU5Yzc0MmRjYWI5IiwiZXhwIjoxNzU2MzY0ODQ2fQ.W-7AQnEH85WfRM2s7zFAKC9xAAGBtyOYA6bnTFyY1-0
+      type: query
+      disabled: true
+  body:
+    type: json
+    data: "{\r
+
+      \  \"userProfile\": \"userIcon.png\",\r
+
+      \  \"userFirstName\": \"keoyang4\",\r
+
+      \  \"userLastName\": \"ssb\",\r
+
+      \  \"phoneCodeId\": \"856\",\r
+
+      \  \"mobileNumber\": \"559\",\r
+
+      \  \"userEmail\": \"keoyang1234666@gmail.com\",\r
+
+      \  \"roleId\": \"1\",\r
+
+      \  \"userSubDepartmentId\": \"1\",\r
+
+      \  \"userPosition\": \"Backend\",\r
+
+      \  \"statusId\": \"1\"\r
+
+      }\r\n"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
