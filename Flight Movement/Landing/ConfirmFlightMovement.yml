@@ -8,44 +8,28 @@ http:
   url: "{{currentIP}}/api/FlightMovementLanding/ConfirmFlightMovement"
   body:
     type: json
-    data: "{\r
-
-      \    \"active_flight_plan_id\": \"9608\",\r
-
-      \    \"flight_plan_id\": \"7022\",\r
-
-      \    \"flight_permission_id\": \"67\",\r
-
-      \    \"call_sign\": \"LLL202\",\r
-
-      \    \"aircraft\": \"C208\",\r
-
-      \    \"date\": \"2025-02-28\",\r
-
-      \    \"entry_point\": \"VTN/OUD\",\r
-
-      \    \"exit_point\": \"VTN/OUD\",\r
-
-      \    \"entry_time\": \"02:19 UTC\",\r
-
-      \    \"exit_time\": \"03:26 UTC\",\r
-
-      \    \"departure\": \"VLVT\",\r
-
-      \    \"destination\": \"VLFL\",\r
-
-      \    \"registration\": \"\",\r
-
-      \    \"is_flight_permission\": true,\r
-
-      \    \"is_flight_plan\": true,\r
-
-      \    \"is_radar\": true\r
-
-      }"
+    data: |-
+      {
+          "active_flight_plan_id": "17154",
+          "flight_plan_id": "699",
+          "flight_permission_id": "2",
+          "call_sign": "LAO441",
+          "aircraft": "ZZZZ",
+          "date": "2026-05-01",
+          "entry_point": "VTN",
+          "exit_point": "VTN",
+          "entry_time": "00:48 UTC",
+          "exit_time": "00:48 UTC",
+          "departure": "VLVT",
+          "destination": "VTBS",
+          "registration": "",
+          "is_flight_permission": true,
+          "is_flight_plan": true,
+          "is_radar": true
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjdjZTYyMjQ4LTQwZDAtNDFiMi04MDYxLTEwNjg5NTAyM2I1MCIsImV4cCI6MTc3OTg0NTA0OH0.Nll2r1o3bUjwFRwEgVDPiMbujbR_9pn0SoVXUa38ISY
 
 settings:
   encodeUrl: true

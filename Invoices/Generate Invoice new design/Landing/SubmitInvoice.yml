@@ -15,7 +15,20 @@ http:
         "date_add": "2025-02-10",
         "invoice_description": "test",
         "invoiceDetails": [
-          
+              {
+              "invoice_no": "LANS/OVF/SIA/05/2026/001",
+              "customer_id": "147",
+              "customer": "HONGKONG AIRLINES",
+              "airline_code": "CRK",
+              "gsa_code": "",
+              "type_of_flight": "",
+              "route": "",
+              "qty": "1",
+              "overflight_fee": "160",
+              "service_fee": "0",
+              "total_fee": "160",
+              "currency": "USD"
+          }
         ]
       }
   auth:

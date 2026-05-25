@@ -11,9 +11,9 @@ http:
     data: |-
       {
         "page_number": 1,
-        "page_size": 10,
-        "from_date": "2025-01-01",
-        "to_date": "2026-01-31",
+        "page_size": 100,
+        "from_date": "2026-05-01",
+        "to_date": "2026-05-31",
         "entry_time": "",
         "airline_id": "",
         "departure": "",
@@ -21,7 +21,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImIxNmQwYjE4LWIyYjctNDRiMi04ODQyLTAyMjhiOTNmYWI4MiIsImV4cCI6MTc3OTU5MDY5N30.GpqR6Y6JliksXGyo6b8owqa_-QdHQIKFMWDd8rLSPWk
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjdjZTYyMjQ4LTQwZDAtNDFiMi04MDYxLTEwNjg5NTAyM2I1MCIsImV4cCI6MTc3OTg0NTA0OH0.Nll2r1o3bUjwFRwEgVDPiMbujbR_9pn0SoVXUa38ISY
 
 settings:
   encodeUrl: true
