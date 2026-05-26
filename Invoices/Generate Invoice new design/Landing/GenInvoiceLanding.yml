@@ -1,0 +1,20 @@
+info:
+  name: GenInvoiceLanding
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoiceLanding/GenInvoiceLanding"
+  body:
+    type: json
+    data: "{\r\n  \"id\": \"14494\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

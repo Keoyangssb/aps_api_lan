@@ -10,30 +10,30 @@ http:
     type: json
     data: |-
       {
-        "from_date": "2025-02-01",
-        "to_date": "2025-02-28",
-        "date_add": "2025-02-10",
-        "invoice_description": "test",
+        "from_date": "2026-05-01",
+        "to_date": "2026-05-31",
+        "date_add": "2026-05-25",
+        "invoice_description": "test 05/2026",
         "invoiceDetails": [
               {
               "invoice_no": "LANS/OVF/SIA/05/2026/001",
-              "customer_id": "147",
-              "customer": "HONGKONG AIRLINES",
-              "airline_code": "CRK",
+              "customer_id": "163",
+              "customer": "SINGAPORE AIRLINES",
+              "airline_code": "SIA",
               "gsa_code": "",
               "type_of_flight": "",
               "route": "",
               "qty": "1",
-              "overflight_fee": "160",
+              "overflight_fee": "0",
               "service_fee": "0",
-              "total_fee": "160",
+              "total_fee": "50",
               "currency": "USD"
           }
         ]
       }
   auth:
     type: bearer
-    token: ""
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjdjZTYyMjQ4LTQwZDAtNDFiMi04MDYxLTEwNjg5NTAyM2I1MCIsImV4cCI6MTc3OTg0NTA0OH0.Nll2r1o3bUjwFRwEgVDPiMbujbR_9pn0SoVXUa38ISY
 
 settings:
   encodeUrl: true
