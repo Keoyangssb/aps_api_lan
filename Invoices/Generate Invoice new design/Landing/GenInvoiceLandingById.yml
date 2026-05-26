@@ -1,0 +1,23 @@
+info:
+  name: GenInvoiceLandingById
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/GenerateInvoiceLanding/GenInvoiceLandingById"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "1981"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjdjZTYyMjQ4LTQwZDAtNDFiMi04MDYxLTEwNjg5NTAyM2I1MCIsImV4cCI6MTc3OTg0NTA0OH0.Nll2r1o3bUjwFRwEgVDPiMbujbR_9pn0SoVXUa38ISY
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
