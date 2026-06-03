@@ -1,16 +1,21 @@
 info:
-  name: GenInvoiceToRevise
+  name: GetAllInvoicesListToRevise
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Invoice/GetInvoiceToRevise"
+  url: "{{currentIP}}/api/Invoice/GetAllInvoicesListToRevise"
   body:
     type: json
     data: |-
       {
-          "id": "15638"
+          "invoice_no": "",
+        "status_name": "",
+        "from_date": "2026-06-01",
+        "to_date": "2026-06-30",
+        "pageNumber": 1,
+        "pageSize": 10
       }
   auth:
     type: bearer
