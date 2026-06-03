@@ -1,0 +1,23 @@
+info:
+  name: GenInvoiceToRevise
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/GetInvoiceToRevise"
+  body:
+    type: json
+    data: |-
+      {
+          "id": "15638"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjJlNzBhNTdlLTE2YzktNDAwNi05NWY3LTgzMzg0NGU4NTllMyIsImV4cCI6MTc4MDYyNzQwMX0.nXb5AHJW9taDPBdMcsPvxLN0HWeIOAv3fi32vQW6uGs
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

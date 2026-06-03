@@ -1,17 +1,14 @@
 info:
-  name: GenInvoiceToRevise
+  name: GetRevisedInvoiceApproved
   type: http
   seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Invoice/GetInvoiceToRevise"
+  url: "{{currentIP}}/api/Invoice/GetRevisedInvoiceApproved"
   body:
     type: json
-    data: |-
-      {
-          "id": "14769"
-      }
+    data: ""
   auth:
     type: bearer
     token: "{{authToken}}"

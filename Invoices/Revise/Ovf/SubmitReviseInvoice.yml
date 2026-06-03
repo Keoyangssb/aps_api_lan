@@ -1,7 +1,7 @@
 info:
   name: SubmitReviseInvoice
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
@@ -16,6 +16,7 @@ http:
         "overflight_fee": "0",
         "service_fee": "0",
         "total_fee": "600",
+        "revise_reason": "testing revise invoice",
         "invoiceDetails": [
           {
             "id": "1",
