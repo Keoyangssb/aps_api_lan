@@ -1,0 +1,26 @@
+info:
+  name: SaveGeneratePaymentReceipt
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ATCPortalLanding/SaveGeneratePaymentReceipt"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "1",
+        "afp_id": "33014",
+        "cash_received": "300",
+        "received_no": "RCP-2026-12345"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjIyOTNmMGMyLTU1YTMtNDNmMC05MTEyLTBmMjRhODk2ZDdmZSIsImV4cCI6MTc4MTMyNjAzMX0.eA0raFoeTydfW2pSMKBcYUEEmiLIOAf8MOUcniLmjT0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

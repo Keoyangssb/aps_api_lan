@@ -1,0 +1,28 @@
+info:
+  name: SaveUploadFile
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ATCPortalLanding/SaveUploadFile?id=1"
+  params:
+    - name: id
+      value: "1"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /Users/keoyang/AIDC/APS/API/server31/apsApi/UploadedFiles/GeneratedInvoices/Invoice_LANS_OVF_AVTN-SPK_01_2020_150.pdf
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjIyOTNmMGMyLTU1YTMtNDNmMC05MTEyLTBmMjRhODk2ZDdmZSIsImV4cCI6MTc4MTMyNjAzMX0.eA0raFoeTydfW2pSMKBcYUEEmiLIOAf8MOUcniLmjT0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
