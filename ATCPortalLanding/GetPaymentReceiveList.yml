@@ -1,21 +1,20 @@
 info:
-  name: SaveOrUpdateLandingFee
+  name: GetPaymentReceiveList
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/ATCPortalLanding/SaveOrUpdateLandingFee"
+  url: "{{currentIP}}/api/ATCPortalLanding/GetPaymentReceiveList"
   body:
     type: json
     data: |-
       {
-        "id": "",
-        "afp_id": "33014",
-        "airline_code": "ABL",
-        "landing_fee": "300",
-        "other_charge": "0",
-        "currency": "USD"
+        "from_date": "",
+        "to_date": "",
+        "status_id": "",
+        "page_number": "1",
+        "page_size": "10"
       }
   auth:
     type: bearer
