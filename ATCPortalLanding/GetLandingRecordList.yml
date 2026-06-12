@@ -14,7 +14,7 @@ http:
         "to_date": "",
         "status_id": "",
         "page_number": "1",
-        "page_size": "500"
+        "page_size": "10"
       }
   auth:
     type: bearer
