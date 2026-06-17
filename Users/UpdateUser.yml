@@ -5,41 +5,27 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/UpdateUser?tokenKey={{authToken}}"
-  params:
-    - name: tokenKey
-      value: "{{authToken}}"
-      type: query
+  url: "{{currentIP}}/api/User/UpdateUser"
   body:
     type: json
-    data: "\r
-
-      {\r
-
-      \    \"id\": 52,\r
-
-      \    \"userProfile\": \"\",\r
-
-      \    \"userFirstName\": \"h\",\r
-
-      \    \"userLastName\": \"h\",\r
-
-      \    \"phoneCodeId\": \"856\",\r
-
-      \    \"mobileNumber\": \"2056588965\",\r
-
-      \    \"roleId\": \"1\",\r
-
-      \    \"userSubDepartmentId\": \"1\",\r
-
-      \    \"userPosition\": \"h\",\r
-
-      \    \"statusId\": \"1\"\r
-
-      }"
+    data: |-
+      
+      {
+          "id": 2,
+          "userProfile": "",
+          "userFirstName": "admin1",
+          "userLastName": "LAN",
+          "phoneCodeId": "856",
+          "mobileNumber": "2056588965",
+          "roleId": "1",
+          "userSubDepartmentId": "1",
+          "userPosition": "dev",
+          "statusId": "1",
+          "is_2fa": true
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImM2NGJlYzU3LTUyYWItNDg3MC05MTg1LTcyZmRmMGRjNzk0ZCIsImV4cCI6MTc4MTgzOTczNn0.zjCxiFuIXqT-Ne2zBMTVffYZyADs8kfKyqk8G8j3pwc
 
 settings:
   encodeUrl: true

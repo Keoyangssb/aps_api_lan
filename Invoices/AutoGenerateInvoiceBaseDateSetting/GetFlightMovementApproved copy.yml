@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementApproved"
+  url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementApprovedAndGenInvoice"
   body:
     type: json
     data: "{\r

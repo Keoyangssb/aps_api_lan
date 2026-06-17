@@ -13,29 +13,20 @@ http:
       disabled: true
   body:
     type: json
-    data: "{\r
-
-      \  \"userProfile\": \"userIcon.png\",\r
-
-      \  \"userFirstName\": \"keoyang4\",\r
-
-      \  \"userLastName\": \"ssb\",\r
-
-      \  \"phoneCodeId\": \"856\",\r
-
-      \  \"mobileNumber\": \"559\",\r
-
-      \  \"userEmail\": \"keoyang1234666@gmail.com\",\r
-
-      \  \"roleId\": \"1\",\r
-
-      \  \"userSubDepartmentId\": \"1\",\r
-
-      \  \"userPosition\": \"Backend\",\r
-
-      \  \"statusId\": \"1\"\r
-
-      }\r\n"
+    data: |
+      {
+        "userProfile": "userIcon.png",
+        "userFirstName": "keoyang4",
+        "userLastName": "ssb",
+        "phoneCodeId": "856",
+        "mobileNumber": "559",
+        "userEmail": "keoyang1234666@gmail.com",
+        "roleId": "1",
+        "userSubDepartmentId": "1",
+        "userPosition": "Backend",
+        "statusId": "1",
+        "is_2fa": true
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

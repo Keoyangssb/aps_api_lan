@@ -5,14 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/Invoice/GetInvoiceHistoryDetail?transactionId=12025110402441128"
+  url: "{{currentIP}}/api/Invoice/GetInvoiceHistoryDetail?transactionId=2025020704001622"
   params:
     - name: transactionId
-      value: "12025110402441128"
+      value: "2025020704001622"
       type: query
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjdjZTYyMjQ4LTQwZDAtNDFiMi04MDYxLTEwNjg5NTAyM2I1MCIsImV4cCI6MTc3OTg0NTA0OH0.Nll2r1o3bUjwFRwEgVDPiMbujbR_9pn0SoVXUa38ISY
 
 settings:
   encodeUrl: true

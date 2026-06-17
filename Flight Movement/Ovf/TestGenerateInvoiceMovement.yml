@@ -1,12 +1,11 @@
 info:
-  name: GetInvoiceType
+  name: TestGenerateInvoiceMovement
   type: http
-  seq: 27
+  seq: 6
 
 http:
   method: GET
-  url: "{{currentIP}}/api/Invoice/GetInvoiceType"
-  auth: inherit
+  url: http://localhost:6001/api/FlightMovement/TestGenerateInvoiceMovement
 
 settings:
   encodeUrl: true

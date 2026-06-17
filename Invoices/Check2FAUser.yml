@@ -1,0 +1,17 @@
+info:
+  name: Check2FAUser
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Invoice/Check2FAUser"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjU4MzFlNWJmLTI2NjctNGNmMS05MDA3LTQ5MzQyODRlNjJlMCIsImV4cCI6MTc4MTc2NTY0N30.avcrCxSqSH6E5xpRKX2j3hNIdgQ0tARt0mAmvvkKm3M
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

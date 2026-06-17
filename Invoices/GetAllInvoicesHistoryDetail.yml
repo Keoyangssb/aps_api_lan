@@ -1,7 +1,7 @@
 info:
   name: GetAllInvoicesHistoryDetail
   type: http
-  seq: 27
+  seq: 28
 
 http:
   method: GET
