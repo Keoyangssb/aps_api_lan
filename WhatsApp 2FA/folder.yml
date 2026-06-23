@@ -1,0 +1,7 @@
+info:
+  name: WhatsApp 2FA
+  type: folder
+  seq: 41
+
+request:
+  auth: inherit
