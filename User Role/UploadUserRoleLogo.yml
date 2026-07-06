@@ -1,0 +1,28 @@
+info:
+  name: UploadUserRoleLogo
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/UserRole/UploadUserRoleLogo?id=2"
+  params:
+    - name: id
+      value: "2"
+      type: query
+  body:
+    type: multipart-form
+    data:
+      - name: file
+        type: file
+        value:
+          - /Users/keoyang/Downloads/pics/lans.png
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjkxMGYxNjYwLTg5ZjItNGRhNC1iZjUzLWRlYTIwNWQwYTVjNCIsImV4cCI6MTc4MzQ4NDUzOH0.X8Pvwv_tJKZ3yPEDmkclc58zGFTvqJk9DEaeNsj6bzc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
