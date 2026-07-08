@@ -1,11 +1,11 @@
 info:
-  name: GetCallSignList
+  name: AddAircraftType
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: GET
-  url: "{{currentIP}}/api/MasterData/GetCallSignList"
+  url: "{{currentIP}}/api/MasterData/GetAircraftTypeList"
   auth:
     type: bearer
     token: "{{authToken}}"

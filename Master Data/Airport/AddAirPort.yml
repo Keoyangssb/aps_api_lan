@@ -1,0 +1,30 @@
+info:
+  name: AddAirPort
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:6003/api/MasterData/AddAirPort
+  body:
+    type: json
+    data: |-
+      {
+        "airport_name": "Pakse International Airport",
+        "icao_code": "PKZ",
+        "iata_code": "PKZ",
+        "airport_type_id": "1",
+        "airport_24h_operation": "false",
+        "open_time": "08:00",
+        "close_time": "23:59",
+        "night_landing_facility": "false"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

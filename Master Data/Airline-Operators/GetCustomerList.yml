@@ -1,0 +1,17 @@
+info:
+  name: GetCustomerList
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://apilans-aps.aidctech.net/api/Customer/GetCustomerList
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjhhZjAxYzA1LTIzZGEtNDI2Yy1iNTllLTY4ZWI0Y2U1Y2VmOSIsImV4cCI6MTc4MzU4NzkxOX0.Yk3vYjPUCIzOj0vd-xOJnt4aL3yeBcdmRbLzg1i9L2E
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
