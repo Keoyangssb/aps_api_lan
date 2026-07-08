@@ -1,0 +1,26 @@
+info:
+  name: EditEntryExitPoint
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/EditEntryExitPoint"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "119",
+        "point_name": "VTE",
+        "point_lat": "102",
+        "point_long": "107"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

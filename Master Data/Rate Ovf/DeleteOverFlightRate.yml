@@ -1,11 +1,15 @@
 info:
-  name: GetUserRoleAsync
+  name: DeleteOverFlightRate
   type: http
-  seq: 1
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/UserRole/GetUserRoleAsync"
+  url: "{{currentIP}}/api/FlightPermission/DeleteOverFlightRate?id=10"
+  params:
+    - name: id
+      value: "10"
+      type: query
   auth:
     type: bearer
     token: "{{authToken}}"

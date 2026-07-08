@@ -1,0 +1,26 @@
+info:
+  name: EditOverFlightRate
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/EditOverFlightRate"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "10",
+        "min_mtow": "400",
+        "max_mtow": "1000",
+        "ovf_price": "600"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

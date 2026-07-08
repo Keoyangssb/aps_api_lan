@@ -1,0 +1,25 @@
+info:
+  name: AddEntryExitPoint
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/AddEntryExitPoint"
+  body:
+    type: json
+    data: |-
+      {
+        "point_name": "VTE",
+        "point_lat": "100",
+        "point_long": "105"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

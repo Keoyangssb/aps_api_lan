@@ -1,0 +1,25 @@
+info:
+  name: AddOverFlightRate
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/AddOverFlightRate"
+  body:
+    type: json
+    data: |-
+      {
+        "min_mtow": "400",
+        "max_mtow": "1000",
+        "ovf_price": "500"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

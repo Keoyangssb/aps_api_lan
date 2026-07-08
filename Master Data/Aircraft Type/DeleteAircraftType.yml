@@ -1,25 +1,15 @@
 info:
-  name: AddAircraftType
+  name: DeleteAircraftType
   type: http
-  seq: 2
+  seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/MasterData/AddAircraftType"
-  body:
-    type: json
-    data: |-
-      {
-        "icao_code": "icao_code_0001",
-        "manufacturer": "test_manufacturer",
-        "model_faa": "test_model_faa",
-        "physical_class_engine": "",
-        "num_engines": "2",
-        "approach_speed_knot": "123",
-        "mtow_lb": "600",
-        "mtow_ton": "2.72",
-        "remark": ""
-      }
+  url: "{{currentIP}}/api/MasterData/DeleteAircraftType?id=591"
+  params:
+    - name: id
+      value: "591"
+      type: query
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjU2NjEzOTAwLTdlMTktNDQ4Zi04YWE3LTkzZjRjYzIxN2I5ZSIsImV4cCI6MTc4MzY2NzAyMX0.Q9ORFS6412V3zcC47TBa196479CcEFtuCK22olHbZv0

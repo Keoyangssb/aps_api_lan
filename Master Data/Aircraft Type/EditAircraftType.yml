@@ -1,23 +1,24 @@
 info:
-  name: AddAircraftType
+  name: EditAircraftType
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/MasterData/AddAircraftType"
+  url: "{{currentIP}}/api/MasterData/EditAircraftType"
   body:
     type: json
     data: |-
       {
+        "id": "591",
         "icao_code": "icao_code_0001",
         "manufacturer": "test_manufacturer",
         "model_faa": "test_model_faa",
         "physical_class_engine": "",
         "num_engines": "2",
         "approach_speed_knot": "123",
-        "mtow_lb": "600",
-        "mtow_ton": "2.72",
+        "mtow_lb": "1000",
+        "mtow_ton": "3",
         "remark": ""
       }
   auth:

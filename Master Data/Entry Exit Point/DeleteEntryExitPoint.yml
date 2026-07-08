@@ -1,11 +1,15 @@
 info:
-  name: GetUserRoleAsync
+  name: DeleteEntryExitPoint
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
-  url: "{{currentIP}}/api/UserRole/GetUserRoleAsync"
+  url: "{{currentIP}}/api/FlightPermission/DeleteEntryExitPoint?id=119"
+  params:
+    - name: id
+      value: "119"
+      type: query
   auth:
     type: bearer
     token: "{{authToken}}"

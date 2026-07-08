@@ -1,11 +1,11 @@
 info:
-  name: GetUserRoleAsync
+  name: GetAirCraftList
   type: http
-  seq: 1
+  seq: 2
 
 http:
-  method: POST
-  url: "{{currentIP}}/api/UserRole/GetUserRoleAsync"
+  method: GET
+  url: "{{currentIP}}/api/MasterData/GetAirCraftList"
   auth:
     type: bearer
     token: "{{authToken}}"

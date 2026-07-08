@@ -4,11 +4,11 @@ info:
   seq: 5
 
 http:
-  method: POST
-  url: "{{currentIP}}/api/MasterData/AddAircraftType"
+  method: GET
+  url: "{{currentIP}}/api/MasterData/GetAircraftTypeList"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjU2NjEzOTAwLTdlMTktNDQ4Zi04YWE3LTkzZjRjYzIxN2I5ZSIsImV4cCI6MTc4MzY2NzAyMX0.Q9ORFS6412V3zcC47TBa196479CcEFtuCK22olHbZv0
 
 settings:
   encodeUrl: true

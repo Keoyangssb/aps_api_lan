@@ -1,0 +1,25 @@
+info:
+  name: AddAirCraft
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/MasterData/AddAirCraft"
+  body:
+    type: json
+    data: |-
+      {
+        "icao_code": "A004",
+        "mtow": "100",
+        "weight": "200"
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
