@@ -1,16 +1,17 @@
 info:
-  name: GetTrackingPaymentByAirline
+  name: Overdue Payment (Pie chart) detail
   type: http
-  seq: 4
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOF/GetTrackingPaymentByAirline"
+  url: "{{currentIP}}/api/Dashboard/GetDashboardOverDuePaymentDetail"
   body:
     type: json
     data: |-
       {
-        "year": "2025"
+        "year": "2026",
+        "airlineCode": ""
       }
   auth: inherit
 

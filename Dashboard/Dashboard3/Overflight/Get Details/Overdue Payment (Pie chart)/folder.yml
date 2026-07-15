@@ -1,0 +1,7 @@
+info:
+  name: Overdue Payment (Pie chart)
+  type: folder
+  seq: 13
+
+request:
+  auth: inherit

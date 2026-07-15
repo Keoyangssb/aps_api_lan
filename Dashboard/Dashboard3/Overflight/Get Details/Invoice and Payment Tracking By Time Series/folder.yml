@@ -1,0 +1,7 @@
+info:
+  name: Invoice and Payment Tracking By Time Series
+  type: folder
+  seq: 11
+
+request:
+  auth: inherit

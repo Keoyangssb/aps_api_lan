@@ -1,11 +1,11 @@
 info:
-  name: InvoiceAmountAndFlightComparison_last_year_detail
+  name: RemainingAmount_detail_all
   type: http
-  seq: 9
+  seq: 15
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard3/InvoiceAmountAndFlightComparison_last_year_detail"
+  url: "{{currentIP}}/api/Dashboard3/RemainingAmount_detail"
   body:
     type: json
     data: "{\r
@@ -13,8 +13,6 @@ http:
       \  \"page_number\": 1,\r
 
       \  \"page_size\": 10,\r
-
-      \  \"monthId\": \"1\",\r
 
       \  \"year\": \"2025\"\r
 

@@ -1,11 +1,11 @@
 info:
-  name: InvoiceAmountAndFlightComparison_last_year_detail
+  name: InvoiceAndPaymentTrackingByTS_invoice_all
   type: http
-  seq: 9
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard3/InvoiceAmountAndFlightComparison_last_year_detail"
+  url: "{{currentIP}}/api/Dashboard3/InvoiceAndPaymentTrackingByTS_invoice_all"
   body:
     type: json
     data: "{\r

@@ -1,11 +1,11 @@
 info:
-  name: TotalInvoiceTracking_payment_detail
+  name: TotalInvoiceTracking_payment_all
   type: http
-  seq: 10
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/Dashboard3/TotalInvoiceTracking_payment_detail"
+  url: "{{currentIP}}/api/Dashboard3/TotalInvoiceTracking_payment_all"
   body:
     type: json
     data: "{\r

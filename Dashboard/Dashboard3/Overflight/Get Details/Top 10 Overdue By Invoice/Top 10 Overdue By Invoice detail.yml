@@ -1,7 +1,7 @@
 info:
-  name: Overdue Payment (Pie chart) detail
+  name: Top 10 Overdue By Invoice detail
   type: http
-  seq: 14
+  seq: 1
 
 http:
   method: POST

@@ -1,15 +1,17 @@
 info:
-  name: GetTrackingPaymentByAirline
+  name: Non-Overdue
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMOF/GetTrackingPaymentByAirline"
+  url: http://localhost:6003/api/Dashboard3/GetInvoiceRemaining_non_overdue
   body:
     type: json
     data: |-
       {
+        "page_number": 1,
+        "page_size": 10,
         "year": "2025"
       }
   auth: inherit

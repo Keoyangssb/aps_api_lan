@@ -1,0 +1,7 @@
+info:
+  name: Dept Correction
+  type: folder
+  seq: 12
+
+request:
+  auth: inherit
