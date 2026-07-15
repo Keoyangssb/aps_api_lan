@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/WhatsApp2FA/Connect"
+  url: http://13.228.207.212:6003/api/WhatsApp2FA/Connect
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImM2NGJlYzU3LTUyYWItNDg3MC05MTg1LTcyZmRmMGRjNzk0ZCIsImV4cCI6MTc4MTgzOTczNn0.zjCxiFuIXqT-Ne2zBMTVffYZyADs8kfKyqk8G8j3pwc
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiZGVkNjc0ZTUtMzcwMi00YjI3LTgxYzgtM2RhY2RiNzA4OWE0IiwiZXhwIjoxNzg0MTg3NDk1fQ.hVjye8EtihGo7Bq18qqHPtPHa_X7rzsZBND2FDN2rX0
 
 settings:
   encodeUrl: true

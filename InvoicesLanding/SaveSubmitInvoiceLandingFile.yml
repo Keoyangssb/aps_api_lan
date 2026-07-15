@@ -5,21 +5,20 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/InvoiceLanding/SaveSubmitInvoiceLandingFile?transaction_id=22025021306332127"
-  params:
-    - name: transaction_id
-      value: "22025021306332127"
-      type: query
+  url: "{{currentIP}}/api/InvoiceLanding/SaveSubmitInvoiceLandingFile"
   body:
     type: multipart-form
     data:
       - name: file
         type: file
         value:
-          - /D:/AIDC_Tech/APS/Docs/invoiceLanding/112024-1.xlsx
+          - /Users/keoyang/AIDC/APS/invoice_landing/landing_vte_07.xlsx
+      - name: transaction_id
+        type: text
+        value: "22026071010184328"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6Ijk0OTUwNmU2LTA5MzktNGYyNC1iZmIwLWZhZmU0N2I5YjFhMCIsImV4cCI6MTc4Mzg0NDU4MX0.ZpTVZ1SjAQTB9hNf-9d5tp-FnPSO2VOE8teeJOcftQk
 
 settings:
   encodeUrl: true

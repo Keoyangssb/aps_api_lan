@@ -10,12 +10,12 @@ http:
     type: json
     data: |-
       {
-        "date_from": "2026-05-01",
-        "date_to": "2026-05-31"
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-30"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImIxNmQwYjE4LWIyYjctNDRiMi04ODQyLTAyMjhiOTNmYWI4MiIsImV4cCI6MTc3OTU5MDY5N30.GpqR6Y6JliksXGyo6b8owqa_-QdHQIKFMWDd8rLSPWk
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiNWM2ZTJjZTctYWNkMi00MTViLWFlYzgtMjM2OWRjM2ZlZGQ5IiwiZXhwIjoxNzg0MDg2NjI0fQ.Q1_tU7vgeKweUfToMfnen-VhMtt8VHHo-A4s0XYfOxI
 
 settings:
   encodeUrl: true

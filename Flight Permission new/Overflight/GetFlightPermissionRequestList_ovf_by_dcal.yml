@@ -5,39 +5,27 @@ info:
 
 http:
   method: POST
-  url: https://apilans-aps.aidctech.net/api/FlightPermission/GetFlightPermissionRequestList_ovf_by_dcal
+  url: "{{currentIP}}/api/FlightPermission/GetFlightPermissionRequestList_ovf_by_dcal"
   body:
     type: json
-    data: "{\r
-
-      \  \"page_number\": 1,\r
-
-      \  \"page_size\": 10,\r
-
-      \  \"customer_id\": \"0\",\r
-
-      \  \"from_date\": \"\",\r
-
-      \  \"to_date\": \"\",\r
-
-      \  \"operator_type_id\": \"\",\r
-
-      \  \"app_status_id\": \"\",\r
-
-      \  \"purpose_flight_id\": \"\",\r
-
-      \  \"request_no\": \"\",\r
-
-      \  \"permit_no\": \"\",\r
-
-      \  \"flight_no\": \"\",\r
-
-      \  \"registration_mark\": \"\"\r
-
-      }"
+    data: |-
+      {
+        "page_number": 1,
+        "page_size": 80,
+        "customer_id": "0",
+        "from_date": "",
+        "to_date": "",
+        "operator_type_id": "",
+        "app_status_id": "",
+        "purpose_flight_id": "",
+        "request_no": "",
+        "permit_no": "",
+        "flight_no": "",
+        "registration_mark": ""
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjA2MGYzY2RiLTA1Y2QtNGY2OC05MTFkLWZmZDE1YzQ5NWM2OCIsImV4cCI6MTc3NzQyOTYxNX0.2ndum5PnjlaKgi7Ic8GVxZVj4h5k10CbkJpIMtWCqvo
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiZGVkNjc0ZTUtMzcwMi00YjI3LTgxYzgtM2RhY2RiNzA4OWE0IiwiZXhwIjoxNzg0MTg3NDk1fQ.hVjye8EtihGo7Bq18qqHPtPHa_X7rzsZBND2FDN2rX0
 
 settings:
   encodeUrl: true

@@ -10,11 +10,11 @@ http:
     type: json
     data: |-
       {
-        "flight_per_id": "89"
+        "flight_per_id": "106"
       }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImQwMmUzNzljLTY1YWMtNDMzMC1hNzRlLTU0N2I0MmM0MGY1ZiIsImV4cCI6MTc4NDEwNTEzNH0.VKoZG1ruE_xkPfVvbbNEiap_prr1JELAB_OjkTKy8rE
 
 settings:
   encodeUrl: true

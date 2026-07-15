@@ -8,120 +8,66 @@ http:
   url: "{{currentIP}}/api/FlightPermission/ApproveDocument"
   body:
     type: json
-    data: "{\r
-
-      \  \"flight_per_id\": \"2\",\r
-
-      \  \"remark\": \"approve\",\r
-
-      \  \"document_files\": [\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"1\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"2\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"3\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"4\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"5\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"6\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"7\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"8\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"9\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    },\r
-
-      \    {\r
-
-      \      \"attach_file_id\": \"10\",\r
-
-      \      \"is_passed\": true,\r
-
-      \      \"remark\": \"passed\"\r
-
-      \    }\r
-
-      \  ]\r
-
-      }"
+    data: |-
+      {
+        "flight_per_id": "95",
+        "remark": "approve level 1",
+        "document_files": [
+          {
+            "attach_file_id": "378",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "379",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "380",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "381",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "382",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "383",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "384",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "385",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "386",
+            "is_passed": true,
+            "remark": "passed"
+          },
+          {
+            "attach_file_id": "387",
+            "is_passed": true,
+            "remark": "passed"
+          }
+        ]
+      }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDExMzE5MTQ0MjEwMTM3MjQ1MTk5MjA3NzcxNzUxNDE2NTIwMTM0MjAyMTIxNjMxMDA1NTE3MjM1MTYzMTg2MjM0MTYxMjAxNzIwMDc3OTMyOSIsImp0aSI6ImI0MzFiMjYxLWFhMDYtNGFiZC05ZDUzLTcxNDMwNDgyNTM5MiIsImV4cCI6MTc1NjQ0MTg0OH0.YoEOU8oUK0FzTBVFtlLgZ8KWkSEjbSMN6oWqpFBRZro
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImM4MjNhYmFmLTVmMDktNDY4NC05MDljLTMyMzA2NzgxNGMzMSIsImV4cCI6MTc4Mzc0NTM1MX0.5jdlL8Xt-B7pslRzu9PbM4GQMv5uE_04jJZzyQxbVI4
 
 settings:
   encodeUrl: true
