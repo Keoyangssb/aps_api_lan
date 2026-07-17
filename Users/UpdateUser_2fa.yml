@@ -1,0 +1,25 @@
+info:
+  name: UpdateUser_2fa
+  type: http
+  seq: 21
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/UpdateUser_2fa"
+  body:
+    type: json
+    data: |-
+      
+      {
+          "user_id": "2",
+          "is_2fa": true
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImM2NGJlYzU3LTUyYWItNDg3MC05MTg1LTcyZmRmMGRjNzk0ZCIsImV4cCI6MTc4MTgzOTczNn0.zjCxiFuIXqT-Ne2zBMTVffYZyADs8kfKyqk8G8j3pwc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
