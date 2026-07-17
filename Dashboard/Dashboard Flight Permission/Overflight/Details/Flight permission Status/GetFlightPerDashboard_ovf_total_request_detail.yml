@@ -1,0 +1,24 @@
+info:
+  name: GetFlightPerDashboard_ovf_total_request_detail
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardFlightPermission/GetFlightPerDashboard_ovf_total_request_detail"
+  body:
+    type: json
+    data: |-
+      {
+          "page_number": 1,
+        "page_size": 10,
+        "fromDate": "2025-01-01",
+        "toDate": "2025-12-30"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -5,14 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/User/GetUserById?id=35"
+  url: "{{currentIP}}/api/User/GetUserById?id=2"
   params:
     - name: id
-      value: "35"
+      value: "2"
       type: query
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImM2NGJlYzU3LTUyYWItNDg3MC05MTg1LTcyZmRmMGRjNzk0ZCIsImV4cCI6MTc4MTgzOTczNn0.zjCxiFuIXqT-Ne2zBMTVffYZyADs8kfKyqk8G8j3pwc
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjE4Zjc4M2VmLTA3MzgtNGY3NS05NDAzLWYwYTg5OTBkYjRlOSIsImV4cCI6MTc4NDQzNTI3NH0.uXPJi-LTvMPhpFO6-Tt6GMAlBC4zhUtipXBmY875ocA
 
 settings:
   encodeUrl: true

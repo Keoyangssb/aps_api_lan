@@ -1,0 +1,7 @@
+info:
+  name: Flight Approved By Season
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

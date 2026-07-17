@@ -8,13 +8,11 @@ http:
   url: "{{currentIP}}/api/Dashboard/GetDashboardOverDuePaymentDetail"
   body:
     type: json
-    data: "{\r
-
-      \  \"year\": \"2025\",\r
-
-      \  \"airlineCode\": \"\"\r
-
-      }"
+    data: |-
+      {
+        "year": "2026",
+        "airlineCode": "AIQ"
+      }
   auth: inherit
 
 settings:
