@@ -1,17 +1,20 @@
 info:
-  name: get_incoming_flight_topsky_pending
+  name: get_review_landing_topsky_list
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/ATCPortalLanding/get_incoming_flight_topsky_pending"
+  url: "{{currentIP}}/api/ATCPortalLanding/get_review_landing_topsky_list"
   body:
     type: json
     data: |-
       {
         "page_number": "1",
-        "page_size": "10"
+        "page_size": "10",
+        "from_date": "2026-01-01",
+        "to_date": "2026-12-31",
+        "atc_status": ""
       }
   auth:
     type: bearer

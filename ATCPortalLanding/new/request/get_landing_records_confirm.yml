@@ -1,7 +1,7 @@
 info:
   name: get_landing_records_confirm
   type: http
-  seq: 1
+  seq: 4
 
 http:
   method: POST
