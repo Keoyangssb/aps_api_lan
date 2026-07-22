@@ -1,15 +1,17 @@
 info:
-  name: AirlineAircraftType_ovf
+  name: GetActualFlightMovement_ovf_total_detail
   type: http
-  seq: 7
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMap/AirlineAircraftType_ovf"
+  url: "{{currentIP}}/api/DashboardMap/GetActualFlightMovement_ovf_total_detail"
   body:
     type: json
     data: |-
       {
+            "page_number": 1,
+        "page_size": 10,
         "fromDate": "2026-01-01",
         "toDate": "2026-12-31"
       }

@@ -1,0 +1,25 @@
+info:
+  name: AirportSummary_ovf_detail
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/DashboardMap/AirportSummary_ovf_detail"
+  body:
+    type: json
+    data: |-
+      {
+        "page_number": 1,
+        "page_size": 10,
+        "fromDate": "2026-01-01",
+        "toDate": "2026-12-31",
+        "airport_name": "Beijing Capital International Airport"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

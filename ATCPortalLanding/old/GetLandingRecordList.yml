@@ -1,7 +1,7 @@
 info:
   name: GetLandingRecordList
   type: http
-  seq: 2
+  seq: 1
 
 http:
   method: POST
@@ -18,7 +18,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjIyOTNmMGMyLTU1YTMtNDNmMC05MTEyLTBmMjRhODk2ZDdmZSIsImV4cCI6MTc4MTMyNjAzMX0.eA0raFoeTydfW2pSMKBcYUEEmiLIOAf8MOUcniLmjT0
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiMTA1MDNmYmUtMTg0Yy00MDkxLWE2NjgtOWQzN2Q0ZTBjNDBiIiwiZXhwIjoxNzg0NzEyNTU5fQ.hMtXWUm6rlR-NFfff0D0Q9k8OjtunhWkc9eXGZQLOcQ
 
 settings:
   encodeUrl: true

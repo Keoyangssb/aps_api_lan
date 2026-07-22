@@ -1,0 +1,7 @@
+info:
+  name: Actual Time Frequency By Entry & Exit Point
+  type: folder
+  seq: 4
+
+request:
+  auth: inherit

@@ -1,0 +1,27 @@
+info:
+  name: get_landing_records_confirm
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ATCPortalLanding/get_landing_records_confirm"
+  body:
+    type: json
+    data: |-
+      {
+        "page_number": "1",
+        "page_size": "10",
+          "from_date": "2026-01-01",
+        "to_date": "2026-12-31",
+        "status_id": "2"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiMTA1MDNmYmUtMTg0Yy00MDkxLWE2NjgtOWQzN2Q0ZTBjNDBiIiwiZXhwIjoxNzg0NzEyNTU5fQ.hMtXWUm6rlR-NFfff0D0Q9k8OjtunhWkc9eXGZQLOcQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

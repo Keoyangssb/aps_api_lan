@@ -1,17 +1,20 @@
 info:
-  name: ActualFlightMovement_ovf
+  name: Top5EntryPoint_ovf_detail
   type: http
   seq: 4
 
 http:
   method: POST
-  url: "{{currentIP}}/api/DashboardMap/ActualFlightMovement_ovf"
+  url: "{{currentIP}}/api/DashboardMap/Top5ExitPoint_ovf_detail"
   body:
     type: json
     data: |-
       {
+              "page_number": 1,
+        "page_size": 10,
         "fromDate": "2026-01-01",
-        "toDate": "2026-12-31"
+        "toDate": "2026-12-31",
+          "entry_point_name": "PAPRA"
       }
   auth: inherit
 

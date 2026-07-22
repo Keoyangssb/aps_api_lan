@@ -19,7 +19,7 @@ request:
     - name: currentIP
       value: http://13.228.207.212:6003
     - name: authToken
-      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiZGVkNjc0ZTUtMzcwMi00YjI3LTgxYzgtM2RhY2RiNzA4OWE0IiwiZXhwIjoxNzg0MTg3NDk1fQ.hVjye8EtihGo7Bq18qqHPtPHa_X7rzsZBND2FDN2rX0
+      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiMTA1MDNmYmUtMTg0Yy00MDkxLWE2NjgtOWQzN2Q0ZTBjNDBiIiwiZXhwIjoxNzg0NzEyNTU5fQ.hMtXWUm6rlR-NFfff0D0Q9k8OjtunhWkc9eXGZQLOcQ
     - name: localhostIP
       value: ""
 bundled: false

@@ -1,0 +1,7 @@
+info:
+  name: Top 10 Entry Points & Exit Points
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

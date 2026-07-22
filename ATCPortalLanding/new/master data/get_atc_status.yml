@@ -1,0 +1,20 @@
+info:
+  name: get_atc_status
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/ATCPortalLanding/get_atc_status"
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiMTA1MDNmYmUtMTg0Yy00MDkxLWE2NjgtOWQzN2Q0ZTBjNDBiIiwiZXhwIjoxNzg0NzEyNTU5fQ.hMtXWUm6rlR-NFfff0D0Q9k8OjtunhWkc9eXGZQLOcQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

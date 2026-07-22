@@ -1,16 +1,21 @@
 info:
-  name: GetLandingFeeAndCashPaymentById
+  name: SaveOrUpdateLandingFee
   type: http
-  seq: 3
+  seq: 6
 
 http:
   method: POST
-  url: "{{currentIP}}/api/ATCPortalLanding/GetLandingFeeAndCashPaymentById"
+  url: "{{currentIP}}/api/ATCPortalLanding/SaveOrUpdateLandingFee"
   body:
     type: json
     data: |-
       {
-        "afp_id": "33014"
+        "id": "",
+        "afp_id": "33014",
+        "airline_code": "ABL",
+        "landing_fee": "300",
+        "other_charge": "0",
+        "currency": "USD"
       }
   auth:
     type: bearer

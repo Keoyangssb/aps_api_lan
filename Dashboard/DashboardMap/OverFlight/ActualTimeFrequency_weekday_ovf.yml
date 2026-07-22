@@ -8,13 +8,11 @@ http:
   url: "{{currentIP}}/api/DashboardMap/ActualTimeFrequency_weekday_ovf"
   body:
     type: json
-    data: "{\r
-
-      \  \"fromDate\": \"2024-01-01\",\r
-
-      \  \"toDate\": \"2025-06-30\"\r
-
-      }"
+    data: |-
+      {
+        "fromDate": "2026-01-01",
+        "toDate": "2026-12-31"
+      }
   auth: inherit
 
 settings:
