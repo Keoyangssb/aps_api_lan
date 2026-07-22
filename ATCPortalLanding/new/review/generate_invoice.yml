@@ -11,15 +11,15 @@ http:
     data: |-
       {
         "id": "",
-        "afp_id": "33014",
-        "airline_code": "ABL",
-        "landing_fee": "300",
+        "afp_id": "1",
+        "airline_code": "LAO",
+        "landing_fee": "400",
         "other_charge": "0",
         "currency": "USD"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjIyOTNmMGMyLTU1YTMtNDNmMC05MTEyLTBmMjRhODk2ZDdmZSIsImV4cCI6MTc4MTMyNjAzMX0.eA0raFoeTydfW2pSMKBcYUEEmiLIOAf8MOUcniLmjT0
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbiIsIlVzZXJJZCI6IjEiLCJSb2xlSWQiOiIyIiwianRpIjoiMTA1MDNmYmUtMTg0Yy00MDkxLWE2NjgtOWQzN2Q0ZTBjNDBiIiwiZXhwIjoxNzg0NzEyNTU5fQ.hMtXWUm6rlR-NFfff0D0Q9k8OjtunhWkc9eXGZQLOcQ
 
 settings:
   encodeUrl: true
