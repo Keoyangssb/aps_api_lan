@@ -1,27 +1,20 @@
 info:
-  name: confirm_landing_from_topsky
+  name: get_landing_records_confirm
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/ATCPortalLanding/confirm_landing_from_topsky"
+  url: "{{currentIP}}/api/ATCPortalLanding/get_landing_records_confirm"
   body:
     type: json
     data: |-
       {
-        "id": 1,
-        "flight_id": "LAO123456",
-        "reg_mark": "RDPL-ABC",
-        "ac_type": "A320",
-        "adep": "VTE",
-        "ades": "BKK",
-        "day_nb": "2026-07-22",
-        "etd": "13:30",
-        "eta": "14:30",
-        "flight_type": "S",
-        "flight_permission_number": "LPD-2026-00123",
-        "return_or_divert_id": 1
+        "page_number": "1",
+        "page_size": "10",
+        "from_date": "2026-01-01",
+        "to_date": "2026-12-31",
+        "status_id": "2"
       }
   auth:
     type: bearer
