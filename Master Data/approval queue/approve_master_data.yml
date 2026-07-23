@@ -6,6 +6,14 @@ info:
 http:
   method: GET
   url: "{{currentIP}}/api/MasterData/approve_master_data"
+  body:
+    type: json
+    data: |-
+      {
+        "category_code": "",
+        "id": "",
+        "remark": ""
+      }
   auth:
     type: bearer
     token: "{{authToken}}"
