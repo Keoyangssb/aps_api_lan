@@ -1,0 +1,30 @@
+info:
+  name: create_lan_user
+  type: http
+  seq: 22
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/create_lan_user"
+  body:
+    type: json
+    data: |
+      {
+        "userProfile": "userIcon.png",
+        "userFirstName": "keoyang123",
+        "userLastName": "ssb",
+        "phoneCodeId": "856",
+        "mobileNumber": "559",
+        "userEmail": "keoyang_test123@gmail.com",
+        "roleId": "1",
+        "userSubDepartmentId": "1",
+        "userPosition": "Backend",
+        "statusId": "1",
+        "is_2fa": true
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

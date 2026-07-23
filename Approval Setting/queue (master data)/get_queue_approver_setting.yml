@@ -1,18 +1,11 @@
 info:
-  name: get_incoming_flight_topsky_pending
+  name: get_queue_approver_setting
   type: http
-  seq: 3
+  seq: 5
 
 http:
-  method: POST
-  url: "{{currentIP}}/api/ATCPortalLanding/get_incoming_flight_topsky_pending"
-  body:
-    type: json
-    data: |-
-      {
-        "page_number": "1",
-        "page_size": "10"
-      }
+  method: GET
+  url: "{{currentIP}}/api/ApprovalSetting/get_queue_approver_setting"
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjE3YWQ3YjE0LTk0NDAtNDAzZC1iYjI1LTcxM2RmOGE0NGUyYyIsImV4cCI6MTc4NDk0NDI0NX0.1vCFnKJqAsGpUMluSwBalycO_TGuLihFO4DnkIcLMBI
