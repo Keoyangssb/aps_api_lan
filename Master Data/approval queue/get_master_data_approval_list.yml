@@ -1,0 +1,17 @@
+info:
+  name: get_master_data_approval_list
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/MasterData/get_master_data_approval_list"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjE3YWQ3YjE0LTk0NDAtNDAzZC1iYjI1LTcxM2RmOGE0NGUyYyIsImV4cCI6MTc4NDk0NDI0NX0.1vCFnKJqAsGpUMluSwBalycO_TGuLihFO4DnkIcLMBI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
