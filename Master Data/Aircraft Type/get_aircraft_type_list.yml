@@ -1,18 +1,17 @@
 info:
-  name: GetAirPortList
+  name: get_aircraft_type_list
   type: http
-  seq: 3
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/MasterData/GetAirPortList"
+  url: "{{currentIP}}/api/MasterData/get_aircraft_type_list"
   body:
     type: json
     data: |-
       {
         "page_number": 1,
         "page_size": 10,
-        "keywordSearch": ""
       }
   auth:
     type: bearer

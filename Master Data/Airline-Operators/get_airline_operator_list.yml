@@ -1,11 +1,11 @@
 info:
-  name: GetAirPortList
+  name: get_airline_operator_list
   type: http
-  seq: 3
+  seq: 1
 
 http:
   method: POST
-  url: "{{currentIP}}/api/MasterData/GetAirPortList"
+  url: "{{currentIP}}/api/MasterData/get_airline_operator_list"
   body:
     type: json
     data: |-

@@ -10,9 +10,9 @@ http:
     type: json
     data: |-
       {
-        "category_code": "",
-        "id": "",
-        "remark": ""
+        "category_code": "rate_ovf",
+        "id": "9",
+        "remark": "approve 1"
       }
   auth:
     type: bearer
