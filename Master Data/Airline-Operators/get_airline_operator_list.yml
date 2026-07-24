@@ -11,8 +11,7 @@ http:
     data: |-
       {
         "page_number": 1,
-        "page_size": 10,
-        "keywordSearch": ""
+        "page_size": 10
       }
   auth:
     type: bearer

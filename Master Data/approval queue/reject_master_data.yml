@@ -4,11 +4,19 @@ info:
   seq: 3
 
 http:
-  method: GET
+  method: POST
   url: "{{currentIP}}/api/MasterData/reject_master_data"
+  body:
+    type: json
+    data: |-
+      {
+        "category_code": "rate_ovf",
+        "id": "9",
+        "remark": "wrongh rate"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjE3YWQ3YjE0LTk0NDAtNDAzZC1iYjI1LTcxM2RmOGE0NGUyYyIsImV4cCI6MTc4NDk0NDI0NX0.1vCFnKJqAsGpUMluSwBalycO_TGuLihFO4DnkIcLMBI
 
 settings:
   encodeUrl: true
