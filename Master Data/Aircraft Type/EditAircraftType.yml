@@ -1,15 +1,16 @@
 info:
-  name: AddAircraftType
+  name: EditAircraftType
   type: http
-  seq: 4
+  seq: 3
 
 http:
   method: POST
-  url: "{{currentIP}}/api/MasterData/AddAircraftType"
+  url: "{{currentIP}}/api/MasterData/EditAircraftType"
   body:
     type: json
     data: |-
       {
+        "id",
         "icao_code": "icao_code_0001",
         "manufacturer": "test_manufacturer",
         "model_faa": "test_model_faa",

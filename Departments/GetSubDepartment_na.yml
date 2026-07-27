@@ -1,0 +1,17 @@
+info:
+  name: GetSubDepartment_na
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/User/GetSubDepartment_na"
+  body:
+    type: json
+    data: "{\r\n  \"deptId\": \"1\"\r\n}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

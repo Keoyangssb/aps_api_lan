@@ -1,0 +1,14 @@
+info:
+  name: GetUserRoleAsync_na
+  type: http
+  seq: 8
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/UserRole/GetUserRoleAsync_na"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
