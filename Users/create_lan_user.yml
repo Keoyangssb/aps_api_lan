@@ -20,7 +20,8 @@ http:
         "userSubDepartmentId": "1",
         "userPosition": "Backend",
         "statusId": "1",
-        "is_2fa": true
+        "is_2fa": true,
+        "userPass": "123456"
       }
 
 settings:
