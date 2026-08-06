@@ -11,6 +11,7 @@ http:
     data: |-
       {
           "active_flight_plan_id": "0",
+          "remark": "0"
       }
   auth:
     type: bearer

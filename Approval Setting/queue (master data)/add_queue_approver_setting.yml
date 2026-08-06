@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/ApprovalSetting/add_queue_approver_setting?approverId=1&approveLevel=1"
+  url: "{{currentIP}}/api/ApprovalSetting/add_queue_approver_setting?approverId=1&approveLevel=2"
   params:
     - name: approverId
       value: "1"
       type: query
     - name: approveLevel
-      value: "1"
+      value: "2"
       type: query
   auth:
     type: bearer

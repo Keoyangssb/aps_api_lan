@@ -8,7 +8,7 @@ http:
   url: "{{currentIP}}/api/UserRole/GetUserRoleAsync"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjZhMDgxNTZlLTMyYmQtNGVhOS04NzYwLTIzYTc1OTY5ZmUzMyIsImV4cCI6MTc4NTgxOTg4MX0.eTsYgcHtnIIlJo5KW-be5C0Rcte1P1hXco591-sJ2VQ
 
 settings:
   encodeUrl: true

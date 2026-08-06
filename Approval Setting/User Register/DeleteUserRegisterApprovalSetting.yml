@@ -11,7 +11,7 @@ http:
     data: "{\r\n  \"id\": \"2\"\r\n}"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjA2ZmJkNWNhLTYzYTYtNDgyNC1iMjc1LTRiNzM2ODRkYzkwMiIsImV4cCI6MTc4NTkwMzc2OH0.EOtubroZqnouUkqP9vYcN6YZzjAw99ol2lw_WwZDNVQ
 
 settings:
   encodeUrl: true

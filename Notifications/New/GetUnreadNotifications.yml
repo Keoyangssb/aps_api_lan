@@ -5,13 +5,13 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/Notification/GetUnreadNotifications?page=1&pageSize=10"
+  url: "{{currentIP}}/api/Notification/GetUnreadNotifications?page=1&pageSize=20"
   params:
     - name: page
       value: "1"
       type: query
     - name: pageSize
-      value: "10"
+      value: "20"
       type: query
   auth:
     type: bearer

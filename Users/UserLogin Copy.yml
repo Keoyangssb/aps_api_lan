@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:6001/api/User/UserLogin
+  url: "{{currentIP}}/api/User/UserLogin"
   body:
     type: json
     data: |-

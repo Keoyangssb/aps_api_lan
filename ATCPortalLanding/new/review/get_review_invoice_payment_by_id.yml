@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "afp_id": "54444"
+        "afp_id": "47152"
       }
   auth:
     type: bearer
