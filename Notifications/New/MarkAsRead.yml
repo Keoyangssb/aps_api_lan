@@ -5,12 +5,14 @@ info:
 
 http:
   method: PUT
-  url: "{{currentIP}}/api/Notification/MarkAsRead?id=11"
+  url: "{{currentIP}}/api/Notification/MarkAsRead?id=1"
   params:
     - name: id
-      value: "11"
+      value: "1"
       type: query
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImZkODYyZmRkLWM3YmEtNDA2OS1iMjI4LWYwYmY2ZmQyNWY5YiIsImV4cCI6MTc4NTM5NTU5OH0.1tTM8iVX0CJgOQ8be8MKIcHndETQBkDoG3addS8bbQg
 
 settings:
   encodeUrl: true

@@ -11,7 +11,7 @@ http:
     data: "{\r\n  \"roleId\": \"1\"\r\n}"
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImNhMDU1OTE5LTk0MDMtNDg3OC05ZWM5LWY5NGMwZjQ4NTQ2ZSIsImV4cCI6MTc4NTgxOTQyMn0.oKGlWob8y0LVJPsYAB5NYpKi87b4VCvYI49n0fE2qTU
 
 settings:
   encodeUrl: true

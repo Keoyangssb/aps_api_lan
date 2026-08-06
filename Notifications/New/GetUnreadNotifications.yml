@@ -5,8 +5,17 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/Notification/GetUnreadNotifications"
-  auth: inherit
+  url: "{{currentIP}}/api/Notification/GetUnreadNotifications?page=1&pageSize=10"
+  params:
+    - name: page
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImZkODYyZmRkLWM3YmEtNDA2OS1iMjI4LWYwYmY2ZmQyNWY5YiIsImV4cCI6MTc4NTM5NTU5OH0.1tTM8iVX0CJgOQ8be8MKIcHndETQBkDoG3addS8bbQg
 
 settings:
   encodeUrl: true
