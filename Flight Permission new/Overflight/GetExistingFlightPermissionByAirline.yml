@@ -1,0 +1,20 @@
+info:
+  name: GetExistingFlightPermissionByAirline
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/GetExistingFlightPermissionByAirline"
+  body:
+    type: json
+    data: "{\r\n  \"airline_id\": \"153\"\r\n}"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,40 @@
+info:
+  name: CheckExistingFlightNumberOvf
+  type: http
+  seq: 13
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/CheckExistingFlightNumberOvf"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"flights_data\": [\r
+
+      \    {\r
+
+      \      \"flight_no\": \"EK798\",\r
+
+      \      \"from_date\": \"2026-03-10\",\r
+
+      \      \"to_date\": \"2026-03-10\",\r
+
+      \      \"etd\": \"10:00\",\r
+
+      \      \"eta\": \"17:30\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
