@@ -1,7 +1,7 @@
 info:
   name: GetFlightPerCertificate copy
   type: http
-  seq: 10
+  seq: 12
 
 http:
   method: POST

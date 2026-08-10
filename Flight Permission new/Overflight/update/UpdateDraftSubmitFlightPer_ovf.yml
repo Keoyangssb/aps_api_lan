@@ -1,0 +1,124 @@
+info:
+  name: UpdateDraftSubmitFlightPer_ovf
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/FlightPermission/UpdateDraftSubmitFlightPer_ovf"
+  body:
+    type: json
+    data: |-
+      {
+        "flight_per_id": "2",
+        "select_flight_type": "1",  //1 = schedule , 2 non schedule
+        "select_urgency": "1", // 1 = general, 2 = urgent
+        "season_id": "1",
+        "operator_type_id": "1",
+        "airline_id": "", // if operator_type_id = 2, airline_id require
+        "purpose_flight_id": "2",
+        "tfc_proviso": "",
+        "flight_per_details": [
+          {
+            "flight_per_detail_id": "2",
+            "flight_no": "LAO702",
+            "callsign": "",
+            "from_date": "2025-08-10",
+            "to_date": "2025-08-12",
+            "date_of_operation": "",
+            "is_daily": true,
+            "is_mon": false,
+            "is_tue": false,
+            "is_wed": false,
+            "is_thu": false,
+            "is_fri": false,
+            "is_sat": false,
+            "is_sun": false,
+            "max_seat": "200",
+            "lease": "",
+            "mtow": "1000",
+            "route": "VTE-OUD",
+            "etd": "10:30",
+            "eta": "11:45",
+            "flight_level_id": "1",
+            "is_aoc": false,
+            "is_cor": false,
+            "is_coa": false,
+            "is_con": false,
+            "is_arsl": false,
+            "is_coi": false,
+            "is_cml": false,
+            "is_opp": false,
+            "is_mc": false,
+            "is_ghc": false,
+            "is_mc_amo": false,
+            "is_po_la": false,
+            "is_asp": false,
+            "flight_per_detail_aircraft_types": [
+              {
+                "detail_acraft_type_id": "2",
+                "aircraft_type_id": "408"
+              },
+              {
+                "detail_acraft_type_id": "",
+                "aircraft_type_id": "409"
+              }
+            ]
+          },
+          {
+            "flight_per_detail_id": "",
+            "flight_no": "LAO445",
+            "callsign": "",
+            "from_date": "2025-08-12",
+            "to_date": "2025-08-13",
+            "date_of_operation": "",
+            "is_daily": true,
+            "is_mon": true,
+            "is_tue": true,
+            "is_wed": true,
+            "is_thu": true,
+            "is_fri": true,
+            "is_sat": true,
+            "is_sun": true,
+            "max_seat": "500",
+            "lease": "",
+            "mtow": "800",
+            "route": "VTE-LPB",
+            "etd": "08:30",
+            "eta": "10:00",
+            "flight_level_id": "2",
+            "is_aoc": false,
+            "is_cor": false,
+            "is_coa": false,
+            "is_con": false,
+            "is_arsl": false,
+            "is_coi": false,
+            "is_cml": false,
+            "is_opp": false,
+            "is_mc": false,
+            "is_ghc": false,
+            "is_mc_amo": false,
+            "is_po_la": false,
+            "is_asp": false,
+            "flight_per_detail_aircraft_types": [
+              {
+                "detail_acraft_type_id": "",
+                "aircraft_type_id": "415"
+              },
+              {
+                "detail_acraft_type_id": "",
+                "aircraft_type_id": "425"
+              }
+            ]
+          }
+        ]
+      }
+  auth:
+    type: bearer
+    token: "{{authToken}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
