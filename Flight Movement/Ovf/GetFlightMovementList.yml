@@ -12,16 +12,17 @@ http:
       {
         "page_number": 1,
         "page_size": 10,
-        "from_date": "2026-06-01",
-        "to_date": "2026-06-30",
+        "from_date": "2026-08-01",
+        "to_date": "2026-08-30",
         "entry_time": "",
-        "airline_id": "147",
+        "airline_id": "",
         "departure": "",
-        "destination": ""
+        "destination": "",
+        "call_sign": "CSN8024"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImQ4ODdmZDUzLWRlOGItNDE1MS04OWMyLWUxNTIyNWE0Y2MxOCIsImV4cCI6MTc4MDQ1MzAzMX0.BjdmdFy3NFIkzcxezh8fL4rHp_mEgxU5EYL0dTjMQLw
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjBiZTBkYTI3LTdjMDItNGQ4OC1hMDIxLWE4MWNlMWI5ZmRkMSIsImV4cCI6MTc4NjUzODgzOX0._CuUyxM5kUcx2cv3cUwZFq5Fi_ckexkAfkPPY-Q2XNA
 
 settings:
   encodeUrl: true
