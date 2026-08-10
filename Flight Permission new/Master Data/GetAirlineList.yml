@@ -1,0 +1,17 @@
+info:
+  name: GetAirlineList
+  type: http
+  seq: 10
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/MasterData/GetAirlineList"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjcxNWQ0NTgzLWI3Y2MtNDg0Ny1hNTBmLTMzMTc0ZTdkMjFhZSIsImV4cCI6MTc4NjQ5ODgyMH0.pv6EOiN15PZz8ek0OmNk2hfbMye5tHlV9spMmkbeIw0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

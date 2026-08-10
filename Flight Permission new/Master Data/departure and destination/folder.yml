@@ -1,0 +1,7 @@
+info:
+  name: departure and destination
+  type: folder
+  seq: 11
+
+request:
+  auth: inherit

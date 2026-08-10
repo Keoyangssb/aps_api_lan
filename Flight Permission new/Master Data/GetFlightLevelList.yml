@@ -1,0 +1,14 @@
+info:
+  name: GetFlightLevelList
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: "{{currentIP}}/api/MasterData/GetFlightLevelList"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
