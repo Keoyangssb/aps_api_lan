@@ -8,30 +8,21 @@ http:
   url: "{{currentIP}}/api/FlightPermission/CheckExistingFlightNumberOvf"
   body:
     type: json
-    data: "{\r
-
-      \  \"flights_data\": [\r
-
-      \    {\r
-
-      \      \"flight_no\": \"EK798\",\r
-
-      \      \"from_date\": \"2026-03-10\",\r
-
-      \      \"to_date\": \"2026-03-10\",\r
-
-      \      \"etd\": \"10:00\",\r
-
-      \      \"eta\": \"17:30\"\r
-
-      \    }\r
-
-      \  ]\r
-
-      }"
+    data: |-
+      {
+        "flights_data": [
+          {
+            "flight_no": "THA645",
+            "from_date": "2026-08-15",
+            "to_date": "2026-08-16",
+            "etd": "10:00",
+            "eta": "23:30"
+          }
+        ]
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiJmMDBjNTNkZi02ZjVmLTRiMmYtOGU2MC0xYzU5NjU1NzU2NWIiLCJleHAiOjE3ODY1ODcxNDF9.YiQWzQ7N_XLdCL5F4PrcD3KqqEPKFMpfdg772kSDEm8
 
 settings:
   encodeUrl: true

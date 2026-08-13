@@ -1,16 +1,16 @@
 info:
-  name: GetExistingFlightPermissionByAirline
+  name: getAirlineName_by_callsign
   type: http
-  seq: 14
+  seq: 6
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightPermission/GetExistingFlightPermissionByAirline"
+  url: "{{currentIP}}/api/FlightMovementLanding/RejectFlightMovement"
   body:
     type: json
     data: |-
       {
-        "airline_id": "233"
+          "active_flight_plan_id": "0",
       }
   auth:
     type: bearer

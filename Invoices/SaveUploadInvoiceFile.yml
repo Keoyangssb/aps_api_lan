@@ -5,10 +5,10 @@ info:
 
 http:
   method: POST
-  url: http://localhost:5236/api/Invoice/SaveUploadInvoiceFile?transaction_id=12025073102571622
+  url: "{{currentIP}}/api/Invoice/SaveUploadInvoiceFile?transaction_id=12026080209495351"
   params:
     - name: transaction_id
-      value: "12025073102571622"
+      value: "12026080209495351"
       type: query
   body:
     type: multipart-form
@@ -16,10 +16,11 @@ http:
       - name: file
         type: file
         value:
-          - /D:/AIDC_Tech/APS/Docs/Invoices - Copy.xlsx
+          - /Users/keoyang/AIDC/APS/Docs/nvoices/invoice_2026_05.csv
+        contentType: text/csv; charset=utf-8
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIzYmRlZGY0ZC0xODI3LTRkMDAtYjEwMy1iNGRkYzYyYzAxNzYiLCJleHAiOjE3ODY2NzMxMjF9.ewcu0Yvhm8ieHzb9QfiR11m_6_-H8CipAjbEqZl5OfQ
 
 settings:
   encodeUrl: true

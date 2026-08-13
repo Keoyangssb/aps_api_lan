@@ -8,18 +8,15 @@ http:
   url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementAwaitingApproval_detail"
   body:
     type: json
-    data: "{\r
-
-      \  \"customer_id\": \"147\",\r
-
-      \  \"date_from\": \"2025-02-01\",\r
-
-      \  \"date_to\": \"2025-02-28\"\r
-
-      }"
+    data: |-
+      {
+        "customer_id": "147",
+        "date_from": "2025-06-01",
+        "date_to": "2025-06-30"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiJmMDBjNTNkZi02ZjVmLTRiMmYtOGU2MC0xYzU5NjU1NzU2NWIiLCJleHAiOjE3ODY1ODcxNDF9.YiQWzQ7N_XLdCL5F4PrcD3KqqEPKFMpfdg772kSDEm8
 
 settings:
   encodeUrl: true

@@ -5,20 +5,26 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/InvoiceLanding/SaveSubmitInvoiceLandingFile"
+  url: https://apilans-aps.aidctech.net/api/InvoiceLanding/SaveSubmitInvoiceLandingFile
+  params:
+    - name: transaction_id
+      value: "12026080209495351"
+      type: query
+      disabled: true
   body:
     type: multipart-form
     data:
       - name: file
         type: file
         value:
-          - /Users/keoyang/AIDC/APS/invoice_landing/landing_vte_07.xlsx
+          - /Users/keoyang/AIDC/APS/Docs/nvoices/invoice_2026_04.csv
+        contentType: text/csv; charset=utf-8
       - name: transaction_id
         type: text
-        value: "22026071010184328"
+        value: "12026080209495351"
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6Ijk0OTUwNmU2LTA5MzktNGYyNC1iZmIwLWZhZmU0N2I5YjFhMCIsImV4cCI6MTc4Mzg0NDU4MX0.ZpTVZ1SjAQTB9hNf-9d5tp-FnPSO2VOE8teeJOcftQk
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIzYmRlZGY0ZC0xODI3LTRkMDAtYjEwMy1iNGRkYzYyYzAxNzYiLCJleHAiOjE3ODY2NzMxMjF9.ewcu0Yvhm8ieHzb9QfiR11m_6_-H8CipAjbEqZl5OfQ
 
 settings:
   encodeUrl: true

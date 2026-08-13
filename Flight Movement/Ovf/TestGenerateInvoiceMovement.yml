@@ -5,7 +5,14 @@ info:
 
 http:
   method: GET
-  url: http://localhost:6001/api/FlightMovement/TestGenerateInvoiceMovement
+  url: "{{currentIP}}/api/FlightMovement/getAirlineName_by_callsign?callsign=CSN8024"
+  params:
+    - name: callsign
+      value: CSN8024
+      type: query
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjBiZTBkYTI3LTdjMDItNGQ4OC1hMDIxLWE4MWNlMWI5ZmRkMSIsImV4cCI6MTc4NjUzODgzOX0._CuUyxM5kUcx2cv3cUwZFq5Fi_ckexkAfkPPY-Q2XNA
 
 settings:
   encodeUrl: true

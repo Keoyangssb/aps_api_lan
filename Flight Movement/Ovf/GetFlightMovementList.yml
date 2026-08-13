@@ -18,7 +18,7 @@ http:
         "airline_id": "",
         "departure": "",
         "destination": "",
-        "call_sign": "CSN8024"
+        "call_sign": "CSN8314"
       }
   auth:
     type: bearer
