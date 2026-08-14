@@ -1,0 +1,7 @@
+info:
+  name: otp_request_verify
+  type: folder
+  seq: 43
+
+request:
+  auth: inherit

@@ -1,0 +1,23 @@
+info:
+  name: send_otp
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/Sms/SendSms_otp"
+  body:
+    type: json
+    data: |-
+      {
+        "phone": "2052456424"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIwMmJlMzAzMi1iZTU3LTQzNGYtOTRkMS0xMDM3Mzg5ODBlNTciLCJleHAiOjE3ODY2OTEyMzZ9.qODLFj-zQDCGkw8v_ywJWx-2dwPk2oAqB5Nm6BNToSw
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

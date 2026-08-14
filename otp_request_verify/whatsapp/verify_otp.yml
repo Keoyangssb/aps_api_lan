@@ -1,0 +1,24 @@
+info:
+  name: verify_otp
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/WhatsApp2FA/VerifyOtp"
+  body:
+    type: json
+    data: |-
+      {
+        "phone": "8562055966963",
+        "code": "521996"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjA2ZmJkNWNhLTYzYTYtNDgyNC1iMjc1LTRiNzM2ODRkYzkwMiIsImV4cCI6MTc4NTkwMzc2OH0.EOtubroZqnouUkqP9vYcN6YZzjAw99ol2lw_WwZDNVQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,23 @@
+info:
+  name: send_otp
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{currentIP}}/api/WhatsApp2FA/SendOtp"
+  body:
+    type: json
+    data: |-
+      {
+        "Phone": "8562055966963"
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6IjA2ZmJkNWNhLTYzYTYtNDgyNC1iMjc1LTRiNzM2ODRkYzkwMiIsImV4cCI6MTc4NTkwMzc2OH0.EOtubroZqnouUkqP9vYcN6YZzjAw99ol2lw_WwZDNVQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
