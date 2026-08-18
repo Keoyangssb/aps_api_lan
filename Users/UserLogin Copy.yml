@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/UserLogin"
+  url: https://apslans-api.aidctech.net/api/User/UserLogin
   body:
     type: json
     data: |-

@@ -1,0 +1,31 @@
+info:
+  name: GetFlightMovementAutoApprovedList
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: https://apslans-api-uat.aidctech.net/api/FlightMovement/GetFlightMovementAutoApprovedList
+  body:
+    type: json
+    data: |-
+      {
+        "page_number": 1,
+        "page_size": 10,
+        "from_date": "2026-06-01",
+        "to_date": "2026-08-30",
+        "entry_time": "",
+        "airline_id": "",
+        "departure": "",
+        "destination": "",
+        "call_sign": ""
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIxNWE4Yzg0NS04MmU3LTQ5M2MtYThhMS04Yzg5NDk1MmJlZDMiLCJleHAiOjE3ODcwMjA2Njd9.GF70hMogG6jYUOCMq94lyqPsHEF_cFFpl3yS89Y4Gr4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

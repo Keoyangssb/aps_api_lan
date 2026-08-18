@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/UserLogin"
+  url: https://apslans-api-dev.aidctech.net/api/User/UserLogin
   body:
     type: json
     data: |-
       {
         "passKey": "eyJiOjE3MzI1OTU0OTV9.ExR06O8Jqctp827e8g2R1pEaEyj-gFmWXXSPvkbDMVk-aIdC-tEcH",
-        "userName": "keoyang.l.aidctech@gmail.com",
+        "userName": "admin1",
         "userPassword": "123456",
         "deviceToken": ""
       }

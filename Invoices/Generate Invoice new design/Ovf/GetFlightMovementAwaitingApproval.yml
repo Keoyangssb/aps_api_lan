@@ -5,19 +5,17 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementAwaitingApproval"
+  url: https://apslans-api-uat.aidctech.net/api/GenerateInvoice/GetFlightMovementAwaitingApproval
   body:
     type: json
-    data: "{\r
-
-      \  \"date_from\": \"2025-02-01\",\r
-
-      \  \"date_to\": \"2025-02-28\"\r
-
-      }"
+    data: |-
+      {
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-30"
+      }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIzOWM2MjBmOC1lM2FiLTRiOGQtYjcwMy01MzcyNzZlMTUyMDkiLCJleHAiOjE3ODcxMTU0NTJ9.X200Ejrl1X9N_o5v2-mzLtVUgcKwiBS1FrLWEC3LBWA
 
 settings:
   encodeUrl: true

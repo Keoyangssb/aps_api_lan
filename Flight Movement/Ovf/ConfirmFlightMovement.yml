@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovement/ConfirmFlightMovement"
+  url: https://apslans-api-uat.aidctech.net/api/FlightMovement/ConfirmFlightMovement
   body:
     type: json
     data: |-
@@ -31,7 +31,7 @@ http:
       }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiJiYmM1NjU3Yi0yNzU5LTRjYWYtYWZmMC1jZmI3NTlhMmM5NDgiLCJleHAiOjE3ODcxMTI2MzR9.kc4ifxT-xWXTbw6PQGZjxAo8Sf60OPIODGD-KkWC2bs
 
 settings:
   encodeUrl: true

@@ -6,11 +6,6 @@ info:
 http:
   method: POST
   url: https://apilans-aps.aidctech.net/api/InvoiceLanding/SaveSubmitInvoiceLandingFile
-  params:
-    - name: transaction_id
-      value: "12026080209495351"
-      type: query
-      disabled: true
   body:
     type: multipart-form
     data:
@@ -24,7 +19,7 @@ http:
         value: "12026080209495351"
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIzYmRlZGY0ZC0xODI3LTRkMDAtYjEwMy1iNGRkYzYyYzAxNzYiLCJleHAiOjE3ODY2NzMxMjF9.ewcu0Yvhm8ieHzb9QfiR11m_6_-H8CipAjbEqZl5OfQ
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIwZjFmM2JlNi0xM2UwLTQ2MDYtYTBlNS1hYjBhYzlkZjAzMmUiLCJleHAiOjE3ODcxOTA1OTh9.d2a7B4kLkFrO9OzGiH0nXnbW2y1c5DRDhUZBvkCSpSs
 
 settings:
   encodeUrl: true

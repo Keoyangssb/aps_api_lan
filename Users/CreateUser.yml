@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/User/CreateUser"
+  url: https://apslans-api-uat.aidctech.net/api/User/CreateUser
   params:
     - name: tokenKey
       value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMDExMDIzOTEwNzUyMjYxMTgxMDYxMTkxMDI3NzMxMjExMDE0MzIxNzIyOTIwODIwNzUzMTI0MjMyMTM1MjQ0OTExNTY1MzE3NTE3NTU4MjMyMTg2IiwianRpIjoiNWE0ZDhhNzEtZDg0Mi00NTNlLWEyYjctOWU5Yzc0MmRjYWI5IiwiZXhwIjoxNzU2MzY0ODQ2fQ.W-7AQnEH85WfRM2s7zFAKC9xAAGBtyOYA6bnTFyY1-0
@@ -16,20 +16,21 @@ http:
     data: |
       {
         "userProfile": "userIcon.png",
-        "userFirstName": "keoyang4",
-        "userLastName": "ssb",
+        "userFirstName": "Lans",
+        "userLastName": "01",
         "phoneCodeId": "856",
-        "mobileNumber": "559",
-        "userEmail": "keoyang1234666@gmail.com",
+        "mobileNumber": "20",
+        "userEmail": "lans01",
         "roleId": "1",
         "userSubDepartmentId": "1",
-        "userPosition": "Backend",
+        "userPosition": "Lans Tesing",
         "statusId": "1",
-        "is_2fa": true
+        "is_2fa": false,
+        "user_signature": "99dd1384-6613-41da-856b-9141dcda21ea.png"
       }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIxNWE4Yzg0NS04MmU3LTQ5M2MtYThhMS04Yzg5NDk1MmJlZDMiLCJleHAiOjE3ODcwMjA2Njd9.GF70hMogG6jYUOCMq94lyqPsHEF_cFFpl3yS89Y4Gr4
 
 settings:
   encodeUrl: true
