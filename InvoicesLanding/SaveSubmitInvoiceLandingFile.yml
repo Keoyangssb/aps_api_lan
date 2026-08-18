@@ -5,18 +5,18 @@ info:
 
 http:
   method: POST
-  url: https://apilans-aps.aidctech.net/api/InvoiceLanding/SaveSubmitInvoiceLandingFile
+  url: https://apslans-api-uat.aidctech.net/api/InvoiceLanding/SaveSubmitInvoiceLandingFile
   body:
     type: multipart-form
     data:
       - name: file
         type: file
         value:
-          - /Users/keoyang/AIDC/APS/Docs/nvoices/invoice_2026_04.csv
-        contentType: text/csv; charset=utf-8
+          - /Users/keoyang/AIDC/APS/invoice_landing/landing_vte_07.xlsx
+        contentType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
       - name: transaction_id
         type: text
-        value: "12026080209495351"
+        value: "22025021207582727"
   auth:
     type: bearer
     token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIwZjFmM2JlNi0xM2UwLTQ2MDYtYTBlNS1hYjBhYzlkZjAzMmUiLCJleHAiOjE3ODcxOTA1OTh9.d2a7B4kLkFrO9OzGiH0nXnbW2y1c5DRDhUZBvkCSpSs
