@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-          "active_flight_plan_id": "0",
+          "active_flight_plan_id": "140427",
           "remark": "test"
       }
   auth:

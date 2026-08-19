@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:4001/api/Statistic/GetFlightMovementApprovedList
+  url: "{{currentIP}}/api/StatisticOvf/GetFlightMovementApprovedList"
   body:
     type: json
     data: |-
@@ -20,9 +20,7 @@ http:
         "destination": "",
         "call_sign": ""
       }
-  auth:
-    type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiI4N2NhODdiOS1kZjI5LTQ1ZDUtOTI5Ni0xZWYyOGI3ZmQzMjIiLCJleHAiOjE3ODcyODA5MDh9.Xjcbfi5_29iix6T8zuwJMMzSoMQyUu6o31YuA7-JdTg
+  auth: inherit
 
 settings:
   encodeUrl: true

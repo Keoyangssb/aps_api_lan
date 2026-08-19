@@ -5,13 +5,13 @@ info:
 
 http:
   method: POST
-  url: http://localhost:4001/api/StatisticOvf/GetAllFlightMovementPendingList
+  url: "{{currentIP}}/api/StatisticOvf/GetAllFlightMovementPendingList"
   body:
     type: json
     data: |-
       {
         "page_number": 1,
-        "page_size": 100,
+        "page_size": 10,
         "from_date": "2026-08-01",
         "to_date": "2026-08-30",
         "entry_time": "",

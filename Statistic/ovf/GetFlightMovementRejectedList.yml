@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:4001/api/StatisticOvf/GetFlightMovementRejectedList
+  url: "{{currentIP}}/api/StatisticOvf/GetFlightMovementRejectedList"
   body:
     type: json
     data: |-
@@ -13,7 +13,7 @@ http:
         "page_number": 1,
         "page_size": 10,
         "from_date": "2025-01-01",
-        "to_date": "2025-08-30",
+        "to_date": "2026-08-30",
         "entry_time": "",
         "airline_id": "",
         "departure": "",
