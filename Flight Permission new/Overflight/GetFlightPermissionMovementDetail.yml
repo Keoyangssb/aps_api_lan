@@ -1,20 +1,17 @@
 info:
-  name: GetSystemLog
+  name: GetFlightPermissionMovementDetail
   type: http
-  seq: 37
+  seq: 15
 
 http:
   method: POST
-  url: "{{currentIP}}/api/General/GetSystemLog"
+  url: http://localhost:4001/api/FlightPermission/GetFlightPermissionMovementDetail
   body:
     type: json
-    data: "{\r
-
-      \  \"from_date\": \"\",\r
-
-      \  \"to_date\": \"\"\r
-
-      }"
+    data: |-
+      {
+        "flight_per_id": "900"
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

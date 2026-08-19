@@ -1,0 +1,39 @@
+info:
+  name: ConfirmFlightMovement
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:4001/api/StatisticOvf/ConfirmFlightMovement
+  body:
+    type: json
+    data: |-
+      {
+          "active_flight_plan_id": "140102",
+          "flight_plan_id": "0",
+          "movement_id": "7",
+          "call_sign": "ABL726",
+          "aircraft": "A21N",
+          "date": "2026-08-01",
+          "entry_point": "BUTRA",
+          "exit_point": "PAPRA",
+          "entry_time": "17:00",
+          "exit_time": "17:12",
+          "departure": "VTBS",
+          "destination": "RKPK",
+          "registration": "HL8366",
+          "is_flight_permission": true,
+          "is_flight_plan": false,
+          "is_radar": true,
+          "remark": "approve",
+          "mtow": "165", // add new
+          "mtow_amount": "240" // add new
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

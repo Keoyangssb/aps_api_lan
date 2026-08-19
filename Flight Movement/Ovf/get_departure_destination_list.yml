@@ -1,7 +1,7 @@
 info:
   name: get_departure_destination_list
   type: http
-  seq: 2
+  seq: 3
 
 http:
   method: GET

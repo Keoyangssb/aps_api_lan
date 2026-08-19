@@ -1,7 +1,7 @@
 info:
   name: DashboardTesting
   type: folder
-  seq: 39
+  seq: 40
 
 request:
   auth: inherit

@@ -1,7 +1,7 @@
 info:
   name: Helper
   type: folder
-  seq: 33
+  seq: 34
 
 request:
   auth: inherit

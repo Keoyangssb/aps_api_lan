@@ -1,7 +1,7 @@
 info:
   name: SendSms
   type: folder
-  seq: 42
+  seq: 43
 
 request:
   auth: inherit

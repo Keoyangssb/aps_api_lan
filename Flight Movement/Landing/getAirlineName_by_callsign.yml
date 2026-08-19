@@ -5,13 +5,14 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovementLanding/RejectFlightMovement"
+  url: "{{currentIP}}/api/FlightMovementLanding/getAirlineName_by_callsign?callsign="
+  params:
+    - name: callsign
+      value: ""
+      type: query
   body:
     type: json
-    data: |-
-      {
-          "active_flight_plan_id": "0",
-      }
+    data: ""
   auth:
     type: bearer
     token: "{{authToken}}"

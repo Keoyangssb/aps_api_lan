@@ -1,20 +1,18 @@
 info:
-  name: GetSystemLog
+  name: RejectFlightMovement
   type: http
-  seq: 37
+  seq: 5
 
 http:
   method: POST
-  url: "{{currentIP}}/api/General/GetSystemLog"
+  url: "{{currentIP}}/api/StatisticOvf/RejectFlightMovement"
   body:
     type: json
-    data: "{\r
-
-      \  \"from_date\": \"\",\r
-
-      \  \"to_date\": \"\"\r
-
-      }"
+    data: |-
+      {
+          "active_flight_plan_id": "0",
+          "remark": "test"
+      }
   auth:
     type: bearer
     token: "{{authToken}}"

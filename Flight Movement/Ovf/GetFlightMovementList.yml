@@ -1,7 +1,7 @@
 info:
   name: GetFlightMovementList
   type: http
-  seq: 1
+  seq: 2
 
 http:
   method: POST
@@ -11,14 +11,14 @@ http:
     data: |-
       {
         "page_number": 1,
-        "page_size": 10,
+        "page_size": 60,
         "from_date": "2026-06-01",
         "to_date": "2026-08-30",
         "entry_time": "",
         "airline_id": "",
         "departure": "",
         "destination": "",
-        "call_sign": "CSC3993"
+        "call_sign": "TVJ3718"
       }
   auth:
     type: bearer

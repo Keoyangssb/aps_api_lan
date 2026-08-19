@@ -1,23 +1,24 @@
 info:
-  name: GetFlightMovementList
+  name: GetFlightMovementManualApprovedList
   type: http
-  seq: 7
+  seq: 9
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovementLanding/GetFlightMovementList"
+  url: http://localhost:4001/api/FlightMovementLanding/GetFlightMovementManualApprovedList
   body:
     type: json
     data: |-
       {
         "page_number": 1,
-        "page_size": 100,
-        "from_date": "2026-05-01",
-        "to_date": "2026-05-31",
+        "page_size": 10,
+        "from_date": "2026-01-01",
+        "to_date": "2026-08-30",
         "entry_time": "",
         "airline_id": "",
         "departure": "",
-        "destination": ""
+        "destination": "",
+        "call_sign": ""
       }
   auth: inherit
 

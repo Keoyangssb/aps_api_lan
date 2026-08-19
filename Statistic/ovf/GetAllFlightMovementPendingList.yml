@@ -1,0 +1,31 @@
+info:
+  name: GetAllFlightMovementPendingList
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:4001/api/StatisticOvf/GetAllFlightMovementPendingList
+  body:
+    type: json
+    data: |-
+      {
+        "page_number": 1,
+        "page_size": 100,
+        "from_date": "2026-08-01",
+        "to_date": "2026-08-30",
+        "entry_time": "",
+        "airline_id": "",
+        "departure": "",
+        "destination": "",
+        "call_sign": ""
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiI4N2NhODdiOS1kZjI5LTQ1ZDUtOTI5Ni0xZWYyOGI3ZmQzMjIiLCJleHAiOjE3ODcyODA5MDh9.Xjcbfi5_29iix6T8zuwJMMzSoMQyUu6o31YuA7-JdTg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
