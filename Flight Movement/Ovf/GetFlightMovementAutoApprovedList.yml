@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://apslans-api-uat.aidctech.net/api/FlightMovement/GetFlightMovementAutoApprovedList
+  url: http://localhost:4001/api/FlightMovement/GetFlightMovementAutoApprovedList
   body:
     type: json
     data: |-

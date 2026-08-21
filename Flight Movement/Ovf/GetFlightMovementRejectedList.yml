@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{currentIP}}/api/FlightMovement/GetFlightMovementRejectedList"
+  url: http://localhost:4001/api/FlightMovement/GetFlightMovementRejectedList
   body:
     type: json
     data: |-
@@ -18,11 +18,11 @@ http:
         "airline_id": "",
         "departure": "",
         "destination": "",
-        "call_sign": ""
+        "call_sign": "VSV5207"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiI5YjY1NmIwZC03YjliLTQ0MWEtYTYzZC1mMWZhYThkZTgyZjEiLCJleHAiOjE3ODY4NjAzNzl9.ixl0clKSkebq4fFuj4dQG0IvL5gYl_0dE_FOk2VcBwk
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIxNWE4Yzg0NS04MmU3LTQ5M2MtYThhMS04Yzg5NDk1MmJlZDMiLCJleHAiOjE3ODcwMjA2Njd9.GF70hMogG6jYUOCMq94lyqPsHEF_cFFpl3yS89Y4Gr4
 
 settings:
   encodeUrl: true

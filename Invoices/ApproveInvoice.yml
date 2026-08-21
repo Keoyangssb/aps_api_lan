@@ -13,10 +13,6 @@ http:
     - name: Remark
       value: app2
       type: query
-    - name: tokenKey
-      value: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMSIsImp0aSI6ImI4YTNkMDI4LWI2N2QtNDExNy1hZmY3LWQyMjRlN2UyYzE5YSIsImV4cCI6MTc2NDIzNzQyOX0.Bv3QNOf4wBcrhARV673WCscbaNFCartzDlMWhhiaUd8
-      type: query
-      disabled: true
   auth:
     type: bearer
     token: "{{authToken}}"

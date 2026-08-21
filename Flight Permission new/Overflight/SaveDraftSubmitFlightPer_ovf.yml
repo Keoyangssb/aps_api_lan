@@ -16,6 +16,7 @@ http:
         "season_id": "1",
         "operator_type_id": "1",
         "airline_id": "", // if operator_type_id = 2, airline_id require
+        "billing_to_id": "",
         "request_no": "",
         "request_date": "",
         "purpose_flight_id": "1",

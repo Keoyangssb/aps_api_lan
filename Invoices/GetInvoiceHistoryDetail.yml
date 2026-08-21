@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{currentIP}}/api/Invoice/GetInvoiceHistoryDetail?transactionId=12026081708073758&page_number=1&page_size=20"
+  url: "{{currentIP}}/api/Invoice/GetInvoiceHistoryDetail?transactionId=12026081708073758&page_number=1&page_size=10"
   params:
     - name: transactionId
       value: "12026081708073758"
@@ -14,7 +14,7 @@ http:
       value: "1"
       type: query
     - name: page_size
-      value: "20"
+      value: "10"
       type: query
   auth:
     type: bearer

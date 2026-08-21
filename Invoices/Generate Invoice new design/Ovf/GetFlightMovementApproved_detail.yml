@@ -8,15 +8,12 @@ http:
   url: "{{currentIP}}/api/GenerateInvoice/GetFlightMovementApproved_detail"
   body:
     type: json
-    data: "{\r
-
-      \  \"customer_id\": \"153\",\r
-
-      \  \"date_from\": \"2025-02-01\",\r
-
-      \  \"date_to\": \"2025-02-28\"\r
-
-      }"
+    data: |-
+      {
+        "customer_id": "163",
+        "date_from": "2026-06-01",
+        "date_to": "2026-06-30"
+      }
   auth:
     type: bearer
     token: "{{authToken}}"
