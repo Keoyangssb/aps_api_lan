@@ -5,16 +5,17 @@ info:
 
 http:
   method: POST
-  url: http://localhost:4001/api/FlightPermission/GetFlightPermissionMovementDetail
+  url: http://localhost:4001/api/FlightPermission/GetFlightPermissionMovements
   body:
     type: json
     data: |-
       {
-        "flight_per_id": "900"
+        "flight_per_id": "912",
+        "flight_per_detail_id": ""
       }
   auth:
     type: bearer
-    token: "{{authToken}}"
+    token: eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbjEiLCJVc2VySWQiOiIyIiwiUm9sZUlkIjoiMTAiLCJqdGkiOiIwYTA4M2FjYi1jZmUzLTQ4YjAtOWQ1OC1lMzk2YzMwZDNmNDMiLCJleHAiOjE3ODc0NTk3NDV9.crxsJKzPSgJtTVA8UgZ9EAWpm0TiS5WejS_3BQ4Yw_0
 
 settings:
   encodeUrl: true
